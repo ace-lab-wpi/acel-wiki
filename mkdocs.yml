@@ -3,7 +3,13 @@ theme_dir: cinder
 site_author: dRonin
 site_description: "dRonin wiki pages organized using mkdocs with cinder theme"
 repo_url: "https://github.com/rxdu/dRonin-docs"
-copyright: "Cinder is licensed under the <a href='https://github.com/chrissimpkins/cinder/blob/master/LICENSE.md'>MIT license</a>"
+copyright: "This documentation is © Copyright 2016 dRonin. Cinder theme is licensed under the <a href='https://github.com/chrissimpkins/cinder/blob/master/LICENSE.md'>MIT license</a>"
 pages:
   - Home: index.md
-  - Specimen: specimen.md
+  - Setup:
+      - 'Linux Setup': 'setup/linux_setup.md'
+  - Architecture:
+      - 'Architecture Overview': 'arch/arch_overview.md'
+  - Tutorials:
+      - 'TestPage': 'tutorials/test.md'
+#  - Specimen: specimen.md
