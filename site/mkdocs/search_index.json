@@ -2,7 +2,7 @@
     "docs": [
         {
             "location": "/", 
-            "text": "Development Guide \nfor dRonin\n\n\n\nAbout\n\n\nWelcome to the dRonin documentation.\n\n\nThis guide is intended for developers. If you just want to lean how to setup and use the dRonin software, please refer to \nthis\n.\n\n\nSetup\n\n\n1. \nDevelopment Setup: Linux\n\n\nArchitecture\n\n\n1. \nOverview\n\n\nContribute\n\n\nLicense\n\n\nThis documentation is \u00a9 Copyright 2016 dRonin. The license for this documentation is presently being determined; in the meantime, you are free to copy it for personal use.", 
+            "text": "Development Guide \nfor dRonin\n\n\n\nAbout\n\n\nWelcome to the dRonin documentation.\n\n\nThis guide is intended for developers. If you just want to lean how to setup and use the dRonin software, please refer to \nthis\n.\n\n\nSetup\n\n\n1. \nDevelopment Setup: Linux\n\n\nArchitecture\n\n\n1. \nOverview\n\n\nTutorials\n\n\n1. \nTestPage\n\n\nContribute\n\n\n1. \nGeneral Guide\n\n\n2. \nCreate a bug report\n\n\nDoxygen Documentation\n\n\n\n\nFlight\n\n\nGround\n\n\n\n\nLicense\n\n\nThis documentation is \u00a9 Copyright 2016 dRonin. The license for this documentation is presently being determined; in the meantime, you are free to copy it for personal use.", 
             "title": "Home"
         }, 
         {
@@ -31,9 +31,34 @@
             "title": "1. Overview"
         }, 
         {
+            "location": "/#tutorials", 
+            "text": "", 
+            "title": "Tutorials"
+        }, 
+        {
+            "location": "/#1-testpage", 
+            "text": "", 
+            "title": "1. TestPage"
+        }, 
+        {
             "location": "/#contribute", 
             "text": "", 
             "title": "Contribute"
+        }, 
+        {
+            "location": "/#1-general-guide", 
+            "text": "", 
+            "title": "1. General Guide"
+        }, 
+        {
+            "location": "/#2-create-a-bug-report", 
+            "text": "", 
+            "title": "2. Create a bug report"
+        }, 
+        {
+            "location": "/#doxygen-documentation", 
+            "text": "Flight  Ground", 
+            "title": "Doxygen Documentation"
         }, 
         {
             "location": "/#license", 
@@ -129,6 +154,51 @@
             "location": "/tutorials/test/", 
             "text": "", 
             "title": "TestPage"
+        }, 
+        {
+            "location": "/contribute/contributing/", 
+            "text": "Contributing\n\n\nSo you'd like to contribute? Wonderful! Opensource projects like these are driven by volunteers, so the more, the merrier.\n\n\nIf you haven't done so already, head over to the \nDevelopment Environments\n wiki page.  That page will walk you through the steps to get the code and set up a development environment.\n\n\nNot a coder?\n\n\nThat's not a problem.  There are several ways you can help still\n\n Join the \nforum\n and \nIRC\n to help out other users\n\n Contribute to the documentation on the wiki\n* [[Help test new code|Reviews-needing-flight-testing]]\n\n\nContacting the developers?\n\n\nThe developers can be found in two main places:\n\n The \ndRonin forum\n\n\n The \n#dronin chat channel\n on freenode.net\n\n\nLooking for something to work on?\n\n\nIf you have your own idea that you want to explore, great! But if you'd like to look a list of issues that are already opened, we have helpfully labeled tasks that we think are good for getting familiar with the code. Just look for the \"difficulty/low\" tag in the \nlist of open issues\n.\n\n\nFound a bug?\n\n\nFirst, check if the issue you've found has already been reported:\n\n Search the \nlist of open issues\n.\n\n Search the \ndRonin\n google group for any open discussion on the issue.\n\n\nIf you don't see the issue in any of those places, head over the the \nissue tracker\n and write up your bug report.\n\n\nIf you're also planning on contributing a fix for this issue, mention that in your bug report so that we know you're working on it.\n\n\nIt's always best to briefly describe how you plan to fix the issue as a reply to the bug report and then to check back often to see if the developers have provided any suggestions for you.\n\n\nWant to add a new feature?\n\n\nIf you have your own idea that you want to explore, great!\n\n\nBefore you get started, you'll want to find out if anyone else is already working on something similar (or identical!).  If this feature has been requested already, there might also be some good discussion about how to get it done.\n\n Search the \nlist of open issues\n.\n\n Search the \ndRonin\n google group for any open discussion on the feature.\n\n\nIf you don't see any sign of the feature you want to add in any of those places, you should start a discussion thread in the \ndRonin\n google group describing your feature as clearly as possible.  This thread will be the place where other users and developers can help you work out some of the details about how best to implement the feature.  Once some of the details have been worked out, you can get started with the code.\n\n\nWhen adding your first feature to the code base, you might want to ask if one of the developers is available to mentor you through the process.  It's not that difficult but you might find it easier with a guide for the first time.\n\n\nIf you're stuck at any point, \nplease\n don't hesitate to ask for some help.\n\n\nSubmitting your code\n\n\nOnce you're done with your bug-fix or feature, the last step is submitting a pull request. This is as easy as \nclicking a button\n. Once your pull request is started, the continuous integration server (Jenkins) will automatically start to compile the new code, making sure that it builds for all targets. If everything is okay, then Jenkins will report that the build succeeded. If not, then Jenkins will report back with an error, visible on the Github pull request page, like shown:\n[[http://i.imgur.com/OOb5Zue.png|alt=Jenkins Results]]\n\n\nClicking the \"Details\" link will take you to the Jenkins build. Click \"Console Output\" on the left menu to see full build output. Tip: Ctrl+F and search for \"error\".\n\n\nAfter submitting your pull request, dRonin developers will be informed that a pull has been requested and they will review your code.  Please be patient during this stage since proper code reviews take time.  You should also be prepared to address any feedback that you get during the code review.  Once you've fixed any issues identified during review, your code will be merged into the upstream \nnext\n branch which is where the active development lands.\n\n\nPlease see these notes for [[Development-Coding-standards]] to make sure your new features are incorporated as quickly as possible.\n\n\nNotes for various parts of the code\n\n\n\n\n[[Math Libraries|math]]", 
+            "title": "General Guide"
+        }, 
+        {
+            "location": "/contribute/contributing/#contributing", 
+            "text": "So you'd like to contribute? Wonderful! Opensource projects like these are driven by volunteers, so the more, the merrier.  If you haven't done so already, head over to the  Development Environments  wiki page.  That page will walk you through the steps to get the code and set up a development environment.", 
+            "title": "Contributing"
+        }, 
+        {
+            "location": "/contribute/contributing/#not-a-coder", 
+            "text": "That's not a problem.  There are several ways you can help still  Join the  forum  and  IRC  to help out other users  Contribute to the documentation on the wiki\n* [[Help test new code|Reviews-needing-flight-testing]]", 
+            "title": "Not a coder?"
+        }, 
+        {
+            "location": "/contribute/contributing/#contacting-the-developers", 
+            "text": "The developers can be found in two main places:  The  dRonin forum   The  #dronin chat channel  on freenode.net", 
+            "title": "Contacting the developers?"
+        }, 
+        {
+            "location": "/contribute/contributing/#looking-for-something-to-work-on", 
+            "text": "If you have your own idea that you want to explore, great! But if you'd like to look a list of issues that are already opened, we have helpfully labeled tasks that we think are good for getting familiar with the code. Just look for the \"difficulty/low\" tag in the  list of open issues .", 
+            "title": "Looking for something to work on?"
+        }, 
+        {
+            "location": "/contribute/contributing/#found-a-bug", 
+            "text": "First, check if the issue you've found has already been reported:  Search the  list of open issues .  Search the  dRonin  google group for any open discussion on the issue.  If you don't see the issue in any of those places, head over the the  issue tracker  and write up your bug report.  If you're also planning on contributing a fix for this issue, mention that in your bug report so that we know you're working on it.  It's always best to briefly describe how you plan to fix the issue as a reply to the bug report and then to check back often to see if the developers have provided any suggestions for you.", 
+            "title": "Found a bug?"
+        }, 
+        {
+            "location": "/contribute/contributing/#want-to-add-a-new-feature", 
+            "text": "If you have your own idea that you want to explore, great!  Before you get started, you'll want to find out if anyone else is already working on something similar (or identical!).  If this feature has been requested already, there might also be some good discussion about how to get it done.  Search the  list of open issues .  Search the  dRonin  google group for any open discussion on the feature.  If you don't see any sign of the feature you want to add in any of those places, you should start a discussion thread in the  dRonin  google group describing your feature as clearly as possible.  This thread will be the place where other users and developers can help you work out some of the details about how best to implement the feature.  Once some of the details have been worked out, you can get started with the code.  When adding your first feature to the code base, you might want to ask if one of the developers is available to mentor you through the process.  It's not that difficult but you might find it easier with a guide for the first time.  If you're stuck at any point,  please  don't hesitate to ask for some help.", 
+            "title": "Want to add a new feature?"
+        }, 
+        {
+            "location": "/contribute/contributing/#submitting-your-code", 
+            "text": "Once you're done with your bug-fix or feature, the last step is submitting a pull request. This is as easy as  clicking a button . Once your pull request is started, the continuous integration server (Jenkins) will automatically start to compile the new code, making sure that it builds for all targets. If everything is okay, then Jenkins will report that the build succeeded. If not, then Jenkins will report back with an error, visible on the Github pull request page, like shown:\n[[http://i.imgur.com/OOb5Zue.png|alt=Jenkins Results]]  Clicking the \"Details\" link will take you to the Jenkins build. Click \"Console Output\" on the left menu to see full build output. Tip: Ctrl+F and search for \"error\".  After submitting your pull request, dRonin developers will be informed that a pull has been requested and they will review your code.  Please be patient during this stage since proper code reviews take time.  You should also be prepared to address any feedback that you get during the code review.  Once you've fixed any issues identified during review, your code will be merged into the upstream  next  branch which is where the active development lands.  Please see these notes for [[Development-Coding-standards]] to make sure your new features are incorporated as quickly as possible.", 
+            "title": "Submitting your code"
+        }, 
+        {
+            "location": "/contribute/contributing/#notes-for-various-parts-of-the-code", 
+            "text": "[[Math Libraries|math]]", 
+            "title": "Notes for various parts of the code"
         }
     ]
 }
