@@ -7,18 +7,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="dRonin wiki pages organized using mkdocs with cinder theme"> 
     <meta name="author" content="dRonin">  
-    <link rel="shortcut icon" href="./img/favicon.ico">
+    <link rel="shortcut icon" href="../../img/favicon.ico">
 
-    <title>Home - Development Guide - dRonin</title>
+    <title>Setup Devlopment Environment - Development Guide - dRonin</title>
 
-    <link href="./css/bootstrap-custom.min.css" rel="stylesheet">
+    <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="//cdn.jsdelivr.net/font-hack/2.018/css/hack.min.css">
     <link href='//fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic&subset=latin-ext,latin' rel='stylesheet' type='text/css'>
     <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,600,700&subset=latin-ext,latin' rel='stylesheet' type='text/css'>
-    <link href="./css/base.css" rel="stylesheet">
-    <link href="./css/cinder.css" rel="stylesheet">
-    <link rel="stylesheet" href="./css/highlight.css">
+    <link href="../../css/base.css" rel="stylesheet">
+    <link href="../../css/cinder.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/highlight.css">
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -55,7 +55,7 @@
     
 </head>
 
-<body class="homepage" >
+<body>
 
     <div class="navbar navbar-default navbar-fixed-top" role="navigation">
     <div class="container">
@@ -73,7 +73,7 @@
             
 
             <!-- Main title -->
-            <a class="navbar-brand" href=".">Development Guide - dRonin</a>
+            <a class="navbar-brand" href="../..">Development Guide - dRonin</a>
         </div>
 
         <!-- Expanded navigation -->
@@ -83,25 +83,25 @@
                 <ul class="nav navbar-nav">
                 
                 
-                    <li class="active">
-                        <a href=".">Home</a>
+                    <li >
+                        <a href="../..">Home</a>
                     </li>
                 
                 
                 
-                    <li class="dropdown">
+                    <li class="dropdown active">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Software <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                         
                             
-<li >
-    <a href="software/setup_dev_env/">Setup Devlopment Environment</a>
+<li class="active">
+    <a href="./">Setup Devlopment Environment</a>
 </li>
 
                         
                             
 <li >
-    <a href="software/firmware_arch/">Firmware Architecture</a>
+    <a href="../firmware_arch/">Firmware Architecture</a>
 </li>
 
                         
@@ -116,19 +116,19 @@
                         
                             
 <li >
-    <a href="hardware/choose_fc/">Choosing A Flight Controller</a>
+    <a href="../../hardware/choose_fc/">Choosing A Flight Controller</a>
 </li>
 
                         
                             
 <li >
-    <a href="hardware/hardware_id/">Hardware IDs</a>
+    <a href="../../hardware/hardware_id/">Hardware IDs</a>
 </li>
 
                         
                             
 <li >
-    <a href="hardware/add_new_board/">Add A New Board Type</a>
+    <a href="../../hardware/add_new_board/">Add A New Board Type</a>
 </li>
 
                         
@@ -143,7 +143,7 @@
                         
                             
 <li >
-    <a href="tutorials/test/">TestPage</a>
+    <a href="../../tutorials/test/">TestPage</a>
 </li>
 
                         
@@ -158,19 +158,19 @@
                         
                             
 <li >
-    <a href="contribute/contributing/">General Guide</a>
+    <a href="../../contribute/contributing/">General Guide</a>
 </li>
 
                         
                             
 <li >
-    <a href="contribute/coding_standards/">Coding Standards</a>
+    <a href="../../contribute/coding_standards/">Coding Standards</a>
 </li>
 
                         
                             
 <li >
-    <a href="contribute/pull_request/">Pull Request Policy</a>
+    <a href="../../contribute/pull_request/">Pull Request Policy</a>
 </li>
 
                         
@@ -188,13 +188,13 @@
                     </a>
                 </li>
                 
-                    <li class="disabled">
-                        <a rel="next" >
+                    <li >
+                        <a rel="next" href="../..">
                             <i class="fa fa-arrow-left"></i> Previous
                         </a>
                     </li>
                     <li >
-                        <a rel="prev" href="software/setup_dev_env/">
+                        <a rel="prev" href="../firmware_arch/">
                             Next <i class="fa fa-arrow-right"></i>
                         </a>
                     </li>
@@ -219,94 +219,19 @@
         <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
     
-        <li class="first-level active"><a href="#about">About</a></li>
-        
-    
-        <li class="first-level "><a href="#software">Software</a></li>
-        
-            <li class="second-level"><a href="#-setup-devlopment-environment">- Setup Devlopment Environment</a></li>
-            
-        
-            <li class="second-level"><a href="#-firmware-architecture">- Firmware Architecture</a></li>
-            
-        
-    
-        <li class="first-level "><a href="#hardware">Hardware</a></li>
-        
-            <li class="second-level"><a href="#-choose-a-flight-controller">- Choose A Flight Controller</a></li>
-            
-        
-            <li class="second-level"><a href="#-hardware-ids">- Hardware IDs</a></li>
-            
-        
-            <li class="second-level"><a href="#-add-a-new-board-type">- Add A New Board Type</a></li>
-            
-        
-    
-        <li class="first-level "><a href="#tutorials">Tutorials</a></li>
-        
-            <li class="second-level"><a href="#-testpage">- TestPage</a></li>
-            
-        
-    
-        <li class="first-level "><a href="#doxygen-docs">Doxygen Docs</a></li>
-        
-            <li class="second-level"><a href="#-flight">- Flight</a></li>
-            
-        
-            <li class="second-level"><a href="#-ground">- Ground</a></li>
-            
-        
-    
-        <li class="first-level "><a href="#contribute">Contribute</a></li>
-        
-            <li class="second-level"><a href="#-general-guide">- General Guide</a></li>
-            
-        
-            <li class="second-level"><a href="#-coding-standards">- Coding Standards</a></li>
-            
-        
-            <li class="second-level"><a href="#-tracking-development-with-git">- Tracking Development with Git</a></li>
-            
-        
-            <li class="second-level"><a href="#-pull-request-policy">- Pull Request Policy</a></li>
-            
-        
-            <li class="second-level"><a href="#-create-a-bug-report">- Create a bug report</a></li>
-            
-        
-    
-        <li class="first-level "><a href="#license">License</a></li>
+        <li class="first-level active"><a href="#setup-devlopment-environment">Setup Devlopment Environment</a></li>
         
     
     </ul>
 </div></div>
         <div class="col-md-9" role="main">
 
-<h1>Development Guide <small>for dRonin</small></h1>
-
-<h3 id="about">About</h3>
-<p>Welcome to the dRonin documentation. This guide is intended for developers. If you just want to lean how to setup and use the dRonin software, please refer to <a href="https://dronin.readme.io/docs/getting-started">this page</a>.</p>
-<h3 id="software">Software</h3>
-<h4 id="-setup-devlopment-environment">- <a href="software/setup_dev_env/">Setup Devlopment Environment</a></h4>
-<h4 id="-firmware-architecture">- <a href="software/firmware_arch/">Firmware Architecture</a></h4>
-<h3 id="hardware">Hardware</h3>
-<h4 id="-choose-a-flight-controller">- <a href="hardware/choose_fc/">Choose A Flight Controller</a></h4>
-<h4 id="-hardware-ids">- <a href="hardware/hardware_id/">Hardware IDs</a></h4>
-<h4 id="-add-a-new-board-type">- <a href="hardware/add_new_board/">Add A New Board Type</a></h4>
-<h3 id="tutorials">Tutorials</h3>
-<h4 id="-testpage">- <a href="tutorials/test/">TestPage</a></h4>
-<h3 id="doxygen-docs">Doxygen Docs</h3>
-<h4 id="-flight">- <a href="http://docs.dronin.tracer.nz/flight/html/">Flight</a></h4>
-<h4 id="-ground">- <a href="http://docs.dronin.tracer.nz/ground/html/">Ground</a></h4>
-<h3 id="contribute">Contribute</h3>
-<h4 id="-general-guide">- <a href="contribute/contributing/">General Guide</a></h4>
-<h4 id="-coding-standards">- <a href="contribute/coding_standards/">Coding Standards</a></h4>
-<h4 id="-tracking-development-with-git">- <a href="https://dronin.readme.io/docs/tracking-development-with-git">Tracking Development with Git</a></h4>
-<h4 id="-pull-request-policy">- <a href="contribute/pull_request/">Pull Request Policy</a></h4>
-<h4 id="-create-a-bug-report">- <a href="https://dronin.readme.io/docs/writing-good-bug-reports">Create a bug report</a></h4>
-<h3 id="license">License</h3>
-<p>This documentation is © Copyright 2016 dRonin. The license for this documentation is presently being determined; in the meantime, you are free to copy it for personal use.</p></div>
+<h1 id="setup-devlopment-environment">Setup Devlopment Environment</h1>
+<ul>
+<li><a href="https://dronin.readme.io/docs/development-setup-linux">Development Setup: Linux</a></li>
+<li><a href="https://dronin.readme.io/docs/development-setup-windows">Development Setup: Windows</a></li>
+<li><a href="https://dronin.readme.io/docs/development-setup-os-x">Development Setup: OS X</a></li>
+</ul></div>
         
     </div>
 
@@ -318,15 +243,15 @@
         <small>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</p></small>
     </footer>
 
-    <script src="./js/jquery-1.10.2.min.js"></script>
-    <script src="./js/bootstrap-3.0.3.min.js"></script>
-    <script src="./js/highlight.pack.js"></script>
+    <script src="../../js/jquery-1.10.2.min.js"></script>
+    <script src="../../js/bootstrap-3.0.3.min.js"></script>
+    <script src="../../js/highlight.pack.js"></script>
     <script>hljs.initHighlightingOnLoad();</script>
     <script>
-    var base_url = '.';
+    var base_url = '../..';
     </script>
-    <script data-main="./mkdocs/js/search.js" src="./mkdocs/js/require.js"></script>
-    <script src="./js/base.js"></script>
+    <script data-main="../../mkdocs/js/search.js" src="../../mkdocs/js/require.js"></script>
+    <script src="../../js/base.js"></script>
 
     <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
         <div class="modal-dialog">
@@ -358,8 +283,3 @@
     </body>
 
 </html>
-
-<!--
-MkDocs version : 0.16.0
-Build Date UTC : 2016-12-22 18:50:10
--->

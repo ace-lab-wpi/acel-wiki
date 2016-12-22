@@ -7,18 +7,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="dRonin wiki pages organized using mkdocs with cinder theme"> 
     <meta name="author" content="dRonin">  
-    <link rel="shortcut icon" href="./img/favicon.ico">
+    <link rel="shortcut icon" href="../../img/favicon.ico">
 
-    <title>Home - Development Guide - dRonin</title>
+    <title>Choosing A Flight Controller - Development Guide - dRonin</title>
 
-    <link href="./css/bootstrap-custom.min.css" rel="stylesheet">
+    <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="//cdn.jsdelivr.net/font-hack/2.018/css/hack.min.css">
     <link href='//fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic&subset=latin-ext,latin' rel='stylesheet' type='text/css'>
     <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,600,700&subset=latin-ext,latin' rel='stylesheet' type='text/css'>
-    <link href="./css/base.css" rel="stylesheet">
-    <link href="./css/cinder.css" rel="stylesheet">
-    <link rel="stylesheet" href="./css/highlight.css">
+    <link href="../../css/base.css" rel="stylesheet">
+    <link href="../../css/cinder.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/highlight.css">
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -55,7 +55,7 @@
     
 </head>
 
-<body class="homepage" >
+<body>
 
     <div class="navbar navbar-default navbar-fixed-top" role="navigation">
     <div class="container">
@@ -73,7 +73,7 @@
             
 
             <!-- Main title -->
-            <a class="navbar-brand" href=".">Development Guide - dRonin</a>
+            <a class="navbar-brand" href="../..">Development Guide - dRonin</a>
         </div>
 
         <!-- Expanded navigation -->
@@ -83,8 +83,8 @@
                 <ul class="nav navbar-nav">
                 
                 
-                    <li class="active">
-                        <a href=".">Home</a>
+                    <li >
+                        <a href="../..">Home</a>
                     </li>
                 
                 
@@ -95,13 +95,13 @@
                         
                             
 <li >
-    <a href="software/setup_dev_env/">Setup Devlopment Environment</a>
+    <a href="../../software/setup_dev_env/">Setup Devlopment Environment</a>
 </li>
 
                         
                             
 <li >
-    <a href="software/firmware_arch/">Firmware Architecture</a>
+    <a href="../../software/firmware_arch/">Firmware Architecture</a>
 </li>
 
                         
@@ -110,25 +110,25 @@
                 
                 
                 
-                    <li class="dropdown">
+                    <li class="dropdown active">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Hardware <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                         
                             
-<li >
-    <a href="hardware/choose_fc/">Choosing A Flight Controller</a>
+<li class="active">
+    <a href="./">Choosing A Flight Controller</a>
 </li>
 
                         
                             
 <li >
-    <a href="hardware/hardware_id/">Hardware IDs</a>
+    <a href="../hardware_id/">Hardware IDs</a>
 </li>
 
                         
                             
 <li >
-    <a href="hardware/add_new_board/">Add A New Board Type</a>
+    <a href="../add_new_board/">Add A New Board Type</a>
 </li>
 
                         
@@ -143,7 +143,7 @@
                         
                             
 <li >
-    <a href="tutorials/test/">TestPage</a>
+    <a href="../../tutorials/test/">TestPage</a>
 </li>
 
                         
@@ -158,19 +158,19 @@
                         
                             
 <li >
-    <a href="contribute/contributing/">General Guide</a>
+    <a href="../../contribute/contributing/">General Guide</a>
 </li>
 
                         
                             
 <li >
-    <a href="contribute/coding_standards/">Coding Standards</a>
+    <a href="../../contribute/coding_standards/">Coding Standards</a>
 </li>
 
                         
                             
 <li >
-    <a href="contribute/pull_request/">Pull Request Policy</a>
+    <a href="../../contribute/pull_request/">Pull Request Policy</a>
 </li>
 
                         
@@ -188,13 +188,13 @@
                     </a>
                 </li>
                 
-                    <li class="disabled">
-                        <a rel="next" >
+                    <li >
+                        <a rel="next" href="../../software/firmware_arch/">
                             <i class="fa fa-arrow-left"></i> Previous
                         </a>
                     </li>
                     <li >
-                        <a rel="prev" href="software/setup_dev_env/">
+                        <a rel="prev" href="../hardware_id/">
                             Next <i class="fa fa-arrow-right"></i>
                         </a>
                     </li>
@@ -219,94 +219,64 @@
         <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
     
-        <li class="first-level active"><a href="#about">About</a></li>
+        <li class="first-level active"><a href="#choose-a-flight-controller-for-dronin">Choose a flight controller for dRonin</a></li>
         
-    
-        <li class="first-level "><a href="#software">Software</a></li>
-        
-            <li class="second-level"><a href="#-setup-devlopment-environment">- Setup Devlopment Environment</a></li>
+            <li class="second-level"><a href="#supported-controllers">Supported controllers</a></li>
+            
+                <li class="third-level"><a href="#stm32f4-controllers">STM32F4 Controllers</a></li>
+            
+                <li class="third-level"><a href="#stm32f3-controllers">STM32F3 Controllers</a></li>
+            
+                <li class="third-level"><a href="#stm32f1-controllers">STM32F1 Controllers</a></li>
             
         
-            <li class="second-level"><a href="#-firmware-architecture">- Firmware Architecture</a></li>
+            <li class="second-level"><a href="#popular-setups">Popular setups</a></li>
             
-        
-    
-        <li class="first-level "><a href="#hardware">Hardware</a></li>
-        
-            <li class="second-level"><a href="#-choose-a-flight-controller">- Choose A Flight Controller</a></li>
+                <li class="third-level"><a href="#to-build-a-micro-brushed-multicopter">To build a micro brushed multicopter</a></li>
             
-        
-            <li class="second-level"><a href="#-hardware-ids">- Hardware IDs</a></li>
+                <li class="third-level"><a href="#to-build-a-brushless-multicopter">To build a brushless multicopter</a></li>
             
-        
-            <li class="second-level"><a href="#-add-a-new-board-type">- Add A New Board Type</a></li>
-            
-        
-    
-        <li class="first-level "><a href="#tutorials">Tutorials</a></li>
-        
-            <li class="second-level"><a href="#-testpage">- TestPage</a></li>
-            
-        
-    
-        <li class="first-level "><a href="#doxygen-docs">Doxygen Docs</a></li>
-        
-            <li class="second-level"><a href="#-flight">- Flight</a></li>
-            
-        
-            <li class="second-level"><a href="#-ground">- Ground</a></li>
-            
-        
-    
-        <li class="first-level "><a href="#contribute">Contribute</a></li>
-        
-            <li class="second-level"><a href="#-general-guide">- General Guide</a></li>
-            
-        
-            <li class="second-level"><a href="#-coding-standards">- Coding Standards</a></li>
-            
-        
-            <li class="second-level"><a href="#-tracking-development-with-git">- Tracking Development with Git</a></li>
-            
-        
-            <li class="second-level"><a href="#-pull-request-policy">- Pull Request Policy</a></li>
-            
-        
-            <li class="second-level"><a href="#-create-a-bug-report">- Create a bug report</a></li>
-            
-        
-    
-        <li class="first-level "><a href="#license">License</a></li>
         
     
     </ul>
 </div></div>
         <div class="col-md-9" role="main">
 
-<h1>Development Guide <small>for dRonin</small></h1>
-
-<h3 id="about">About</h3>
-<p>Welcome to the dRonin documentation. This guide is intended for developers. If you just want to lean how to setup and use the dRonin software, please refer to <a href="https://dronin.readme.io/docs/getting-started">this page</a>.</p>
-<h3 id="software">Software</h3>
-<h4 id="-setup-devlopment-environment">- <a href="software/setup_dev_env/">Setup Devlopment Environment</a></h4>
-<h4 id="-firmware-architecture">- <a href="software/firmware_arch/">Firmware Architecture</a></h4>
-<h3 id="hardware">Hardware</h3>
-<h4 id="-choose-a-flight-controller">- <a href="hardware/choose_fc/">Choose A Flight Controller</a></h4>
-<h4 id="-hardware-ids">- <a href="hardware/hardware_id/">Hardware IDs</a></h4>
-<h4 id="-add-a-new-board-type">- <a href="hardware/add_new_board/">Add A New Board Type</a></h4>
-<h3 id="tutorials">Tutorials</h3>
-<h4 id="-testpage">- <a href="tutorials/test/">TestPage</a></h4>
-<h3 id="doxygen-docs">Doxygen Docs</h3>
-<h4 id="-flight">- <a href="http://docs.dronin.tracer.nz/flight/html/">Flight</a></h4>
-<h4 id="-ground">- <a href="http://docs.dronin.tracer.nz/ground/html/">Ground</a></h4>
-<h3 id="contribute">Contribute</h3>
-<h4 id="-general-guide">- <a href="contribute/contributing/">General Guide</a></h4>
-<h4 id="-coding-standards">- <a href="contribute/coding_standards/">Coding Standards</a></h4>
-<h4 id="-tracking-development-with-git">- <a href="https://dronin.readme.io/docs/tracking-development-with-git">Tracking Development with Git</a></h4>
-<h4 id="-pull-request-policy">- <a href="contribute/pull_request/">Pull Request Policy</a></h4>
-<h4 id="-create-a-bug-report">- <a href="https://dronin.readme.io/docs/writing-good-bug-reports">Create a bug report</a></h4>
-<h3 id="license">License</h3>
-<p>This documentation is © Copyright 2016 dRonin. The license for this documentation is presently being determined; in the meantime, you are free to copy it for personal use.</p></div>
+<h1 id="choose-a-flight-controller-for-dronin">Choose a flight controller for dRonin</h1>
+<p>dRonin supports many different flight controller boards. Which one you choose depends on your model, the capabilities you want, and your budget. You can build a quadcopter or a plane for less than $60 using the most affordable boards, or you can spend $100 on the flight controller alone.</p>
+<h2 id="supported-controllers">Supported controllers</h2>
+<h3 id="stm32f4-controllers">STM32F4 Controllers</h3>
+<p>These boards support all features (subject to hardware limitations).
+<em> <a href="http://brainfpv.com/">BrainFPV</a> Small and light with integrated OSD
+</em> <a href="http://brainfpv.com">BrainFPV RE1</a> Next generation BrainFPV
+<em> <a href="http://aeroquad.com/showwiki.php?title=AeroQuad32-Flight-Control-Board-v2">AeroQuad32</a>
+</em> [[Sparky2]] - more powerful version of Sparky1 with integrated radio.
+<em> [[Revolution|RevoMini]] - OpenPilot Revolution board.
+</em> <a href="http://www.quantec-networks.de/shop/en/quanton/1/quanton-flight-control-rev.-1">Quanton</a> - Powerful platform with large amounts of connectivity including 8 PWM in and 8 PWM out, and four serial ports.
+* <a href="http://www.team-blacksheep.com/products/prod:gemini">Gemini</a> - Mini FPV hex racer from Team Black Sheep that uses the Colibri flight controller, a derivative of the Quanton</p>
+<h3 id="stm32f3-controllers">STM32F3 Controllers</h3>
+<p>These boards support all features except PicoC scripting (subject to hardware limitations).
+<em> <a href="http://www.getfpv.com/lumenier-lux-flight-controller.html">Lumenier LUX</a> F3 based flight controlled for FPV racing.
+</em> [[Sparky]] - Small single sided flight controller. Fully supported.
+* DTFc Integrated PDB board from DTFUHF</p>
+<p>These boards are not supported!
+* SPRF3 (a.k.a seriously pro racing F3): the hardware is more than often poor and cannot be flashed easily ( see <a href="https://forum.dronin.org/forum/d/239-dronin-on-sp-f3-flight-controller">dronin on sp f3 flight controller</a> )</p>
+<h3 id="stm32f1-controllers">STM32F1 Controllers</h3>
+<p>These boards support only a limited feature set. Navigation is not supported.
+<em> [[OpenNaze/Naze32|OpenNaze Naze32]] - Popular platform, basic support, can't yet be flashed from GCS. dRonin also works on Naze32-based brushed flight controllers such as the Quanum Pico/Micro Scisky32.
+</em> <a href="http://www.openpilot.org/products/openpilot-coptercontrol-platform/">CC3D</a> - Popular older platform, easy to setup and well documented, see [[Getting started|Configuring-your-new-board-for-basic-flight]]</p>
+<h2 id="popular-setups">Popular setups</h2>
+<h3 id="to-build-a-micro-brushed-multicopter">To build a micro brushed multicopter</h3>
+<p>The easiest way to build a micro brushed multicopter is with a board that has integrated brushed motor drivers, and can run on 1S batteries (3.7V) without additional equipment. Some of these boards even integrate a radio receiver or transceiver.</p>
+<p>For the easiest build, you'll want a board with at least four integrated brushed motor drivers, unless you're using an external brushed motor driver. Your choices are many.  You can go with the Brushed Sparky2, which is the only brushed STM32F4 flight controller on the market. It supports all dRonin features including navigation if you add a GPS. If you want a more affordable board, like one of the numerous Naze32-based flight controllers listed below.</p>
+<p>Here should be a brushed micro board comparison table.
+<em> The <a href="http://buildandcrash.blogspot.fr/2015/03/brushedsparky-v02.html">Brushed Sparky2</a> has an integrated OpenLRS 433MHz transceiver and STM32F4, as well as powerful FETs.
+</em> The <a href="http://www.hobbyking.com/hobbyking/store/__86503__Quanum_Pico_32bit_Brushed_Flight_Control_Board.html">Quanum Pico (a.k.a Micro Scisky 32)</a> has an integrated DSM2 receiver and is very affordable.
+* The <a href="http://fisselrc.com/BBB32/rev1/BBB32v1_user_guide.html">BBB32 (a.k.a Beef's Brushed Board)</a></p>
+<p>There are others that should work, like NANO-B-FC and LulFro.</p>
+<h3 id="to-build-a-brushless-multicopter">To build a brushless multicopter</h3>
+<p>While you can build a larger multicopter with a basic STM32F1 board like the Naze32 or CC3D, it is preferable that you use a STM32F4 or STM32F3 board for better performance and access to the full features of dRonin.</p>
+<p>If you want to build an FPV multicopter, the BrainFPV is probably the best choice, as there is an integrated OSD. If you don't require the integrated OSD, two great boards are the Sparky2 and the Revolution. Of course, dRonin will work great on any of the supported STM32F4 boards.</p></div>
         
     </div>
 
@@ -318,15 +288,15 @@
         <small>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</p></small>
     </footer>
 
-    <script src="./js/jquery-1.10.2.min.js"></script>
-    <script src="./js/bootstrap-3.0.3.min.js"></script>
-    <script src="./js/highlight.pack.js"></script>
+    <script src="../../js/jquery-1.10.2.min.js"></script>
+    <script src="../../js/bootstrap-3.0.3.min.js"></script>
+    <script src="../../js/highlight.pack.js"></script>
     <script>hljs.initHighlightingOnLoad();</script>
     <script>
-    var base_url = '.';
+    var base_url = '../..';
     </script>
-    <script data-main="./mkdocs/js/search.js" src="./mkdocs/js/require.js"></script>
-    <script src="./js/base.js"></script>
+    <script data-main="../../mkdocs/js/search.js" src="../../mkdocs/js/require.js"></script>
+    <script src="../../js/base.js"></script>
 
     <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
         <div class="modal-dialog">
@@ -358,8 +328,3 @@
     </body>
 
 </html>
-
-<!--
-MkDocs version : 0.16.0
-Build Date UTC : 2016-12-22 18:50:10
--->

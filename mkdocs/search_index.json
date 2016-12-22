@@ -2,33 +2,48 @@
     "docs": [
         {
             "location": "/", 
-            "text": "Development Guide \nfor dRonin\n\n\n\nAbout\n\n\nWelcome to the dRonin documentation.\n\n\nThis guide is intended for developers. If you just want to lean how to setup and use the dRonin software, please refer to \nthis\n.\n\n\nSetup\n\n\n1. \nDevelopment Setup: Linux\n\n\nArchitecture\n\n\n1. \nOverview\n\n\nTutorials\n\n\n1. \nTestPage\n\n\nContribute\n\n\n1. \nGeneral Guide\n\n\n2. \nCreate a bug report\n\n\nDoxygen Documentation\n\n\n\n\nFlight\n\n\nGround\n\n\n\n\nLicense\n\n\nThis documentation is \u00a9 Copyright 2016 dRonin. The license for this documentation is presently being determined; in the meantime, you are free to copy it for personal use.", 
+            "text": "Development Guide \nfor dRonin\n\n\n\nAbout\n\n\nWelcome to the dRonin documentation. This guide is intended for developers. If you just want to lean how to setup and use the dRonin software, please refer to \nthis page\n.\n\n\nSoftware\n\n\n- \nSetup Devlopment Environment\n\n\n- \nFirmware Architecture\n\n\nHardware\n\n\n- \nChoose A Flight Controller\n\n\n- \nHardware IDs\n\n\n- \nAdd A New Board Type\n\n\nTutorials\n\n\n- \nTestPage\n\n\nDoxygen Docs\n\n\n- \nFlight\n\n\n- \nGround\n\n\nContribute\n\n\n- \nGeneral Guide\n\n\n- \nCoding Standards\n\n\n- \nTracking Development with Git\n\n\n- \nPull Request Policy\n\n\n- \nCreate a bug report\n\n\nLicense\n\n\nThis documentation is \u00a9 Copyright 2016 dRonin. The license for this documentation is presently being determined; in the meantime, you are free to copy it for personal use.", 
             "title": "Home"
         }, 
         {
             "location": "/#about", 
-            "text": "Welcome to the dRonin documentation.  This guide is intended for developers. If you just want to lean how to setup and use the dRonin software, please refer to  this .", 
+            "text": "Welcome to the dRonin documentation. This guide is intended for developers. If you just want to lean how to setup and use the dRonin software, please refer to  this page .", 
             "title": "About"
         }, 
         {
-            "location": "/#setup", 
+            "location": "/#software", 
             "text": "", 
-            "title": "Setup"
+            "title": "Software"
         }, 
         {
-            "location": "/#1-development-setup-linux", 
+            "location": "/#-setup-devlopment-environment", 
             "text": "", 
-            "title": "1. Development Setup: Linux"
+            "title": "- Setup Devlopment Environment"
         }, 
         {
-            "location": "/#architecture", 
+            "location": "/#-firmware-architecture", 
             "text": "", 
-            "title": "Architecture"
+            "title": "- Firmware Architecture"
         }, 
         {
-            "location": "/#1-overview", 
+            "location": "/#hardware", 
             "text": "", 
-            "title": "1. Overview"
+            "title": "Hardware"
+        }, 
+        {
+            "location": "/#-choose-a-flight-controller", 
+            "text": "", 
+            "title": "- Choose A Flight Controller"
+        }, 
+        {
+            "location": "/#-hardware-ids", 
+            "text": "", 
+            "title": "- Hardware IDs"
+        }, 
+        {
+            "location": "/#-add-a-new-board-type", 
+            "text": "", 
+            "title": "- Add A New Board Type"
         }, 
         {
             "location": "/#tutorials", 
@@ -36,9 +51,24 @@
             "title": "Tutorials"
         }, 
         {
-            "location": "/#1-testpage", 
+            "location": "/#-testpage", 
             "text": "", 
-            "title": "1. TestPage"
+            "title": "- TestPage"
+        }, 
+        {
+            "location": "/#doxygen-docs", 
+            "text": "", 
+            "title": "Doxygen Docs"
+        }, 
+        {
+            "location": "/#-flight", 
+            "text": "", 
+            "title": "- Flight"
+        }, 
+        {
+            "location": "/#-ground", 
+            "text": "", 
+            "title": "- Ground"
         }, 
         {
             "location": "/#contribute", 
@@ -46,19 +76,29 @@
             "title": "Contribute"
         }, 
         {
-            "location": "/#1-general-guide", 
+            "location": "/#-general-guide", 
             "text": "", 
-            "title": "1. General Guide"
+            "title": "- General Guide"
         }, 
         {
-            "location": "/#2-create-a-bug-report", 
+            "location": "/#-coding-standards", 
             "text": "", 
-            "title": "2. Create a bug report"
+            "title": "- Coding Standards"
         }, 
         {
-            "location": "/#doxygen-documentation", 
-            "text": "Flight  Ground", 
-            "title": "Doxygen Documentation"
+            "location": "/#-tracking-development-with-git", 
+            "text": "", 
+            "title": "- Tracking Development with Git"
+        }, 
+        {
+            "location": "/#-pull-request-policy", 
+            "text": "", 
+            "title": "- Pull Request Policy"
+        }, 
+        {
+            "location": "/#-create-a-bug-report", 
+            "text": "", 
+            "title": "- Create a bug report"
         }, 
         {
             "location": "/#license", 
@@ -66,89 +106,149 @@
             "title": "License"
         }, 
         {
-            "location": "/setup/linux_setup/", 
-            "text": "Development Setup: Linux\n\n\nConsider forking the project on GitHub before proceeding with this procedure if you intend to contribute back to the project. (More details on this are at \nTracking Development with Git\n)\n\n\n1. Set up prerequisites for the build environment\n\n\nUBUNTU/MINT/DEBIAN BASED DISTRIBUTIONS\n\n\nFirst ensure your package manager is up to date:\n\n\nsudo apt-get update\n\n\n\n\nNext, get a host compiler and other build tools, along with your revision control environment:\n\n\nsudo apt-get install build-essential gdb wget debhelper ccache git\n\n\n\n\nIf you are running a 64-bit version of Linux (if you run uname -m and the output says x86_64 you are in a 64-bit environment), you'll also need to install 32-bit compatibility libraries.\n\n\nsudo apt-get install gcc-multilib\n\n\n\n\nFinally, install some additional libraries required to compile GCS\n\n\nsudo apt-get install zlib1g-dev libusb-1.0-0-dev libudev-dev libgl1-mesa-dev\n\n\n\n\nFEDORA-BASED DISTRIBUTIONS\n\n\nInstall the required packages:\n\n\nsudo dnf install libstdc++.i686 gcc-c++ ccache\nsudo dnf install libusb-devel qt5-qtdeclarative-devel qt5-qtimageformats qt5-qtserialport-devel qt5-qtsvg-devel qt5-qtxmlpatterns-devel SDL-devel systemd-devel zlib-devel\n\n\n\n\n2. Check out the dRonin repository and build\n\n\nCLONE THE SOURCE CODE REPOSITORY\n\n\nFirst, clone the dRonin repository. Change to an appropriate directory to check out the code. If you have your own fork, specify its URL on the git command line (otherwise you can use the parent fork per the below example).\n\n\ngit clone git://github.com/d-ronin/dRonin.git\ncd dRonin\n\n\n\n\nAUTOMATIC DOWNLOAD AND INSTALL OF REQUIRED PROGRAMS\n\n\nThe dRonin build environment is capable of installing the rest of the tools that it needs.\n\n\nQt build tools\nNext, run make qt_sdk_install, copy the path from the output in your terminal and paste it into the installer when prompted.\n\n\n Do not install Qt to the default location!\n\nWhen running the qt sdk install command, you'll be told where to install qt, then the GUI installer will open. Here is what it will look like:\n\n*** NOTE NOTE NOTE ***\n*\n*  In the GUI, please use exactly this path as the installation path:\n*        /some/path/src/dRonin/tools/Qt5.5.1\n*\n*** NOTE NOTE NOTE ***\nBe sure to copy the specified path into the installer when prompted for the install location!\n\n\n\n\nArm cross compilation toolchain\nThis is easy. Just type: make arm_sdk_install\n\n\n3. Build the software\n\n\nYou should be ready to go. Type make all to compile the entire project. Type make to see a list of possible make arguments.\n\n\n4. Install udev rules\n\n\nYou need to grant permission for normal users (ie. not root) to access your flight-controller boards from the GCS. This is accomplished by installing specific udev rules for the various flight controller boards.\n\n\nCheck if your user is in the group \"plugdev\" by running 'groups'\n\n\nIf you're not in group \"plugdev\"...\n\n\nIf you're not in the group \"plugdev\", you can add the group to your user by running this command:\n\n\nsudo usermod -a -G plugdev user\n\n\n\n\nThen, log-out and log back in and check again by running groups\n\n\nNext, run these commands to install the dRonin udev rules:\n\n\nsudo cp package/linux/deb/_package.udev /etc/udev/rules.d/45-dronin-permissions.rules\nsudo udevadm control --reload-rules\n\n\n\n\n4. Run GCS\n\n\nLaunch the gcs with ./build/ground/gcs/bin/drgcs and connect to / flash your board.", 
-            "title": "Linux Setup"
+            "location": "/software/setup_dev_env/", 
+            "text": "Setup Devlopment Environment\n\n\n\n\nDevelopment Setup: Linux\n\n\nDevelopment Setup: Windows\n\n\nDevelopment Setup: OS X", 
+            "title": "Setup Devlopment Environment"
         }, 
         {
-            "location": "/setup/linux_setup/#development-setup-linux", 
-            "text": "Consider forking the project on GitHub before proceeding with this procedure if you intend to contribute back to the project. (More details on this are at  Tracking Development with Git )", 
-            "title": "Development Setup: Linux"
+            "location": "/software/setup_dev_env/#setup-devlopment-environment", 
+            "text": "Development Setup: Linux  Development Setup: Windows  Development Setup: OS X", 
+            "title": "Setup Devlopment Environment"
         }, 
         {
-            "location": "/setup/linux_setup/#1-set-up-prerequisites-for-the-build-environment", 
-            "text": "", 
-            "title": "1. Set up prerequisites for the build environment"
-        }, 
-        {
-            "location": "/setup/linux_setup/#ubuntumintdebian-based-distributions", 
-            "text": "First ensure your package manager is up to date:  sudo apt-get update  Next, get a host compiler and other build tools, along with your revision control environment:  sudo apt-get install build-essential gdb wget debhelper ccache git  If you are running a 64-bit version of Linux (if you run uname -m and the output says x86_64 you are in a 64-bit environment), you'll also need to install 32-bit compatibility libraries.  sudo apt-get install gcc-multilib  Finally, install some additional libraries required to compile GCS  sudo apt-get install zlib1g-dev libusb-1.0-0-dev libudev-dev libgl1-mesa-dev", 
-            "title": "UBUNTU/MINT/DEBIAN BASED DISTRIBUTIONS"
-        }, 
-        {
-            "location": "/setup/linux_setup/#fedora-based-distributions", 
-            "text": "Install the required packages:  sudo dnf install libstdc++.i686 gcc-c++ ccache\nsudo dnf install libusb-devel qt5-qtdeclarative-devel qt5-qtimageformats qt5-qtserialport-devel qt5-qtsvg-devel qt5-qtxmlpatterns-devel SDL-devel systemd-devel zlib-devel", 
-            "title": "FEDORA-BASED DISTRIBUTIONS"
-        }, 
-        {
-            "location": "/setup/linux_setup/#2-check-out-the-dronin-repository-and-build", 
-            "text": "", 
-            "title": "2. Check out the dRonin repository and build"
-        }, 
-        {
-            "location": "/setup/linux_setup/#clone-the-source-code-repository", 
-            "text": "First, clone the dRonin repository. Change to an appropriate directory to check out the code. If you have your own fork, specify its URL on the git command line (otherwise you can use the parent fork per the below example).  git clone git://github.com/d-ronin/dRonin.git\ncd dRonin", 
-            "title": "CLONE THE SOURCE CODE REPOSITORY"
-        }, 
-        {
-            "location": "/setup/linux_setup/#automatic-download-and-install-of-required-programs", 
-            "text": "The dRonin build environment is capable of installing the rest of the tools that it needs.  Qt build tools\nNext, run make qt_sdk_install, copy the path from the output in your terminal and paste it into the installer when prompted.   Do not install Qt to the default location!\n\nWhen running the qt sdk install command, you'll be told where to install qt, then the GUI installer will open. Here is what it will look like:\n\n*** NOTE NOTE NOTE ***\n*\n*  In the GUI, please use exactly this path as the installation path:\n*        /some/path/src/dRonin/tools/Qt5.5.1\n*\n*** NOTE NOTE NOTE ***\nBe sure to copy the specified path into the installer when prompted for the install location!  Arm cross compilation toolchain\nThis is easy. Just type: make arm_sdk_install", 
-            "title": "AUTOMATIC DOWNLOAD AND INSTALL OF REQUIRED PROGRAMS"
-        }, 
-        {
-            "location": "/setup/linux_setup/#3-build-the-software", 
-            "text": "You should be ready to go. Type make all to compile the entire project. Type make to see a list of possible make arguments.", 
-            "title": "3. Build the software"
-        }, 
-        {
-            "location": "/setup/linux_setup/#4-install-udev-rules", 
-            "text": "You need to grant permission for normal users (ie. not root) to access your flight-controller boards from the GCS. This is accomplished by installing specific udev rules for the various flight controller boards.  Check if your user is in the group \"plugdev\" by running 'groups'  If you're not in group \"plugdev\"...  If you're not in the group \"plugdev\", you can add the group to your user by running this command:  sudo usermod -a -G plugdev user  Then, log-out and log back in and check again by running groups  Next, run these commands to install the dRonin udev rules:  sudo cp package/linux/deb/_package.udev /etc/udev/rules.d/45-dronin-permissions.rules\nsudo udevadm control --reload-rules", 
-            "title": "4. Install udev rules"
-        }, 
-        {
-            "location": "/setup/linux_setup/#4-run-gcs", 
-            "text": "Launch the gcs with ./build/ground/gcs/bin/drgcs and connect to / flash your board.", 
-            "title": "4. Run GCS"
-        }, 
-        {
-            "location": "/arch/arch_overview/", 
+            "location": "/software/firmware_arch/", 
             "text": "Architecture Overview\n\n\nThere are a few core concepts required to understand Tau Labs software, and especially the firmware side.\n\n\nModules\n\n\nflight/Modules\n\n\n[[Modules|Development Modules]] are the core logical units on the firmware side. They are generally fairly compact logical components of the flight software, such as a module to get sensor data, or a module to estimate the attitude. Modules can only communicate either via drivers calls (PiOS) or by getting and setting data via UAVObjects.\n\n\nPiOS\n\n\nflight/PiOS\n\n\nPiOS (Pilot Operating System) is the hardware abstraction layer. It is divided into two main sections. The \nflight/PiOS/STM32Fxx\n sections which are hardware specific (currently only supporting STM32 F1, F3, and F4 series processors).  The \nflight/PiOS/Common\n directory contains drivers that run on all platforms via the hardware specific platforms.  PiOS contains all the [[drivers|Development Drivers]] for external sensor chips, PWM generation and input, PPM, serial communications, etc.\n\n\nUAVObjects\n\n\nshared/uavobjectdefinition\n\n\nDetails on adding a new UAVObject can be found \nhere\n\n\nUAVObjects are the data (and setting) representation used on both the firmware side and the GCS side.  They are implemented as data structures generated dynamically from xml definitions. These data objects are transferred from the firmware side to the ground control side and also used for inter-module communication on the firmware.\n\n\nOn the firmware side these interface via FreeRTOS primitives such as queues. Modules can block on updates from an object, so that when another module performs an update the first module resumes. Based on the meta data for that object, updates may be transferred to the ground control system with different frequencies.\n\n\nThe eventdispatcher ( \nflight/UAVObjects/eventdispatcher\n ) is responsible for performing these updates and handling the FreeRTOS interface as well as storage in the UAVObjectManager ( \nflight/UAVObjects/uavobjectmanager\n ).  The telemetry module performs the updates to the ground control system ( \nflight/Modules/Telemetry/telemetry\n ).\n\n\nUAVTalk\n\n\nflight/UAVTalk\n\n\n[[UAVTalk|Development UAVTalk Protocol]] is the protocol used to serialize UAVObjects, as well as send updates or request updates.", 
-            "title": "Architecture Overview"
+            "title": "Firmware Architecture"
         }, 
         {
-            "location": "/arch/arch_overview/#architecture-overview", 
+            "location": "/software/firmware_arch/#architecture-overview", 
             "text": "There are a few core concepts required to understand Tau Labs software, and especially the firmware side.", 
             "title": "Architecture Overview"
         }, 
         {
-            "location": "/arch/arch_overview/#modules", 
+            "location": "/software/firmware_arch/#modules", 
             "text": "flight/Modules  [[Modules|Development Modules]] are the core logical units on the firmware side. They are generally fairly compact logical components of the flight software, such as a module to get sensor data, or a module to estimate the attitude. Modules can only communicate either via drivers calls (PiOS) or by getting and setting data via UAVObjects.", 
             "title": "Modules"
         }, 
         {
-            "location": "/arch/arch_overview/#pios", 
+            "location": "/software/firmware_arch/#pios", 
             "text": "flight/PiOS  PiOS (Pilot Operating System) is the hardware abstraction layer. It is divided into two main sections. The  flight/PiOS/STM32Fxx  sections which are hardware specific (currently only supporting STM32 F1, F3, and F4 series processors).  The  flight/PiOS/Common  directory contains drivers that run on all platforms via the hardware specific platforms.  PiOS contains all the [[drivers|Development Drivers]] for external sensor chips, PWM generation and input, PPM, serial communications, etc.", 
             "title": "PiOS"
         }, 
         {
-            "location": "/arch/arch_overview/#uavobjects", 
+            "location": "/software/firmware_arch/#uavobjects", 
             "text": "shared/uavobjectdefinition  Details on adding a new UAVObject can be found  here  UAVObjects are the data (and setting) representation used on both the firmware side and the GCS side.  They are implemented as data structures generated dynamically from xml definitions. These data objects are transferred from the firmware side to the ground control side and also used for inter-module communication on the firmware.  On the firmware side these interface via FreeRTOS primitives such as queues. Modules can block on updates from an object, so that when another module performs an update the first module resumes. Based on the meta data for that object, updates may be transferred to the ground control system with different frequencies.  The eventdispatcher (  flight/UAVObjects/eventdispatcher  ) is responsible for performing these updates and handling the FreeRTOS interface as well as storage in the UAVObjectManager (  flight/UAVObjects/uavobjectmanager  ).  The telemetry module performs the updates to the ground control system (  flight/Modules/Telemetry/telemetry  ).", 
             "title": "UAVObjects"
         }, 
         {
-            "location": "/arch/arch_overview/#uavtalk", 
+            "location": "/software/firmware_arch/#uavtalk", 
             "text": "flight/UAVTalk  [[UAVTalk|Development UAVTalk Protocol]] is the protocol used to serialize UAVObjects, as well as send updates or request updates.", 
             "title": "UAVTalk"
+        }, 
+        {
+            "location": "/hardware/choose_fc/", 
+            "text": "Choose a flight controller for dRonin\n\n\ndRonin supports many different flight controller boards. Which one you choose depends on your model, the capabilities you want, and your budget. You can build a quadcopter or a plane for less than $60 using the most affordable boards, or you can spend $100 on the flight controller alone.\n\n\nSupported controllers\n\n\nSTM32F4 Controllers\n\n\nThese boards support all features (subject to hardware limitations).\n\n \nBrainFPV\n Small and light with integrated OSD\n\n \nBrainFPV RE1\n Next generation BrainFPV\n\n \nAeroQuad32\n\n\n [[Sparky2]] - more powerful version of Sparky1 with integrated radio.\n\n [[Revolution|RevoMini]] - OpenPilot Revolution board.\n\n \nQuanton\n - Powerful platform with large amounts of connectivity including 8 PWM in and 8 PWM out, and four serial ports.\n* \nGemini\n - Mini FPV hex racer from Team Black Sheep that uses the Colibri flight controller, a derivative of the Quanton\n\n\nSTM32F3 Controllers\n\n\nThese boards support all features except PicoC scripting (subject to hardware limitations).\n\n \nLumenier LUX\n F3 based flight controlled for FPV racing.\n\n [[Sparky]] - Small single sided flight controller. Fully supported.\n* DTFc Integrated PDB board from DTFUHF\n\n\nThese boards are not supported!\n* SPRF3 (a.k.a seriously pro racing F3): the hardware is more than often poor and cannot be flashed easily ( see \ndronin on sp f3 flight controller\n )\n\n\nSTM32F1 Controllers\n\n\nThese boards support only a limited feature set. Navigation is not supported.\n\n [[OpenNaze/Naze32|OpenNaze Naze32]] - Popular platform, basic support, can't yet be flashed from GCS. dRonin also works on Naze32-based brushed flight controllers such as the Quanum Pico/Micro Scisky32.\n\n \nCC3D\n - Popular older platform, easy to setup and well documented, see [[Getting started|Configuring-your-new-board-for-basic-flight]]\n\n\nPopular setups\n\n\nTo build a micro brushed multicopter\n\n\nThe easiest way to build a micro brushed multicopter is with a board that has integrated brushed motor drivers, and can run on 1S batteries (3.7V) without additional equipment. Some of these boards even integrate a radio receiver or transceiver.\n\n\nFor the easiest build, you'll want a board with at least four integrated brushed motor drivers, unless you're using an external brushed motor driver. Your choices are many.  You can go with the Brushed Sparky2, which is the only brushed STM32F4 flight controller on the market. It supports all dRonin features including navigation if you add a GPS. If you want a more affordable board, like one of the numerous Naze32-based flight controllers listed below.\n\n\nHere should be a brushed micro board comparison table.\n\n The \nBrushed Sparky2\n has an integrated OpenLRS 433MHz transceiver and STM32F4, as well as powerful FETs.\n\n The \nQuanum Pico (a.k.a Micro Scisky 32)\n has an integrated DSM2 receiver and is very affordable.\n* The \nBBB32 (a.k.a Beef's Brushed Board)\n\n\nThere are others that should work, like NANO-B-FC and LulFro.\n\n\nTo build a brushless multicopter\n\n\nWhile you can build a larger multicopter with a basic STM32F1 board like the Naze32 or CC3D, it is preferable that you use a STM32F4 or STM32F3 board for better performance and access to the full features of dRonin.\n\n\nIf you want to build an FPV multicopter, the BrainFPV is probably the best choice, as there is an integrated OSD. If you don't require the integrated OSD, two great boards are the Sparky2 and the Revolution. Of course, dRonin will work great on any of the supported STM32F4 boards.", 
+            "title": "Choosing A Flight Controller"
+        }, 
+        {
+            "location": "/hardware/choose_fc/#choose-a-flight-controller-for-dronin", 
+            "text": "dRonin supports many different flight controller boards. Which one you choose depends on your model, the capabilities you want, and your budget. You can build a quadcopter or a plane for less than $60 using the most affordable boards, or you can spend $100 on the flight controller alone.", 
+            "title": "Choose a flight controller for dRonin"
+        }, 
+        {
+            "location": "/hardware/choose_fc/#supported-controllers", 
+            "text": "", 
+            "title": "Supported controllers"
+        }, 
+        {
+            "location": "/hardware/choose_fc/#stm32f4-controllers", 
+            "text": "These boards support all features (subject to hardware limitations).   BrainFPV  Small and light with integrated OSD   BrainFPV RE1  Next generation BrainFPV   AeroQuad32   [[Sparky2]] - more powerful version of Sparky1 with integrated radio.  [[Revolution|RevoMini]] - OpenPilot Revolution board.   Quanton  - Powerful platform with large amounts of connectivity including 8 PWM in and 8 PWM out, and four serial ports.\n*  Gemini  - Mini FPV hex racer from Team Black Sheep that uses the Colibri flight controller, a derivative of the Quanton", 
+            "title": "STM32F4 Controllers"
+        }, 
+        {
+            "location": "/hardware/choose_fc/#stm32f3-controllers", 
+            "text": "These boards support all features except PicoC scripting (subject to hardware limitations).   Lumenier LUX  F3 based flight controlled for FPV racing.  [[Sparky]] - Small single sided flight controller. Fully supported.\n* DTFc Integrated PDB board from DTFUHF  These boards are not supported!\n* SPRF3 (a.k.a seriously pro racing F3): the hardware is more than often poor and cannot be flashed easily ( see  dronin on sp f3 flight controller  )", 
+            "title": "STM32F3 Controllers"
+        }, 
+        {
+            "location": "/hardware/choose_fc/#stm32f1-controllers", 
+            "text": "These boards support only a limited feature set. Navigation is not supported.  [[OpenNaze/Naze32|OpenNaze Naze32]] - Popular platform, basic support, can't yet be flashed from GCS. dRonin also works on Naze32-based brushed flight controllers such as the Quanum Pico/Micro Scisky32.   CC3D  - Popular older platform, easy to setup and well documented, see [[Getting started|Configuring-your-new-board-for-basic-flight]]", 
+            "title": "STM32F1 Controllers"
+        }, 
+        {
+            "location": "/hardware/choose_fc/#popular-setups", 
+            "text": "", 
+            "title": "Popular setups"
+        }, 
+        {
+            "location": "/hardware/choose_fc/#to-build-a-micro-brushed-multicopter", 
+            "text": "The easiest way to build a micro brushed multicopter is with a board that has integrated brushed motor drivers, and can run on 1S batteries (3.7V) without additional equipment. Some of these boards even integrate a radio receiver or transceiver.  For the easiest build, you'll want a board with at least four integrated brushed motor drivers, unless you're using an external brushed motor driver. Your choices are many.  You can go with the Brushed Sparky2, which is the only brushed STM32F4 flight controller on the market. It supports all dRonin features including navigation if you add a GPS. If you want a more affordable board, like one of the numerous Naze32-based flight controllers listed below.  Here should be a brushed micro board comparison table.  The  Brushed Sparky2  has an integrated OpenLRS 433MHz transceiver and STM32F4, as well as powerful FETs.  The  Quanum Pico (a.k.a Micro Scisky 32)  has an integrated DSM2 receiver and is very affordable.\n* The  BBB32 (a.k.a Beef's Brushed Board)  There are others that should work, like NANO-B-FC and LulFro.", 
+            "title": "To build a micro brushed multicopter"
+        }, 
+        {
+            "location": "/hardware/choose_fc/#to-build-a-brushless-multicopter", 
+            "text": "While you can build a larger multicopter with a basic STM32F1 board like the Naze32 or CC3D, it is preferable that you use a STM32F4 or STM32F3 board for better performance and access to the full features of dRonin.  If you want to build an FPV multicopter, the BrainFPV is probably the best choice, as there is an integrated OSD. If you don't require the integrated OSD, two great boards are the Sparky2 and the Revolution. Of course, dRonin will work great on any of the supported STM32F4 boards.", 
+            "title": "To build a brushless multicopter"
+        }, 
+        {
+            "location": "/hardware/hardware_id/", 
+            "text": "Hardware IDs\n\n\n\n\nBOARD_TYPE and BOARD_REVISION are being stored permanently in the \npios_board_info\n blob on the device flash at the end of the bootloader section. They are being exposed to ground control station via the \nFirmwareIAPObj\n UAVO.\n\n\nUDB_VID and USB_PID are being used by the \nboard_manager\n within ground control station.\n\n\n\n\n\n\n\n\n\n\nName\n\n\nBOARD_TYPE\n\n\nBOARD_REVISION\n\n\nUSB_VID\n\n\nUSB_PID\n\n\nRemarks\n\n\n\n\n\n\n\n\n\n\nPipXtreme\n\n\n0x03\n\n\n0x01\n\n\n0x20a0\n\n\n0x415c\n\n\n\n\n\n\n\n\nCoptercontrol\n\n\n0x04\n\n\n0x01\n\n\n0x20a0\n\n\n0x415b\n\n\n\n\n\n\n\n\nCoptercontrol 3D\n\n\n0x04\n\n\n0x02\n\n\n0x20a0\n\n\n0x415b\n\n\n\n\n\n\n\n\nOSD\n\n\n0x05\n\n\n0x01\n\n\n0x20a0\n\n\n0x4194\n\n\n\n\n\n\n\n\nESC\n\n\n0x08\n\n\n0x01\n\n\n-\n\n\n-\n\n\n\n\n\n\n\n\nRevolution\n\n\n0x7f\n\n\n0x02\n\n\n0x20a0\n\n\n0x415e\n\n\n\n\n\n\n\n\nRevoMini\n\n\n0x09\n\n\n0x03\n\n\n0x20a0\n\n\n0x415e\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFreedom\n\n\n0x81\n\n\n0x01\n\n\n0x20a0\n\n\n0x41d0\n\n\n\n\n\n\n\n\nFlyingF3\n\n\n0x82\n\n\n0x01\n\n\n0x20a0\n\n\n0x4195\n\n\n\n\n\n\n\n\nDiscoveryF3\n\n\n0x83\n\n\n0x01\n\n\n0x20a0\n\n\n0x4195\n\n\ncurrently unused\n\n\n\n\n\n\nFlyingF4\n\n\n0x84\n\n\n0x01\n\n\n0x20a0\n\n\n0x4195\n\n\ncurrently unused\n\n\n\n\n\n\nDiscoveryF4\n\n\n0x85\n\n\n0x01\n\n\n0x20a0\n\n\n0x4195\n\n\n\n\n\n\n\n\nQuanton\n\n\n0x86\n\n\n0x01\n\n\n0x0fda\n\n\n0x0100\n\n\n\n\n\n\n\n\nSparky\n\n\n0x88\n\n\n0x02\n\n\n0x20a0\n\n\n0x41d0\n\n\n\n\n\n\n\n\nCoreF4\n\n\n0x89\n\n\n0x01\n\n\n0x20a0\n\n\n0x4195\n\n\n\n\n\n\n\n\nBrain\n\n\n0x8A\n\n\n0x01\n\n\n0x20a0\n\n\n0x4242\n\n\n\n\n\n\n\n\nBrain RE1\n\n\n0x8B\n\n\n0x01\n\n\n0x20a0\n\n\n0x4242\n\n\n\n\n\n\n\n\nAeroCore\n\n\n0x90\n\n\n0x01\n\n\n0x20a0\n\n\n0x41d0\n\n\n\n\n\n\n\n\nColibri\n\n\n0x91\n\n\n0x01\n\n\n0x20a0\n\n\n0x4235\n\n\n\n\n\n\n\n\nAeroQuad32\n\n\n0x94\n\n\n0x01\n\n\n0x20a0\n\n\n0x4284\n\n\n\n\n\n\n\n\nOpenNaze/Naze Family\n\n\n0xA0\n\n\n0x01\n\n\nvarious\n\n\nvarious\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLumenier LUX\n\n\n0xCA\n\n\n0x02\n\n\n0x1209\n\n\n0xf3fc\n\n\n\n\n\n\n\n\nPlayUAVOSD\n\n\n0xCB\n\n\n0x01\n\n\n0x20a0\n\n\n0x4250\n\n\n\n\n\n\n\n\nDTFc\n\n\n0xD7\n\n\n0x04\n\n\n0x16D0\n\n\n0xd7fc\n\n\n\n\n\n\n\n\n\n\nnotes:\n\n BOARD_TYPE 0x00 to 0x7f is informally reserved for OpenPilot.  Tau Labs will not assign any new BOARD_TYPE values in that range.\n\n Hardware manufacturers using Tau Labs firmware are politely asked to contact Tau Labs for assigning a BOARD_TYPE in the 0x80-0xFF range to prevent conflicts", 
+            "title": "Hardware IDs"
+        }, 
+        {
+            "location": "/hardware/hardware_id/#hardware-ids", 
+            "text": "BOARD_TYPE and BOARD_REVISION are being stored permanently in the  pios_board_info  blob on the device flash at the end of the bootloader section. They are being exposed to ground control station via the  FirmwareIAPObj  UAVO.  UDB_VID and USB_PID are being used by the  board_manager  within ground control station.      Name  BOARD_TYPE  BOARD_REVISION  USB_VID  USB_PID  Remarks      PipXtreme  0x03  0x01  0x20a0  0x415c     Coptercontrol  0x04  0x01  0x20a0  0x415b     Coptercontrol 3D  0x04  0x02  0x20a0  0x415b     OSD  0x05  0x01  0x20a0  0x4194     ESC  0x08  0x01  -  -     Revolution  0x7f  0x02  0x20a0  0x415e     RevoMini  0x09  0x03  0x20a0  0x415e             Freedom  0x81  0x01  0x20a0  0x41d0     FlyingF3  0x82  0x01  0x20a0  0x4195     DiscoveryF3  0x83  0x01  0x20a0  0x4195  currently unused    FlyingF4  0x84  0x01  0x20a0  0x4195  currently unused    DiscoveryF4  0x85  0x01  0x20a0  0x4195     Quanton  0x86  0x01  0x0fda  0x0100     Sparky  0x88  0x02  0x20a0  0x41d0     CoreF4  0x89  0x01  0x20a0  0x4195     Brain  0x8A  0x01  0x20a0  0x4242     Brain RE1  0x8B  0x01  0x20a0  0x4242     AeroCore  0x90  0x01  0x20a0  0x41d0     Colibri  0x91  0x01  0x20a0  0x4235     AeroQuad32  0x94  0x01  0x20a0  0x4284     OpenNaze/Naze Family  0xA0  0x01  various  various             Lumenier LUX  0xCA  0x02  0x1209  0xf3fc     PlayUAVOSD  0xCB  0x01  0x20a0  0x4250     DTFc  0xD7  0x04  0x16D0  0xd7fc      notes:  BOARD_TYPE 0x00 to 0x7f is informally reserved for OpenPilot.  Tau Labs will not assign any new BOARD_TYPE values in that range.  Hardware manufacturers using Tau Labs firmware are politely asked to contact Tau Labs for assigning a BOARD_TYPE in the 0x80-0xFF range to prevent conflicts", 
+            "title": "Hardware IDs"
+        }, 
+        {
+            "location": "/hardware/add_new_board/", 
+            "text": "Add a New Board Type\n\n\nHere are the steps to add a new hardware target. This assumes that the CPU architecture is supported already.\n\n\nFor an overview of the software architecture please \nread this\n\n\nFirmware code changes\n\n\nThe changes you will need to make for your target should be largely confined to the \nflight/targets/\nboard name\n directory, which you will need to create. It is probably easiest to start by copying a directory of a board most similar to yours.\n\n if you are doing an F1 board, start with \nflight/targets/coptercontrol\n\n\n if you are doing an F3 board, start with \nflight/targets/sparky\n\n* if you are doing an F4 board, start with \nflight/targets/quanton\n\nand copy that file to your \nflight/targets/\nboard name\n where \nboard name\n is what you want to call your new target.\n\n\nMain Makefile\n\n\nflight/targets/\nboard name\n/fw/Makefile\n\n\nAdd your board name (lowercase) to the \"ALL_BOARDS\" variable\nAdd your board name (capitalised) to the Friendly names variable\nIf necessary, exclude your board from the boot loader updater targets.\n\n\nBoard-level definitions\n\n\nBefore being able to compile a firmware for this board, you have to configure the build environment so that the PiOS HAL is mapped to the way the MCU peripherals are configured on your target, how memory is mapped, how the target is programmed, etc.\n\n\nUpdate the \nboard-info.mk\n file\n\n\n./flight/targets/\nboard name\n/board-info/board-info.mk\n\n\nThis file defines the actual hardware chip used by the board, memory mapping, CPU frequency and programming methods. It also contains PiOS-related: board model, revision, type.\n\n\nThis contains a lot of the meta information for your target that is packaged into the boot loader and determines details about the memory layout, as well as the unique board ID. For the board id (BOARD_TYPE) make sure you are not conflicting with the \nexisting targets\n.\n\n\nBoard hardware description and power initialization code\n\n\nflight/targets/\nboard name\n/board-info/board_hw_defs.c\n\n\nThis is one of the most important files for your target, and contains the majority of the hardware mappings. See other examples for the conventions. It is used by both the main firmware and the bootloader.\n\n\nflight/targets/\nboard name\n/fw/pios_board.c\n\n\nThis file is the one that predominantly uses \nboard_hw_defs.c\n to power up the board and contains most of the remainder of the board specific information.\n\n\nAdd your target to the boards.h file\n\n\nflight/PiOS/inc/pios_board_info.h\n\n\nadd a board define for your board (for instance STM32F4xx_Revolution.h)\nupdate pios_board.h to include this define.\n\n\nThis file is largely historical and more information has been migrating to \nboard_hw_defs.c\n and \npios_board.c\n, but still contains various defines for the various peripherals of the MCU are configured for this target (used by the PiOS drivers):\n   - Bootloader Settings\n   - LED defines\n   - SPI\n   - Watchdog\n   - I2C\n   - Serial ports\n   - USB\n\n\nIt also contains application settings such as:\n   - Temetry stack\n   - RC Receiver settings (channels, protocols)\n\n\nIt defines low-level hardware configuration specific to the board:\n   - Clocks, IRQ, DMA\n\n\nBootloader\n\n\nIf the other files are changed properly, no changes should be needed here.\n\n\nGetting your target into the main code base\n\n\nThere are a number of requirements for adding a target to the main repository:\n\n\n\n\nclean implementation consistent with the changes above\n\n\nperson willing to maintain that target if there are problems\n\n\nhave your unique board ID added to the \nlist of targets\n\n\nopen source hardware with the hardware files included in \nflight/target/\nboard name\n/hw\n\n\n\n\nOnce those requirements are met, upload your code to github and \ncreate a pull request\n.\n\n\nIf you are unsure of things, feel free to upload your code and either point us to it on the forums or create a pull request and ask questions.", 
+            "title": "Add A New Board Type"
+        }, 
+        {
+            "location": "/hardware/add_new_board/#add-a-new-board-type", 
+            "text": "Here are the steps to add a new hardware target. This assumes that the CPU architecture is supported already.  For an overview of the software architecture please  read this", 
+            "title": "Add a New Board Type"
+        }, 
+        {
+            "location": "/hardware/add_new_board/#firmware-code-changes", 
+            "text": "The changes you will need to make for your target should be largely confined to the  flight/targets/ board name  directory, which you will need to create. It is probably easiest to start by copying a directory of a board most similar to yours.  if you are doing an F1 board, start with  flight/targets/coptercontrol   if you are doing an F3 board, start with  flight/targets/sparky \n* if you are doing an F4 board, start with  flight/targets/quanton \nand copy that file to your  flight/targets/ board name  where  board name  is what you want to call your new target.", 
+            "title": "Firmware code changes"
+        }, 
+        {
+            "location": "/hardware/add_new_board/#main-makefile", 
+            "text": "flight/targets/ board name /fw/Makefile  Add your board name (lowercase) to the \"ALL_BOARDS\" variable\nAdd your board name (capitalised) to the Friendly names variable\nIf necessary, exclude your board from the boot loader updater targets.", 
+            "title": "Main Makefile"
+        }, 
+        {
+            "location": "/hardware/add_new_board/#board-level-definitions", 
+            "text": "Before being able to compile a firmware for this board, you have to configure the build environment so that the PiOS HAL is mapped to the way the MCU peripherals are configured on your target, how memory is mapped, how the target is programmed, etc.", 
+            "title": "Board-level definitions"
+        }, 
+        {
+            "location": "/hardware/add_new_board/#update-the-board-infomk-file", 
+            "text": "./flight/targets/ board name /board-info/board-info.mk  This file defines the actual hardware chip used by the board, memory mapping, CPU frequency and programming methods. It also contains PiOS-related: board model, revision, type.  This contains a lot of the meta information for your target that is packaged into the boot loader and determines details about the memory layout, as well as the unique board ID. For the board id (BOARD_TYPE) make sure you are not conflicting with the  existing targets .", 
+            "title": "Update the board-info.mk file"
+        }, 
+        {
+            "location": "/hardware/add_new_board/#board-hardware-description-and-power-initialization-code", 
+            "text": "flight/targets/ board name /board-info/board_hw_defs.c  This is one of the most important files for your target, and contains the majority of the hardware mappings. See other examples for the conventions. It is used by both the main firmware and the bootloader.  flight/targets/ board name /fw/pios_board.c  This file is the one that predominantly uses  board_hw_defs.c  to power up the board and contains most of the remainder of the board specific information.", 
+            "title": "Board hardware description and power initialization code"
+        }, 
+        {
+            "location": "/hardware/add_new_board/#add-your-target-to-the-boardsh-file", 
+            "text": "flight/PiOS/inc/pios_board_info.h  add a board define for your board (for instance STM32F4xx_Revolution.h)\nupdate pios_board.h to include this define.  This file is largely historical and more information has been migrating to  board_hw_defs.c  and  pios_board.c , but still contains various defines for the various peripherals of the MCU are configured for this target (used by the PiOS drivers):\n   - Bootloader Settings\n   - LED defines\n   - SPI\n   - Watchdog\n   - I2C\n   - Serial ports\n   - USB  It also contains application settings such as:\n   - Temetry stack\n   - RC Receiver settings (channels, protocols)  It defines low-level hardware configuration specific to the board:\n   - Clocks, IRQ, DMA", 
+            "title": "Add your target to the boards.h file"
+        }, 
+        {
+            "location": "/hardware/add_new_board/#bootloader", 
+            "text": "If the other files are changed properly, no changes should be needed here.", 
+            "title": "Bootloader"
+        }, 
+        {
+            "location": "/hardware/add_new_board/#getting-your-target-into-the-main-code-base", 
+            "text": "There are a number of requirements for adding a target to the main repository:   clean implementation consistent with the changes above  person willing to maintain that target if there are problems  have your unique board ID added to the  list of targets  open source hardware with the hardware files included in  flight/target/ board name /hw   Once those requirements are met, upload your code to github and  create a pull request .  If you are unsure of things, feel free to upload your code and either point us to it on the forums or create a pull request and ask questions.", 
+            "title": "Getting your target into the main code base"
         }, 
         {
             "location": "/tutorials/test/", 
@@ -199,6 +299,86 @@
             "location": "/contribute/contributing/#notes-for-various-parts-of-the-code", 
             "text": "[[Math Libraries|math]]", 
             "title": "Notes for various parts of the code"
+        }, 
+        {
+            "location": "/contribute/coding_standards/", 
+            "text": "Development Coding standards\n\n\nAll Code\n\n\n\n\nPlease use Linux line-endings (LF, no CR).\n\n\nPlease try to keep diff minimal. If you really feel some re-formatting is necessary, please do it in a separate commit to ease review\n\n\nKeep lines reasonably short (80 chars is a good guide), break statements over multiple lines where necessary\n\n\nUse \ndefault\n cases in \nswitch\n statements only where you \nreally\n intend it, they neuter compile-time checking of missed code when new enumerations are introduced\n\n\n\n\nFlight Code (C)\n\n\nThe flight side code has historically tried to stick as much as possible with the \nlinux kernel style\n.\n\n\nNew Draft Guidelines\n\n\nAlways defer to K\nR conventions when not explicitly covered here.\n\n Use TABS, not spaces\n\n Use typedefs only when strictly necessary\n    - One exception is for device handles where they appear in public declarations of PiOS drivers\n\n \ncase\n statements are indented at the same level as the parent \nswitch\n\n\n Use spaces around parentheses for \nif\n, \nswitch\n, etc., but not for functions.\n* Opening braces are on the same line as \nif\n, \nswitch\n, etc. \nelse\n is on the same line as previous closing brace, e.g.\n\n\n```c\nif (this_thing) {\n    switch (this_thing) {\n    case THING_1:\n        do_some_stuff();\n        break;\n    case THING_2:\n        do_other_stuff();\n        break;\n    }\n} else {\n    do_that_other_thing();\n}\n```\n\n\n\n\n\n\n\nBraces are optional for single statement \nif\ns, but ONLY if all branches have no braces. e.g. Okay:\n\n\nc\nif (this_thing)\n    do_stuff();\nelse if (other_thing)\n    do_other_stuff();\nelse\n    return NULL;\n\n\nNOT okay:\n\n\nc\nif (this_thing)\n    do_stuff();\nelse {\n    PIOS_DEBUG_Assert(false);\n    return NULL;\n}\n\n* ... more to come ...\n\n\n\n\n\n\nGCS Code (C++)\n\n\nUse \nQt style\n and \nQt coding conventions\n\n\n Use 4 SPACES, not tabs\n\n DON'T assume that returned pointers are non-null\n* Use [[dynamic UAVO relations|Development-UAVObject-to-Widget-Relations]] where you can, these will (soon) be checked at compile time against UAVO definitions", 
+            "title": "Coding Standards"
+        }, 
+        {
+            "location": "/contribute/coding_standards/#development-coding-standards", 
+            "text": "", 
+            "title": "Development Coding standards"
+        }, 
+        {
+            "location": "/contribute/coding_standards/#all-code", 
+            "text": "Please use Linux line-endings (LF, no CR).  Please try to keep diff minimal. If you really feel some re-formatting is necessary, please do it in a separate commit to ease review  Keep lines reasonably short (80 chars is a good guide), break statements over multiple lines where necessary  Use  default  cases in  switch  statements only where you  really  intend it, they neuter compile-time checking of missed code when new enumerations are introduced", 
+            "title": "All Code"
+        }, 
+        {
+            "location": "/contribute/coding_standards/#flight-code-c", 
+            "text": "The flight side code has historically tried to stick as much as possible with the  linux kernel style .", 
+            "title": "Flight Code (C)"
+        }, 
+        {
+            "location": "/contribute/coding_standards/#new-draft-guidelines", 
+            "text": "Always defer to K R conventions when not explicitly covered here.  Use TABS, not spaces  Use typedefs only when strictly necessary\n    - One exception is for device handles where they appear in public declarations of PiOS drivers   case  statements are indented at the same level as the parent  switch   Use spaces around parentheses for  if ,  switch , etc., but not for functions.\n* Opening braces are on the same line as  if ,  switch , etc.  else  is on the same line as previous closing brace, e.g.  ```c\nif (this_thing) {\n    switch (this_thing) {\n    case THING_1:\n        do_some_stuff();\n        break;\n    case THING_2:\n        do_other_stuff();\n        break;\n    }\n} else {\n    do_that_other_thing();\n}\n```    Braces are optional for single statement  if s, but ONLY if all branches have no braces. e.g. Okay:  c\nif (this_thing)\n    do_stuff();\nelse if (other_thing)\n    do_other_stuff();\nelse\n    return NULL;  NOT okay:  c\nif (this_thing)\n    do_stuff();\nelse {\n    PIOS_DEBUG_Assert(false);\n    return NULL;\n} \n* ... more to come ...", 
+            "title": "New Draft Guidelines"
+        }, 
+        {
+            "location": "/contribute/coding_standards/#gcs-code-c", 
+            "text": "Use  Qt style  and  Qt coding conventions   Use 4 SPACES, not tabs  DON'T assume that returned pointers are non-null\n* Use [[dynamic UAVO relations|Development-UAVObject-to-Widget-Relations]] where you can, these will (soon) be checked at compile time against UAVO definitions", 
+            "title": "GCS Code (C++)"
+        }, 
+        {
+            "location": "/contribute/pull_request/", 
+            "text": "Pull Requests Policy\n\n\nGoals\n\n\nThis policy is intended to make collaborative development for Tau Labs as efficient as possible, while maintaining safe code development as a priority. To achieve this, we try to keep the time from request to resolution as well as the number of open requests as small as possible. This benefits authors, reviewers and users as well. Authors will be encouraged to contribute more and will be able to scope their work easier, reviewers can more efficiently evaluate the relevant changes, and users get new features and bug fixes quicker.\n\n\nPhilosophy\n\n\nWhen you submit code by creating a pull request, it is your obligation to prove that your code is good to merge. \nAll\n changes submitted for merging must be reviewed. It is your obligation as the author to find someone willing to invest time into reviewing your work and discussing and resolving all issues or concerns raised during the review. As author, you are expected to fix anything found during review; it is not the reviewer's responsibility to fix it for you. You should strive to make your code as easy as possible to review.\n\n\nCreation\n\n\n\n\nA pull request should be focused on one specific feature / bug fix / problem. The smaller the scope, the better. The less scope mixing, the better. Try to make commits as atomic as possible to ease merging as well as review. Consider splitting up big features into multiple requests.\n\n\nKeep in mind while writing and commenting your code that someone will have to review it. The better job you do at making clear what you are doing, the faster you will get through review.\n\n\nNever mix formatting fixes with semantic changes within a single commit.\n\n\nWrite a proper summary and include potential pitfalls for the reviewer to ease his job.\n\n\n\n\nThings we like to see as pull requests\n\n\n\n\nBugfixes (one bug per request)\n\n\nNew features (one feature per request)\n\n\nRequest for comments (if explicitly stated)\n\n\n\n\nThings we don't like to see as pull requests\n\n\n\n\nI don't like color xyz, so i changed it to abc\n\n\nI don't like name of variable abc so i changed it to def\n\n\nChanges without proper logical reason\n\n\n\n\nReview\n\n\nAfter submitting a pull request, one or more reviewers will go through your code and write comments. For anything more than trivial changes, at least one reviewer \nmust\n be a core developer. The quicker you respond to those comments by fixing mistakes or clarifying things, the sooner your code will be merged. You can always add commits to a running pull request. Just push them to the branch which is going to be merged.\n\n\nMerge or Close\n\n\nWhen the review is done, the reviewer will write a summary of his findings and vote for merge or close, sometimes adding conditions (e.g. something has to be fixed before merge).\nWhen there is consensus between author and reviewer that code will not be merged in the current state and has to be redone, the request will be closed. When a simple majority of core developer vote to merge or close, the request will be merged or closed accordingly.\n\n\nIf a pull request has been reviewed and is dormant because issues need to be addressed or the author is not resolving issues, the request will be closed. It can be reopened again later. This keeps the list of pending requests open to actionable items.\n\n\nAuthors will not merge their own pull requests.\n\n\nAppeals\n\n\nEvery effort should be made to resolve issues and concerns within the standard review process. If, however, after three months from the date of the pull request opening, an agreement cannot be reached to merge or close the pull request, an appeal to the project governing board can be made. Once an appeal is made, no changes will be allowed on the branch. Board members will be notified and shall have one months from the date of notification to vote merge or close, or explicitly abstain. The board will not discuss technical merit after an appeal is made, but shall only review comments made prior to the appeal. No board member will need to explain their rationale for voting. The majority vote for merge or close shall govern.\n\n\nThis process is intentionally lengthy and should only be a means of last resort.  Again, every effort should be made to resolve issues and concerns within the standard review process.", 
+            "title": "Pull Request Policy"
+        }, 
+        {
+            "location": "/contribute/pull_request/#pull-requests-policy", 
+            "text": "", 
+            "title": "Pull Requests Policy"
+        }, 
+        {
+            "location": "/contribute/pull_request/#goals", 
+            "text": "This policy is intended to make collaborative development for Tau Labs as efficient as possible, while maintaining safe code development as a priority. To achieve this, we try to keep the time from request to resolution as well as the number of open requests as small as possible. This benefits authors, reviewers and users as well. Authors will be encouraged to contribute more and will be able to scope their work easier, reviewers can more efficiently evaluate the relevant changes, and users get new features and bug fixes quicker.", 
+            "title": "Goals"
+        }, 
+        {
+            "location": "/contribute/pull_request/#philosophy", 
+            "text": "When you submit code by creating a pull request, it is your obligation to prove that your code is good to merge.  All  changes submitted for merging must be reviewed. It is your obligation as the author to find someone willing to invest time into reviewing your work and discussing and resolving all issues or concerns raised during the review. As author, you are expected to fix anything found during review; it is not the reviewer's responsibility to fix it for you. You should strive to make your code as easy as possible to review.", 
+            "title": "Philosophy"
+        }, 
+        {
+            "location": "/contribute/pull_request/#creation", 
+            "text": "A pull request should be focused on one specific feature / bug fix / problem. The smaller the scope, the better. The less scope mixing, the better. Try to make commits as atomic as possible to ease merging as well as review. Consider splitting up big features into multiple requests.  Keep in mind while writing and commenting your code that someone will have to review it. The better job you do at making clear what you are doing, the faster you will get through review.  Never mix formatting fixes with semantic changes within a single commit.  Write a proper summary and include potential pitfalls for the reviewer to ease his job.", 
+            "title": "Creation"
+        }, 
+        {
+            "location": "/contribute/pull_request/#things-we-like-to-see-as-pull-requests", 
+            "text": "Bugfixes (one bug per request)  New features (one feature per request)  Request for comments (if explicitly stated)", 
+            "title": "Things we like to see as pull requests"
+        }, 
+        {
+            "location": "/contribute/pull_request/#things-we-dont-like-to-see-as-pull-requests", 
+            "text": "I don't like color xyz, so i changed it to abc  I don't like name of variable abc so i changed it to def  Changes without proper logical reason", 
+            "title": "Things we don't like to see as pull requests"
+        }, 
+        {
+            "location": "/contribute/pull_request/#review", 
+            "text": "After submitting a pull request, one or more reviewers will go through your code and write comments. For anything more than trivial changes, at least one reviewer  must  be a core developer. The quicker you respond to those comments by fixing mistakes or clarifying things, the sooner your code will be merged. You can always add commits to a running pull request. Just push them to the branch which is going to be merged.", 
+            "title": "Review"
+        }, 
+        {
+            "location": "/contribute/pull_request/#merge-or-close", 
+            "text": "When the review is done, the reviewer will write a summary of his findings and vote for merge or close, sometimes adding conditions (e.g. something has to be fixed before merge).\nWhen there is consensus between author and reviewer that code will not be merged in the current state and has to be redone, the request will be closed. When a simple majority of core developer vote to merge or close, the request will be merged or closed accordingly.  If a pull request has been reviewed and is dormant because issues need to be addressed or the author is not resolving issues, the request will be closed. It can be reopened again later. This keeps the list of pending requests open to actionable items.  Authors will not merge their own pull requests.", 
+            "title": "Merge or Close"
+        }, 
+        {
+            "location": "/contribute/pull_request/#appeals", 
+            "text": "Every effort should be made to resolve issues and concerns within the standard review process. If, however, after three months from the date of the pull request opening, an agreement cannot be reached to merge or close the pull request, an appeal to the project governing board can be made. Once an appeal is made, no changes will be allowed on the branch. Board members will be notified and shall have one months from the date of notification to vote merge or close, or explicitly abstain. The board will not discuss technical merit after an appeal is made, but shall only review comments made prior to the appeal. No board member will need to explain their rationale for voting. The majority vote for merge or close shall govern.  This process is intentionally lengthy and should only be a means of last resort.  Again, every effort should be made to resolve issues and concerns within the standard review process.", 
+            "title": "Appeals"
         }
     ]
 }

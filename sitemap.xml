@@ -12,7 +12,13 @@
     
         
     <url>
-     <loc>/setup/linux_setup/</loc>
+     <loc>/software/setup_dev_env/</loc>
+     <lastmod>2016-12-22</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/software/firmware_arch/</loc>
      <lastmod>2016-12-22</lastmod>
      <changefreq>daily</changefreq>
     </url>
@@ -22,7 +28,19 @@
     
         
     <url>
-     <loc>/arch/arch_overview/</loc>
+     <loc>/hardware/choose_fc/</loc>
+     <lastmod>2016-12-22</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/hardware/hardware_id/</loc>
+     <lastmod>2016-12-22</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/hardware/add_new_board/</loc>
      <lastmod>2016-12-22</lastmod>
      <changefreq>daily</changefreq>
     </url>
@@ -43,6 +61,18 @@
         
     <url>
      <loc>/contribute/contributing/</loc>
+     <lastmod>2016-12-22</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/contribute/coding_standards/</loc>
+     <lastmod>2016-12-22</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/contribute/pull_request/</loc>
      <lastmod>2016-12-22</lastmod>
      <changefreq>daily</changefreq>
     </url>

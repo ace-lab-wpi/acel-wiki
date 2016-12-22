@@ -9,7 +9,7 @@
     <meta name="author" content="dRonin">  
     <link rel="shortcut icon" href="../../img/favicon.ico">
 
-    <title>Linux Setup - Development Guide - dRonin</title>
+    <title>Coding Standards - Development Guide - dRonin</title>
 
     <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
@@ -89,13 +89,19 @@
                 
                 
                 
-                    <li class="dropdown active">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Setup <b class="caret"></b></a>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Software <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                         
                             
-<li class="active">
-    <a href="./">Linux Setup</a>
+<li >
+    <a href="../../software/setup_dev_env/">Setup Devlopment Environment</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../software/firmware_arch/">Firmware Architecture</a>
 </li>
 
                         
@@ -105,12 +111,24 @@
                 
                 
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Architecture <b class="caret"></b></a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Hardware <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                         
                             
 <li >
-    <a href="../../arch/arch_overview/">Architecture Overview</a>
+    <a href="../../hardware/choose_fc/">Choosing A Flight Controller</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../hardware/hardware_id/">Hardware IDs</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../hardware/add_new_board/">Add A New Board Type</a>
 </li>
 
                         
@@ -134,13 +152,25 @@
                 
                 
                 
-                    <li class="dropdown">
+                    <li class="dropdown active">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Contribute <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                         
                             
 <li >
-    <a href="../../contribute/contributing/">General Guide</a>
+    <a href="../contributing/">General Guide</a>
+</li>
+
+                        
+                            
+<li class="active">
+    <a href="./">Coding Standards</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../pull_request/">Pull Request Policy</a>
 </li>
 
                         
@@ -159,12 +189,12 @@
                 </li>
                 
                     <li >
-                        <a rel="next" href="../..">
+                        <a rel="next" href="../contributing/">
                             <i class="fa fa-arrow-left"></i> Previous
                         </a>
                     </li>
                     <li >
-                        <a rel="prev" href="../../arch/arch_overview/">
+                        <a rel="prev" href="../pull_request/">
                             Next <i class="fa fa-arrow-right"></i>
                         </a>
                     </li>
@@ -189,29 +219,17 @@
         <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
     
-        <li class="first-level active"><a href="#development-setup-linux">Development Setup: Linux</a></li>
+        <li class="first-level active"><a href="#development-coding-standards">Development Coding standards</a></li>
         
-            <li class="second-level"><a href="#1-set-up-prerequisites-for-the-build-environment">1. Set up prerequisites for the build environment</a></li>
-            
-                <li class="third-level"><a href="#ubuntumintdebian-based-distributions">UBUNTU/MINT/DEBIAN BASED DISTRIBUTIONS</a></li>
-            
-                <li class="third-level"><a href="#fedora-based-distributions">FEDORA-BASED DISTRIBUTIONS</a></li>
+            <li class="second-level"><a href="#all-code">All Code</a></li>
             
         
-            <li class="second-level"><a href="#2-check-out-the-dronin-repository-and-build">2. Check out the dRonin repository and build</a></li>
+            <li class="second-level"><a href="#flight-code-c">Flight Code (C)</a></li>
             
-                <li class="third-level"><a href="#clone-the-source-code-repository">CLONE THE SOURCE CODE REPOSITORY</a></li>
-            
-                <li class="third-level"><a href="#automatic-download-and-install-of-required-programs">AUTOMATIC DOWNLOAD AND INSTALL OF REQUIRED PROGRAMS</a></li>
+                <li class="third-level"><a href="#new-draft-guidelines">New Draft Guidelines</a></li>
             
         
-            <li class="second-level"><a href="#3-build-the-software">3. Build the software</a></li>
-            
-        
-            <li class="second-level"><a href="#4-install-udev-rules">4. Install udev rules</a></li>
-            
-        
-            <li class="second-level"><a href="#4-run-gcs">4. Run GCS</a></li>
+            <li class="second-level"><a href="#gcs-code-c">GCS Code (C++)</a></li>
             
         
     
@@ -219,76 +237,65 @@
 </div></div>
         <div class="col-md-9" role="main">
 
-<h1 id="development-setup-linux">Development Setup: Linux</h1>
-<p>Consider forking the project on GitHub before proceeding with this procedure if you intend to contribute back to the project. (More details on this are at <a href="https://dronin.readme.io/v20161004/docs/tracking-development-with-git">Tracking Development with Git</a>)</p>
-<h2 id="1-set-up-prerequisites-for-the-build-environment">1. Set up prerequisites for the build environment</h2>
-<h3 id="ubuntumintdebian-based-distributions">UBUNTU/MINT/DEBIAN BASED DISTRIBUTIONS</h3>
-<p>First ensure your package manager is up to date:</p>
-<pre><code>sudo apt-get update
+<h1 id="development-coding-standards">Development Coding standards</h1>
+<h2 id="all-code">All Code</h2>
+<ul>
+<li>Please use Linux line-endings (LF, no CR).</li>
+<li>Please try to keep diff minimal. If you really feel some re-formatting is necessary, please do it in a separate commit to ease review</li>
+<li>Keep lines reasonably short (80 chars is a good guide), break statements over multiple lines where necessary</li>
+<li>Use <code>default</code> cases in <code>switch</code> statements only where you <strong>really</strong> intend it, they neuter compile-time checking of missed code when new enumerations are introduced</li>
+</ul>
+<h2 id="flight-code-c">Flight Code (C)</h2>
+<p>The flight side code has historically tried to stick as much as possible with the <a href="https://www.kernel.org/doc/Documentation/CodingStyle">linux kernel style</a>.</p>
+<h3 id="new-draft-guidelines">New Draft Guidelines</h3>
+<p>Always defer to K&amp;R conventions when not explicitly covered here.
+<em> Use TABS, not spaces
+</em> Use typedefs only when strictly necessary
+    - One exception is for device handles where they appear in public declarations of PiOS drivers
+<em> <code>case</code> statements are indented at the same level as the parent <code>switch</code>
+</em> Use spaces around parentheses for <code>if</code>, <code>switch</code>, etc., but not for functions.
+* Opening braces are on the same line as <code>if</code>, <code>switch</code>, etc. <code>else</code> is on the same line as previous closing brace, e.g.</p>
+<pre><code>```c
+if (this_thing) {
+    switch (this_thing) {
+    case THING_1:
+        do_some_stuff();
+        break;
+    case THING_2:
+        do_other_stuff();
+        break;
+    }
+} else {
+    do_that_other_thing();
+}
+```
 </code></pre>
-
-<p>Next, get a host compiler and other build tools, along with your revision control environment:</p>
-<pre><code>sudo apt-get install build-essential gdb wget debhelper ccache git
-</code></pre>
-
-<p>If you are running a 64-bit version of Linux (if you run uname -m and the output says x86_64 you are in a 64-bit environment), you'll also need to install 32-bit compatibility libraries.</p>
-<pre><code>sudo apt-get install gcc-multilib
-</code></pre>
-
-<p>Finally, install some additional libraries required to compile GCS</p>
-<pre><code>sudo apt-get install zlib1g-dev libusb-1.0-0-dev libudev-dev libgl1-mesa-dev
-</code></pre>
-
-<h3 id="fedora-based-distributions">FEDORA-BASED DISTRIBUTIONS</h3>
-<p>Install the required packages:</p>
-<pre><code>sudo dnf install libstdc++.i686 gcc-c++ ccache
-sudo dnf install libusb-devel qt5-qtdeclarative-devel qt5-qtimageformats qt5-qtserialport-devel qt5-qtsvg-devel qt5-qtxmlpatterns-devel SDL-devel systemd-devel zlib-devel
-</code></pre>
-
-<h2 id="2-check-out-the-dronin-repository-and-build">2. Check out the dRonin repository and build</h2>
-<h3 id="clone-the-source-code-repository">CLONE THE SOURCE CODE REPOSITORY</h3>
-<p>First, clone the dRonin repository. Change to an appropriate directory to check out the code. If you have your own fork, specify its URL on the git command line (otherwise you can use the parent fork per the below example).</p>
-<pre><code>git clone git://github.com/d-ronin/dRonin.git
-cd dRonin
-</code></pre>
-
-<h3 id="automatic-download-and-install-of-required-programs">AUTOMATIC DOWNLOAD AND INSTALL OF REQUIRED PROGRAMS</h3>
-<p>The dRonin build environment is capable of installing the rest of the tools that it needs.</p>
-<p>Qt build tools
-Next, run make qt_sdk_install, copy the path from the output in your terminal and paste it into the installer when prompted.</p>
-<pre><code> Do not install Qt to the default location!
-
-When running the qt sdk install command, you'll be told where to install qt, then the GUI installer will open. Here is what it will look like:
-
-*** NOTE NOTE NOTE ***
-*
-*  In the GUI, please use exactly this path as the installation path:
-*        /some/path/src/dRonin/tools/Qt5.5.1
-*
-*** NOTE NOTE NOTE ***
-Be sure to copy the specified path into the installer when prompted for the install location!
-</code></pre>
-
-<p>Arm cross compilation toolchain
-This is easy. Just type: make arm_sdk_install</p>
-<h2 id="3-build-the-software">3. Build the software</h2>
-<p>You should be ready to go. Type make all to compile the entire project. Type make to see a list of possible make arguments.</p>
-<h2 id="4-install-udev-rules">4. Install udev rules</h2>
-<p>You need to grant permission for normal users (ie. not root) to access your flight-controller boards from the GCS. This is accomplished by installing specific udev rules for the various flight controller boards.</p>
-<p>Check if your user is in the group "plugdev" by running 'groups'</p>
-<p>If you're not in group "plugdev"...</p>
-<p>If you're not in the group "plugdev", you can add the group to your user by running this command:</p>
-<pre><code>sudo usermod -a -G plugdev user
-</code></pre>
-
-<p>Then, log-out and log back in and check again by running groups</p>
-<p>Next, run these commands to install the dRonin udev rules:</p>
-<pre><code>sudo cp package/linux/deb/_package.udev /etc/udev/rules.d/45-dronin-permissions.rules
-sudo udevadm control --reload-rules
-</code></pre>
-
-<h2 id="4-run-gcs">4. Run GCS</h2>
-<p>Launch the gcs with ./build/ground/gcs/bin/drgcs and connect to / flash your board.</p></div>
+<ul>
+<li>
+<p>Braces are optional for single statement <code>if</code>s, but ONLY if all branches have no braces. e.g. Okay:</p>
+<p><code>c
+if (this_thing)
+    do_stuff();
+else if (other_thing)
+    do_other_stuff();
+else
+    return NULL;</code></p>
+<p>NOT okay:</p>
+<p><code>c
+if (this_thing)
+    do_stuff();
+else {
+    PIOS_DEBUG_Assert(false);
+    return NULL;
+}</code>
+* ... more to come ...</p>
+</li>
+</ul>
+<h2 id="gcs-code-c">GCS Code (C++)</h2>
+<p>Use <a href="http://wiki.qt-project.org/Coding_Style">Qt style</a> and <a href="http://wiki.qt-project.org/Coding_Conventions">Qt coding conventions</a>
+<em> Use 4 SPACES, not tabs
+</em> DON'T assume that returned pointers are non-null
+* Use [[dynamic UAVO relations|Development-UAVObject-to-Widget-Relations]] where you can, these will (soon) be checked at compile time against UAVO definitions</p></div>
         
     </div>
 

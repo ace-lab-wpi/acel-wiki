@@ -9,7 +9,7 @@
     <meta name="author" content="dRonin">  
     <link rel="shortcut icon" href="../../img/favicon.ico">
 
-    <title>Architecture Overview - Development Guide - dRonin</title>
+    <title>Add A New Board Type - Development Guide - dRonin</title>
 
     <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
@@ -90,12 +90,18 @@
                 
                 
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Setup <b class="caret"></b></a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Software <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                         
                             
 <li >
-    <a href="../../setup/linux_setup/">Linux Setup</a>
+    <a href="../../software/setup_dev_env/">Setup Devlopment Environment</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../software/firmware_arch/">Firmware Architecture</a>
 </li>
 
                         
@@ -105,12 +111,24 @@
                 
                 
                     <li class="dropdown active">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Architecture <b class="caret"></b></a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Hardware <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                         
                             
+<li >
+    <a href="../choose_fc/">Choosing A Flight Controller</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../hardware_id/">Hardware IDs</a>
+</li>
+
+                        
+                            
 <li class="active">
-    <a href="./">Architecture Overview</a>
+    <a href="./">Add A New Board Type</a>
 </li>
 
                         
@@ -144,6 +162,18 @@
 </li>
 
                         
+                            
+<li >
+    <a href="../../contribute/coding_standards/">Coding Standards</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../contribute/pull_request/">Pull Request Policy</a>
+</li>
+
+                        
                         </ul>
                     </li>
                 
@@ -159,7 +189,7 @@
                 </li>
                 
                     <li >
-                        <a rel="next" href="../../setup/linux_setup/">
+                        <a rel="next" href="../hardware_id/">
                             <i class="fa fa-arrow-left"></i> Previous
                         </a>
                     </li>
@@ -189,18 +219,22 @@
         <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
     
-        <li class="first-level active"><a href="#architecture-overview">Architecture Overview</a></li>
+        <li class="first-level active"><a href="#add-a-new-board-type">Add a New Board Type</a></li>
         
-            <li class="second-level"><a href="#modules">Modules</a></li>
+            <li class="second-level"><a href="#firmware-code-changes">Firmware code changes</a></li>
+            
+                <li class="third-level"><a href="#main-makefile">Main Makefile</a></li>
+            
+                <li class="third-level"><a href="#board-level-definitions">Board-level definitions</a></li>
+            
+                <li class="third-level"><a href="#board-hardware-description-and-power-initialization-code">Board hardware description and power initialization code</a></li>
+            
+                <li class="third-level"><a href="#add-your-target-to-the-boardsh-file">Add your target to the boards.h file</a></li>
+            
+                <li class="third-level"><a href="#bootloader">Bootloader</a></li>
             
         
-            <li class="second-level"><a href="#pios">PiOS</a></li>
-            
-        
-            <li class="second-level"><a href="#uavobjects">UAVObjects</a></li>
-            
-        
-            <li class="second-level"><a href="#uavtalk">UAVTalk</a></li>
+            <li class="second-level"><a href="#getting-your-target-into-the-main-code-base">Getting your target into the main code base</a></li>
             
         
     
@@ -208,23 +242,60 @@
 </div></div>
         <div class="col-md-9" role="main">
 
-<h1 id="architecture-overview">Architecture Overview</h1>
-<p>There are a few core concepts required to understand Tau Labs software, and especially the firmware side.</p>
-<h2 id="modules">Modules</h2>
-<p><strong>flight/Modules</strong></p>
-<p>[[Modules|Development Modules]] are the core logical units on the firmware side. They are generally fairly compact logical components of the flight software, such as a module to get sensor data, or a module to estimate the attitude. Modules can only communicate either via drivers calls (PiOS) or by getting and setting data via UAVObjects.</p>
-<h2 id="pios">PiOS</h2>
-<p><strong>flight/PiOS</strong></p>
-<p>PiOS (Pilot Operating System) is the hardware abstraction layer. It is divided into two main sections. The <strong>flight/PiOS/STM32Fxx</strong> sections which are hardware specific (currently only supporting STM32 F1, F3, and F4 series processors).  The <strong>flight/PiOS/Common</strong> directory contains drivers that run on all platforms via the hardware specific platforms.  PiOS contains all the [[drivers|Development Drivers]] for external sensor chips, PWM generation and input, PPM, serial communications, etc.</p>
-<h2 id="uavobjects">UAVObjects</h2>
-<p><strong>shared/uavobjectdefinition</strong></p>
-<p>Details on adding a new UAVObject can be found <a href="https://github.com/TauLabs/TauLabs/wiki/Development-UAVObjects">here</a></p>
-<p>UAVObjects are the data (and setting) representation used on both the firmware side and the GCS side.  They are implemented as data structures generated dynamically from xml definitions. These data objects are transferred from the firmware side to the ground control side and also used for inter-module communication on the firmware.</p>
-<p>On the firmware side these interface via FreeRTOS primitives such as queues. Modules can block on updates from an object, so that when another module performs an update the first module resumes. Based on the meta data for that object, updates may be transferred to the ground control system with different frequencies.</p>
-<p>The eventdispatcher ( <strong>flight/UAVObjects/eventdispatcher</strong> ) is responsible for performing these updates and handling the FreeRTOS interface as well as storage in the UAVObjectManager ( <strong>flight/UAVObjects/uavobjectmanager</strong> ).  The telemetry module performs the updates to the ground control system ( <strong>flight/Modules/Telemetry/telemetry</strong> ).</p>
-<h2 id="uavtalk">UAVTalk</h2>
-<p><strong>flight/UAVTalk</strong></p>
-<p>[[UAVTalk|Development UAVTalk Protocol]] is the protocol used to serialize UAVObjects, as well as send updates or request updates.</p></div>
+<h1 id="add-a-new-board-type">Add a New Board Type</h1>
+<p>Here are the steps to add a new hardware target. This assumes that the CPU architecture is supported already.</p>
+<p>For an overview of the software architecture please <a href="../Development-Firmware-Architecture-Overview">read this</a></p>
+<h2 id="firmware-code-changes">Firmware code changes</h2>
+<p>The changes you will need to make for your target should be largely confined to the <code>flight/targets/&lt;board name&gt;</code> directory, which you will need to create. It is probably easiest to start by copying a directory of a board most similar to yours.
+<em> if you are doing an F1 board, start with <code>flight/targets/coptercontrol</code>
+</em> if you are doing an F3 board, start with <code>flight/targets/sparky</code>
+* if you are doing an F4 board, start with <code>flight/targets/quanton</code>
+and copy that file to your <code>flight/targets/&lt;board name&gt;</code> where <code>&lt;board name&gt;</code> is what you want to call your new target.</p>
+<h3 id="main-makefile">Main Makefile</h3>
+<p><code>flight/targets/&lt;board name&gt;/fw/Makefile</code></p>
+<p>Add your board name (lowercase) to the "ALL_BOARDS" variable
+Add your board name (capitalised) to the Friendly names variable
+If necessary, exclude your board from the boot loader updater targets.</p>
+<h3 id="board-level-definitions">Board-level definitions</h3>
+<p>Before being able to compile a firmware for this board, you have to configure the build environment so that the PiOS HAL is mapped to the way the MCU peripherals are configured on your target, how memory is mapped, how the target is programmed, etc.</p>
+<h4 id="update-the-board-infomk-file">Update the <code>board-info.mk</code> file</h4>
+<p><code>./flight/targets/&lt;board name&gt;/board-info/board-info.mk</code></p>
+<p>This file defines the actual hardware chip used by the board, memory mapping, CPU frequency and programming methods. It also contains PiOS-related: board model, revision, type.</p>
+<p>This contains a lot of the meta information for your target that is packaged into the boot loader and determines details about the memory layout, as well as the unique board ID. For the board id (BOARD_TYPE) make sure you are not conflicting with the <a href="../Development-Hardware-IDs">existing targets</a>.</p>
+<h3 id="board-hardware-description-and-power-initialization-code">Board hardware description and power initialization code</h3>
+<p><code>flight/targets/&lt;board name&gt;/board-info/board_hw_defs.c</code></p>
+<p>This is one of the most important files for your target, and contains the majority of the hardware mappings. See other examples for the conventions. It is used by both the main firmware and the bootloader.</p>
+<p><code>flight/targets/&lt;board name&gt;/fw/pios_board.c</code></p>
+<p>This file is the one that predominantly uses <code>board_hw_defs.c</code> to power up the board and contains most of the remainder of the board specific information.</p>
+<h3 id="add-your-target-to-the-boardsh-file">Add your target to the boards.h file</h3>
+<p><code>flight/PiOS/inc/pios_board_info.h</code></p>
+<p>add a board define for your board (for instance STM32F4xx_Revolution.h)
+update pios_board.h to include this define.</p>
+<p>This file is largely historical and more information has been migrating to <code>board_hw_defs.c</code> and <code>pios_board.c</code>, but still contains various defines for the various peripherals of the MCU are configured for this target (used by the PiOS drivers):
+   - Bootloader Settings
+   - LED defines
+   - SPI
+   - Watchdog
+   - I2C
+   - Serial ports
+   - USB</p>
+<p>It also contains application settings such as:
+   - Temetry stack
+   - RC Receiver settings (channels, protocols)</p>
+<p>It defines low-level hardware configuration specific to the board:
+   - Clocks, IRQ, DMA</p>
+<h3 id="bootloader">Bootloader</h3>
+<p>If the other files are changed properly, no changes should be needed here.</p>
+<h2 id="getting-your-target-into-the-main-code-base">Getting your target into the main code base</h2>
+<p>There are a number of requirements for adding a target to the main repository:</p>
+<ol>
+<li>clean implementation consistent with the changes above</li>
+<li>person willing to maintain that target if there are problems</li>
+<li>have your unique board ID added to the <a href="../Development-Hardware-IDs">list of targets</a></li>
+<li>open source hardware with the hardware files included in <code>flight/target/&lt;board name&gt;/hw</code></li>
+</ol>
+<p>Once those requirements are met, upload your code to github and <a href="https://help.github.com/articles/creating-a-pull-request">create a pull request</a>.</p>
+<p>If you are unsure of things, feel free to upload your code and either point us to it on the forums or create a pull request and ask questions.</p></div>
         
     </div>
 
