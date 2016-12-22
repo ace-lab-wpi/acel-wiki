@@ -2,203 +2,133 @@
     "docs": [
         {
             "location": "/", 
-            "text": "Cinder Theme \nfor MkDocs\n\n\n\nAbout\n\n\nCinder is a clean, responsive theme for static documentation sites that are generated with \nMkDocs\n. It's built on the \nBootstrap framework\n and includes pre-packaged syntax highlighting (\nhighlight.js\n), icons (\n \nFontAwesome\n), and a smashingly legible type scheme to get your message out to your users.\n\n\nYou are looking at the theme and can see a selection of the theme elements on the \nSpecimen page\n.\n\n\nInstall\n\n\nRequired\n: Python 2.6+ or 3.3+\n\n\nInstall MkDocs \n Create a New Project\n\n\nIf you haven't installed MkDocs yet, use the following command to install it:\n\n\n$ pip install mkdocs\n\n\n\nNext, navigate to a clean directory and create a new MkDocs project with the following command:\n\n\n$ mkdocs new [projectname]\n\n\n\nReplace \n[projectname]\n with the name of your project (without the brackets).\n\n\nThen navigate to the root of your project directory:\n\n\n$ cd [projectname]\n\n\n\nInstall the Cinder Theme\n\n\nChoose one of the following install approaches:\n\n\n1. Install with pip\n\n\nIf you are using MkDocs v0.15.0 or higher, you can install the Cinder theme with pip using the command:\n\n\n$ pip install mkdocs-cinder\n\n\n\nMkDocs projects use a YAML settings file called \nmkdocs.yml\n.  This is located in the root of your project directory after you use the \nmkdocs new\n command.  Open the file in a text editor and modify it to define Cinder in the \ntheme\n setting as follows (note that this is case-sensitive):\n\n\nsite_name: [YOURPROJECT]\ntheme: cinder\npages:\n- Home: index.md\n\n\n\n\nTheme Updates\n: If you choose the pip install approach, you can update your Cinder theme to new releases with the command \n$ pip install --upgrade mkdocs-cinder\n.  Then re-build your static site files (see instructions below).\n\n\n2. Manual Install\n\n\nDownload the Cinder theme archive.\n\n\n  Download Cinder v0.9.4\n\n\nUnpack the contents of the archive into a directory named \ncinder\n at the top level of your MkDocs project directory.\n\n\nYour project directory should now look like this:\n\n\n.\n\u251c\u2500\u2500 mkdocs.yml\n\u251c\u2500\u2500 cinder\n\u2502     \u251c\u2500\u2500 css\n\u2502     \u251c\u2500\u2500 img\n\u2502     \u251c\u2500\u2500 js\n\u2502     \u251c\u2500\u2500 base.html\n\u2502\u00a0\u00a0   \u251c\u2500\u2500 content.html\n\u2502     \u251c\u2500\u2500 404.html\n\u2502     \u251c\u2500\u2500 nav-sub.html\n\u2502\u00a0\u00a0   \u251c\u2500\u2500 nav.html\n\u2502\u00a0\u00a0   \u2514\u2500\u2500 toc.html\n\u2514\u2500\u2500 docs\n      \u2514\u2500\u2500 index.md\n\n\n\n\nMkDocs projects use a YAML settings file called \nmkdocs.yml\n.  This is located in the root of your project directory after you use the \nmkdocs new\n command.  Open the file in a text editor and modify it to include the \ntheme_dir\n setting as follows:\n\n\nsite_name: [YOURPROJECT]\ntheme_dir: cinder\npages:\n- Home: index.md\n\n\n\n\nTheme Updates\n: If you choose the manual install approach, you can update your Cinder theme by downloading the new cinder.zip release archive and including it in your project. Then re-build your static site files (see instructions below).\n\n\nTest with a Local Site Server\n\n\nUse the following command to establish a local server for your site:\n\n\n$ mkdocs serve\n\n\n\nThen open your site in any browser at the URL \nhttp://localhost:8000\n.\n\n\nCreate Your Site\n\n\nAdd Content with Markdown Syntax\n\n\nGet to work on your site home page by opening the \ndocs/index.md\n file and editing it in Markdown syntax.  The HTML automatically updates in the browser when you save the Markdown file if you use the MkDocs server (see command above).\n\n\nAdd New Pages\n\n\nAdd new pages to your site by creating a new Markdown file in your \ndocs\n directory, then linking to the new page in the \nmkdocs.yml\n file.  This uses a \nPage Name : Markdown file\n syntax.\n\n\nFor example, to add an About page using a Markdown file that is located on the path \ndocs/about.md\n, you would format the \nmkdocs.yml\n file as follows:\n\n\nsite_name: [YOURPROJECT]\ntheme_dir: cinder\npages:\n- Home: index.md\n- About: about.md\n\n\n\nAdd additional pages to your site by repeating the above series of steps.\n\n\nBuild Your Site\n\n\nBuild your site files with the command:\n\n\n$ mkdocs build\n\n\n\nYour site files are built in the \nsite\n directory and are ready to use.  Deploy the contents of the \nsite\n directory to your web server.\n\n\nSite Customization\n\n\nThe following are a few common customizations that you might be interested in.  For much more detail about the configuration of your site, check out the \nMkDocs Configuration documentation\n.\n\n\nSite Favicon\n\n\nPlace your site favicon image file in the top level of your docs directory and then include a new \nsite_favicon:\n field in the \nmkdocs.yml\n file:\n\n\nsite_name: [YOURPROJECT]\ntheme_dir: cinder\nsite_favicon: favicon.ico\npages:\n  - Home: index.md\n  - About: about.md\n\n\n\nAdd Your Own CSS Stylesheets\n\n\nCreate a \ncss\n directory inside your \ndocs\n directory and add your CSS files.  You can overwrite any of the Cinder styles in your CSS files.  Then include your CSS files in the \nmkdocs.yml\n file with the \nextra_css\n field:\n\n\nsite_name: [YOURPROJECT]\ntheme_dir: cinder\nextra_css:\n  - \"css/mystyle.css\"\n  - \"css/myotherstyle.css\"\npages:\n  - Home: index.md\n  - About: about.md\n\n\n\nYour CSS styles fall at the end of the cascade and will override all styles included in the theme (including Bootstrap and default Cinder styles).  You can find the Cinder and Bootstrap CSS files on the paths \ncinder/css/cinder.css\n and \ncinder/css/bootstrap.min.css\n, respectively.\n\n\nAdd Your Own JavaScript\n\n\nCreate a \njs\n directory inside your \ndocs\n directory and add your JS files.  Then include your JS files in the \nmkdocs.yml\n file with the \nextra_js\n field:\n\n\nsite_name: [YOURPROJECT]\ntheme_dir: cinder\nextra_js:\n  - \"js/myscript.js\"\n  - \"js/myotherscript.js\"\npages:\n  - Home: index.md\n  - About: about.md\n\n\n\nGithub or Bitbucket Repository Link\n\n\nInclude the \nrepo_url\n field and define it with your repository URL:\n\n\nsite_name: [YOURPROJECT]\ntheme_dir: cinder\nrepo_url: \"https://github.com/chrissimpkins/cinder\"\npages:\n  - Home: index.md\n  - About: about.md\n\n\n\nThe link appears at the upper right hand corner of your site.\n\n\nLicense Declaration and Link\n\n\nThe Cinder theme displays your license declaration in the footer if you include a \ncopyright\n field and define it with the text (and optionally the HTML link) that you would like to display:\n\n\nsite_name: [YOURPROJECT]\ntheme_dir: cinder\ncopyright: \"Cinder is licensed under the \na href='https://github.com/chrissimpkins/cinder/blob/master/LICENSE.md'\nMIT license\n\"\npages:\n  - Home: index.md\n  - About: about.md\n\n\n\nIssues\n\n\nIf you have any issues with the theme, please report them on the Cinder repository:\n\n\nReport Issue\n\n\nActive Issues\n\n\nLicense\n\n\nCinder is licensed under the MIT license. The full text of the license is available \nhere\n.", 
+            "text": "Development Guide \nfor dRonin\n\n\n\nAbout\n\n\nWelcome to the dRonin documentation.\n\n\nThis guide is intended for developers. If you just want to lean how to setup and use the dRonin software, please refer to \nthis\n.\n\n\nSetup\n\n\n1. \nDevelopment Setup: Linux\n\n\nArchitecture\n\n\n1. \nOverview\n\n\nContribute\n\n\nLicense\n\n\nThis documentation is \u00a9 Copyright 2016 dRonin. The license for this documentation is presently being determined; in the meantime, you are free to copy it for personal use.", 
             "title": "Home"
         }, 
         {
             "location": "/#about", 
-            "text": "Cinder is a clean, responsive theme for static documentation sites that are generated with  MkDocs . It's built on the  Bootstrap framework  and includes pre-packaged syntax highlighting ( highlight.js ), icons (   FontAwesome ), and a smashingly legible type scheme to get your message out to your users.  You are looking at the theme and can see a selection of the theme elements on the  Specimen page .", 
+            "text": "Welcome to the dRonin documentation.  This guide is intended for developers. If you just want to lean how to setup and use the dRonin software, please refer to  this .", 
             "title": "About"
         }, 
         {
-            "location": "/#install", 
-            "text": "Required : Python 2.6+ or 3.3+", 
-            "title": "Install"
-        }, 
-        {
-            "location": "/#install-mkdocs-create-a-new-project", 
-            "text": "If you haven't installed MkDocs yet, use the following command to install it:  $ pip install mkdocs  Next, navigate to a clean directory and create a new MkDocs project with the following command:  $ mkdocs new [projectname]  Replace  [projectname]  with the name of your project (without the brackets).  Then navigate to the root of your project directory:  $ cd [projectname]", 
-            "title": "Install MkDocs &amp; Create a New Project"
-        }, 
-        {
-            "location": "/#install-the-cinder-theme", 
-            "text": "Choose one of the following install approaches:", 
-            "title": "Install the Cinder Theme"
-        }, 
-        {
-            "location": "/#1-install-with-pip", 
-            "text": "If you are using MkDocs v0.15.0 or higher, you can install the Cinder theme with pip using the command:  $ pip install mkdocs-cinder  MkDocs projects use a YAML settings file called  mkdocs.yml .  This is located in the root of your project directory after you use the  mkdocs new  command.  Open the file in a text editor and modify it to define Cinder in the  theme  setting as follows (note that this is case-sensitive):  site_name: [YOURPROJECT]\ntheme: cinder\npages:\n- Home: index.md  Theme Updates : If you choose the pip install approach, you can update your Cinder theme to new releases with the command  $ pip install --upgrade mkdocs-cinder .  Then re-build your static site files (see instructions below).", 
-            "title": "1. Install with pip"
-        }, 
-        {
-            "location": "/#2-manual-install", 
-            "text": "Download the Cinder theme archive.    Download Cinder v0.9.4  Unpack the contents of the archive into a directory named  cinder  at the top level of your MkDocs project directory.  Your project directory should now look like this:  .\n\u251c\u2500\u2500 mkdocs.yml\n\u251c\u2500\u2500 cinder\n\u2502     \u251c\u2500\u2500 css\n\u2502     \u251c\u2500\u2500 img\n\u2502     \u251c\u2500\u2500 js\n\u2502     \u251c\u2500\u2500 base.html\n\u2502\u00a0\u00a0   \u251c\u2500\u2500 content.html\n\u2502     \u251c\u2500\u2500 404.html\n\u2502     \u251c\u2500\u2500 nav-sub.html\n\u2502\u00a0\u00a0   \u251c\u2500\u2500 nav.html\n\u2502\u00a0\u00a0   \u2514\u2500\u2500 toc.html\n\u2514\u2500\u2500 docs\n      \u2514\u2500\u2500 index.md  MkDocs projects use a YAML settings file called  mkdocs.yml .  This is located in the root of your project directory after you use the  mkdocs new  command.  Open the file in a text editor and modify it to include the  theme_dir  setting as follows:  site_name: [YOURPROJECT]\ntheme_dir: cinder\npages:\n- Home: index.md  Theme Updates : If you choose the manual install approach, you can update your Cinder theme by downloading the new cinder.zip release archive and including it in your project. Then re-build your static site files (see instructions below).", 
-            "title": "2. Manual Install"
-        }, 
-        {
-            "location": "/#test-with-a-local-site-server", 
-            "text": "Use the following command to establish a local server for your site:  $ mkdocs serve  Then open your site in any browser at the URL  http://localhost:8000 .", 
-            "title": "Test with a Local Site Server"
-        }, 
-        {
-            "location": "/#create-your-site", 
+            "location": "/#setup", 
             "text": "", 
-            "title": "Create Your Site"
+            "title": "Setup"
         }, 
         {
-            "location": "/#add-content-with-markdown-syntax", 
-            "text": "Get to work on your site home page by opening the  docs/index.md  file and editing it in Markdown syntax.  The HTML automatically updates in the browser when you save the Markdown file if you use the MkDocs server (see command above).", 
-            "title": "Add Content with Markdown Syntax"
+            "location": "/#1-development-setup-linux", 
+            "text": "", 
+            "title": "1. Development Setup: Linux"
         }, 
         {
-            "location": "/#add-new-pages", 
-            "text": "Add new pages to your site by creating a new Markdown file in your  docs  directory, then linking to the new page in the  mkdocs.yml  file.  This uses a  Page Name : Markdown file  syntax.  For example, to add an About page using a Markdown file that is located on the path  docs/about.md , you would format the  mkdocs.yml  file as follows:  site_name: [YOURPROJECT]\ntheme_dir: cinder\npages:\n- Home: index.md\n- About: about.md  Add additional pages to your site by repeating the above series of steps.", 
-            "title": "Add New Pages"
+            "location": "/#architecture", 
+            "text": "", 
+            "title": "Architecture"
         }, 
         {
-            "location": "/#build-your-site", 
-            "text": "Build your site files with the command:  $ mkdocs build  Your site files are built in the  site  directory and are ready to use.  Deploy the contents of the  site  directory to your web server.", 
-            "title": "Build Your Site"
+            "location": "/#1-overview", 
+            "text": "", 
+            "title": "1. Overview"
         }, 
         {
-            "location": "/#site-customization", 
-            "text": "The following are a few common customizations that you might be interested in.  For much more detail about the configuration of your site, check out the  MkDocs Configuration documentation .", 
-            "title": "Site Customization"
-        }, 
-        {
-            "location": "/#site-favicon", 
-            "text": "Place your site favicon image file in the top level of your docs directory and then include a new  site_favicon:  field in the  mkdocs.yml  file:  site_name: [YOURPROJECT]\ntheme_dir: cinder\nsite_favicon: favicon.ico\npages:\n  - Home: index.md\n  - About: about.md", 
-            "title": "Site Favicon"
-        }, 
-        {
-            "location": "/#add-your-own-css-stylesheets", 
-            "text": "Create a  css  directory inside your  docs  directory and add your CSS files.  You can overwrite any of the Cinder styles in your CSS files.  Then include your CSS files in the  mkdocs.yml  file with the  extra_css  field:  site_name: [YOURPROJECT]\ntheme_dir: cinder\nextra_css:\n  - \"css/mystyle.css\"\n  - \"css/myotherstyle.css\"\npages:\n  - Home: index.md\n  - About: about.md  Your CSS styles fall at the end of the cascade and will override all styles included in the theme (including Bootstrap and default Cinder styles).  You can find the Cinder and Bootstrap CSS files on the paths  cinder/css/cinder.css  and  cinder/css/bootstrap.min.css , respectively.", 
-            "title": "Add Your Own CSS Stylesheets"
-        }, 
-        {
-            "location": "/#add-your-own-javascript", 
-            "text": "Create a  js  directory inside your  docs  directory and add your JS files.  Then include your JS files in the  mkdocs.yml  file with the  extra_js  field:  site_name: [YOURPROJECT]\ntheme_dir: cinder\nextra_js:\n  - \"js/myscript.js\"\n  - \"js/myotherscript.js\"\npages:\n  - Home: index.md\n  - About: about.md", 
-            "title": "Add Your Own JavaScript"
-        }, 
-        {
-            "location": "/#github-or-bitbucket-repository-link", 
-            "text": "Include the  repo_url  field and define it with your repository URL:  site_name: [YOURPROJECT]\ntheme_dir: cinder\nrepo_url: \"https://github.com/chrissimpkins/cinder\"\npages:\n  - Home: index.md\n  - About: about.md  The link appears at the upper right hand corner of your site.", 
-            "title": "Github or Bitbucket Repository Link"
-        }, 
-        {
-            "location": "/#license-declaration-and-link", 
-            "text": "The Cinder theme displays your license declaration in the footer if you include a  copyright  field and define it with the text (and optionally the HTML link) that you would like to display:  site_name: [YOURPROJECT]\ntheme_dir: cinder\ncopyright: \"Cinder is licensed under the  a href='https://github.com/chrissimpkins/cinder/blob/master/LICENSE.md' MIT license \"\npages:\n  - Home: index.md\n  - About: about.md", 
-            "title": "License Declaration and Link"
-        }, 
-        {
-            "location": "/#issues", 
-            "text": "If you have any issues with the theme, please report them on the Cinder repository:  Report Issue  Active Issues", 
-            "title": "Issues"
+            "location": "/#contribute", 
+            "text": "", 
+            "title": "Contribute"
         }, 
         {
             "location": "/#license", 
-            "text": "Cinder is licensed under the MIT license. The full text of the license is available  here .", 
+            "text": "This documentation is \u00a9 Copyright 2016 dRonin. The license for this documentation is presently being determined; in the meantime, you are free to copy it for personal use.", 
             "title": "License"
         }, 
         {
-            "location": "/specimen/", 
-            "text": "Cinder Theme Specimen\n\n\n\nTypography\n\n\nTypefaces\n\n\n\n\nHeaders: \nPT Sans\n\n\nBody: \nOpen Sans\n\n\nCode: \nHack\n\n\n\n\nBody Copy\n\n\nYou think water moves fast? You should see ice. \nIt moves like it has a mind\n. Like it knows it killed the world once and got a taste for murder. \nAfter the avalanche, it took us a week to climb out\n. Now, I don't know exactly when we turned on each other, but I know that seven of us survived the slide... and only five made it out.\n\n\nNow we took an oath, that I'm breaking now. \nWe said\n we'd say it was the snow that killed the other two, but it wasn't.  Nature is lethal but it doesn't hold a candle to man.\n\n\nLike inline code?  Here is a string for you \n010101010\n.\n\n\nLead Body Copy\n\n\nVivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus.\n\n\n\nHeadings\n\n\nAll HTML headings, \nh1\n through \nh6\n, are available. \n.h1\n through \n.h6\n classes are also available, for when you want to match the font styling of a heading but still want your text to be displayed inline.\n\n\nh1. Heading\n\n\n\nh2. Heading\n\n\n\nh3. Heading\n\n\n\nh4. Heading\n\n\n\nh5. Heading\n\n\n\nh6. Heading\n\n\n\nh1. Heading \nSecondary text\n\n\n\nh2. Heading \nSecondary text\n\n\n\nh3. Heading \nSecondary text\n\n\n\nh4. Heading \nSecondary text\n\n\n\nh5. Heading \nSecondary text\n\n\n\nh6. Heading \nSecondary text\n\n\n\nBlockquotes\n\n\n\n  \nLorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.\n\n  \nSomeone famous in \nSource Title\n\n\n\n\n\nLists\n\n\n\n\nmkdocs new [dir-name]\n - Create a new project.\n\n\nmkdocs serve\n - Start the live-reloading docs server.\n\n\nmkdocs build\n - Build the documentation site.\n\n\nmkdocs help\n - Print this help message.\n\n\n\n\nHorizontal Description Lists\n\n\n\n  \nSomething\n\n  \nThis is something\n\n  \nSomethingElse\n\n  \nThis is something else\n\n\n\n\n\nContextual Colors\n\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.\n\n\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.\n\n\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.\n\n\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.\n\n\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.\n\n\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.\n\n\n\nCode\n\n\nInline Code\n\n\nThis is an example of inline code \n#import requests\n\n\nPreformatted Code Blocks \nwith Syntax Highlighting\n\n\n\ndef convert_markdown(markdown_source, config, site_navigation=None):\n    \"\"\"\n    Convert the Markdown source file to HTML as per the config and\n    site_navigation. Return a tuple of the HTML as a string, the parsed table\n    of contents, and a dictionary of any metadata that was specified in the\n    Markdown file.\n    \"\"\"\n\n    extensions = [\n        RelativePathExtension(site_navigation, config['strict'])\n    ] + config['markdown_extensions']\n\n    return utils.convert_markdown(\n        markdown_source=markdown_source,\n        extensions=extensions,\n        extension_configs=config['mdx_configs']\n    )\n\n\n\n\nTables\n\n\nStriped Table\n\n\n\n  \n\n      \n\n        \n#\n\n        \nHead 1\n\n        \nHead 2\n\n        \nHead 3\n\n      \n\n      \n\n      \n\n      \n\n        \n1\n\n        \nBox 1\n\n        \nBox 2\n\n        \nBox 3\n\n      \n\n        \n\n        \n2\n\n        \nBox 4\n\n        \nBox 5\n\n        \nBox 6\n\n      \n\n      \n\n        \n3\n\n        \nBox 7\n\n        \nBox 8\n\n        \nBox 9\n\n      \n\n  \n\n\n\n\n\nBordered Table\n\n\n\n  \n\n      \n\n        \n#\n\n        \nHead 1\n\n        \nHead 2\n\n        \nHead 3\n\n      \n\n      \n\n      \n\n      \n\n        \n1\n\n        \nBox 1\n\n        \nBox 2\n\n        \nBox 3\n\n      \n\n        \n\n        \n2\n\n        \nBox 4\n\n        \nBox 5\n\n        \nBox 6\n\n      \n\n      \n\n        \n3\n\n        \nBox 7\n\n        \nBox 8\n\n        \nBox 9\n\n      \n\n  \n\n\n\n\n\nButtons\n\n\nDefault Buttons\n\n\nLink\n\n\nButton\n\n\n\n\n\n\nStyled Buttons\n\n\n\n\n\nDefault\n\n\n\n\n\nPrimary\n\n\n\n\n\nSuccess\n\n\n\n\n\nInfo\n\n\n\n\n\nWarning\n\n\n\n\n\nDanger\n\n\nButton Sizes\n\n\n\n  \nLarge button\n\n  \nLarge button\n\n\n\n\n\n\n  \nDefault button\n\n  \nDefault button\n\n\n\n\n\n\n  \nSmall button\n\n  \nSmall button\n\n\n\n\n\n\n  \nExtra small button\n\n  \nExtra small button\n\n\n\n\n\nBlock Level Buttons\n\n\nBlock level button\n\n\nBlock level button", 
-            "title": "Specimen"
+            "location": "/setup/linux_setup/", 
+            "text": "Development Setup: Linux\n\n\nConsider forking the project on GitHub before proceeding with this procedure if you intend to contribute back to the project. (More details on this are at \nTracking Development with Git\n)\n\n\n1. Set up prerequisites for the build environment\n\n\nUBUNTU/MINT/DEBIAN BASED DISTRIBUTIONS\n\n\nFirst ensure your package manager is up to date:\n\n\nsudo apt-get update\n\n\n\n\nNext, get a host compiler and other build tools, along with your revision control environment:\n\n\nsudo apt-get install build-essential gdb wget debhelper ccache git\n\n\n\n\nIf you are running a 64-bit version of Linux (if you run uname -m and the output says x86_64 you are in a 64-bit environment), you'll also need to install 32-bit compatibility libraries.\n\n\nsudo apt-get install gcc-multilib\n\n\n\n\nFinally, install some additional libraries required to compile GCS\n\n\nsudo apt-get install zlib1g-dev libusb-1.0-0-dev libudev-dev libgl1-mesa-dev\n\n\n\n\nFEDORA-BASED DISTRIBUTIONS\n\n\nInstall the required packages:\n\n\nsudo dnf install libstdc++.i686 gcc-c++ ccache\nsudo dnf install libusb-devel qt5-qtdeclarative-devel qt5-qtimageformats qt5-qtserialport-devel qt5-qtsvg-devel qt5-qtxmlpatterns-devel SDL-devel systemd-devel zlib-devel\n\n\n\n\n2. Check out the dRonin repository and build\n\n\nCLONE THE SOURCE CODE REPOSITORY\n\n\nFirst, clone the dRonin repository. Change to an appropriate directory to check out the code. If you have your own fork, specify its URL on the git command line (otherwise you can use the parent fork per the below example).\n\n\ngit clone git://github.com/d-ronin/dRonin.git\ncd dRonin\n\n\n\n\nAUTOMATIC DOWNLOAD AND INSTALL OF REQUIRED PROGRAMS\n\n\nThe dRonin build environment is capable of installing the rest of the tools that it needs.\n\n\nQt build tools\nNext, run make qt_sdk_install, copy the path from the output in your terminal and paste it into the installer when prompted.\n\n\n Do not install Qt to the default location!\n\nWhen running the qt sdk install command, you'll be told where to install qt, then the GUI installer will open. Here is what it will look like:\n\n*** NOTE NOTE NOTE ***\n*\n*  In the GUI, please use exactly this path as the installation path:\n*        /some/path/src/dRonin/tools/Qt5.5.1\n*\n*** NOTE NOTE NOTE ***\nBe sure to copy the specified path into the installer when prompted for the install location!\n\n\n\n\nArm cross compilation toolchain\nThis is easy. Just type: make arm_sdk_install\n\n\n3. Build the software\n\n\nYou should be ready to go. Type make all to compile the entire project. Type make to see a list of possible make arguments.\n\n\n4. Install udev rules\n\n\nYou need to grant permission for normal users (ie. not root) to access your flight-controller boards from the GCS. This is accomplished by installing specific udev rules for the various flight controller boards.\n\n\nCheck if your user is in the group \"plugdev\" by running 'groups'\n\n\nIf you're not in group \"plugdev\"...\n\n\nIf you're not in the group \"plugdev\", you can add the group to your user by running this command:\n\n\nsudo usermod -a -G plugdev user\n\n\n\n\nThen, log-out and log back in and check again by running groups\n\n\nNext, run these commands to install the dRonin udev rules:\n\n\nsudo cp package/linux/deb/_package.udev /etc/udev/rules.d/45-dronin-permissions.rules\nsudo udevadm control --reload-rules\n\n\n\n\n4. Run GCS\n\n\nLaunch the gcs with ./build/ground/gcs/bin/drgcs and connect to / flash your board.", 
+            "title": "Linux Setup"
         }, 
         {
-            "location": "/specimen/#typography", 
+            "location": "/setup/linux_setup/#development-setup-linux", 
+            "text": "Consider forking the project on GitHub before proceeding with this procedure if you intend to contribute back to the project. (More details on this are at  Tracking Development with Git )", 
+            "title": "Development Setup: Linux"
+        }, 
+        {
+            "location": "/setup/linux_setup/#1-set-up-prerequisites-for-the-build-environment", 
             "text": "", 
-            "title": "Typography"
+            "title": "1. Set up prerequisites for the build environment"
         }, 
         {
-            "location": "/specimen/#typefaces", 
-            "text": "Headers:  PT Sans  Body:  Open Sans  Code:  Hack", 
-            "title": "Typefaces"
+            "location": "/setup/linux_setup/#ubuntumintdebian-based-distributions", 
+            "text": "First ensure your package manager is up to date:  sudo apt-get update  Next, get a host compiler and other build tools, along with your revision control environment:  sudo apt-get install build-essential gdb wget debhelper ccache git  If you are running a 64-bit version of Linux (if you run uname -m and the output says x86_64 you are in a 64-bit environment), you'll also need to install 32-bit compatibility libraries.  sudo apt-get install gcc-multilib  Finally, install some additional libraries required to compile GCS  sudo apt-get install zlib1g-dev libusb-1.0-0-dev libudev-dev libgl1-mesa-dev", 
+            "title": "UBUNTU/MINT/DEBIAN BASED DISTRIBUTIONS"
         }, 
         {
-            "location": "/specimen/#body-copy", 
-            "text": "You think water moves fast? You should see ice.  It moves like it has a mind . Like it knows it killed the world once and got a taste for murder.  After the avalanche, it took us a week to climb out . Now, I don't know exactly when we turned on each other, but I know that seven of us survived the slide... and only five made it out.  Now we took an oath, that I'm breaking now.  We said  we'd say it was the snow that killed the other two, but it wasn't.  Nature is lethal but it doesn't hold a candle to man.  Like inline code?  Here is a string for you  010101010 .", 
-            "title": "Body Copy"
+            "location": "/setup/linux_setup/#fedora-based-distributions", 
+            "text": "Install the required packages:  sudo dnf install libstdc++.i686 gcc-c++ ccache\nsudo dnf install libusb-devel qt5-qtdeclarative-devel qt5-qtimageformats qt5-qtserialport-devel qt5-qtsvg-devel qt5-qtxmlpatterns-devel SDL-devel systemd-devel zlib-devel", 
+            "title": "FEDORA-BASED DISTRIBUTIONS"
         }, 
         {
-            "location": "/specimen/#lead-body-copy", 
-            "text": "Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus.", 
-            "title": "Lead Body Copy"
-        }, 
-        {
-            "location": "/specimen/#headings", 
-            "text": "All HTML headings,  h1  through  h6 , are available.  .h1  through  .h6  classes are also available, for when you want to match the font styling of a heading but still want your text to be displayed inline.", 
-            "title": "Headings"
-        }, 
-        {
-            "location": "/specimen/#blockquotes", 
-            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante. \n   Someone famous in  Source Title", 
-            "title": "Blockquotes"
-        }, 
-        {
-            "location": "/specimen/#lists", 
-            "text": "mkdocs new [dir-name]  - Create a new project.  mkdocs serve  - Start the live-reloading docs server.  mkdocs build  - Build the documentation site.  mkdocs help  - Print this help message.", 
-            "title": "Lists"
-        }, 
-        {
-            "location": "/specimen/#horizontal-description-lists", 
-            "text": "Something \n   This is something \n   SomethingElse \n   This is something else", 
-            "title": "Horizontal Description Lists"
-        }, 
-        {
-            "location": "/specimen/#contextual-colors", 
-            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.", 
-            "title": "Contextual Colors"
-        }, 
-        {
-            "location": "/specimen/#code", 
+            "location": "/setup/linux_setup/#2-check-out-the-dronin-repository-and-build", 
             "text": "", 
-            "title": "Code"
+            "title": "2. Check out the dRonin repository and build"
         }, 
         {
-            "location": "/specimen/#inline-code", 
-            "text": "This is an example of inline code  #import requests", 
-            "title": "Inline Code"
+            "location": "/setup/linux_setup/#clone-the-source-code-repository", 
+            "text": "First, clone the dRonin repository. Change to an appropriate directory to check out the code. If you have your own fork, specify its URL on the git command line (otherwise you can use the parent fork per the below example).  git clone git://github.com/d-ronin/dRonin.git\ncd dRonin", 
+            "title": "CLONE THE SOURCE CODE REPOSITORY"
         }, 
         {
-            "location": "/specimen/#tables", 
+            "location": "/setup/linux_setup/#automatic-download-and-install-of-required-programs", 
+            "text": "The dRonin build environment is capable of installing the rest of the tools that it needs.  Qt build tools\nNext, run make qt_sdk_install, copy the path from the output in your terminal and paste it into the installer when prompted.   Do not install Qt to the default location!\n\nWhen running the qt sdk install command, you'll be told where to install qt, then the GUI installer will open. Here is what it will look like:\n\n*** NOTE NOTE NOTE ***\n*\n*  In the GUI, please use exactly this path as the installation path:\n*        /some/path/src/dRonin/tools/Qt5.5.1\n*\n*** NOTE NOTE NOTE ***\nBe sure to copy the specified path into the installer when prompted for the install location!  Arm cross compilation toolchain\nThis is easy. Just type: make arm_sdk_install", 
+            "title": "AUTOMATIC DOWNLOAD AND INSTALL OF REQUIRED PROGRAMS"
+        }, 
+        {
+            "location": "/setup/linux_setup/#3-build-the-software", 
+            "text": "You should be ready to go. Type make all to compile the entire project. Type make to see a list of possible make arguments.", 
+            "title": "3. Build the software"
+        }, 
+        {
+            "location": "/setup/linux_setup/#4-install-udev-rules", 
+            "text": "You need to grant permission for normal users (ie. not root) to access your flight-controller boards from the GCS. This is accomplished by installing specific udev rules for the various flight controller boards.  Check if your user is in the group \"plugdev\" by running 'groups'  If you're not in group \"plugdev\"...  If you're not in the group \"plugdev\", you can add the group to your user by running this command:  sudo usermod -a -G plugdev user  Then, log-out and log back in and check again by running groups  Next, run these commands to install the dRonin udev rules:  sudo cp package/linux/deb/_package.udev /etc/udev/rules.d/45-dronin-permissions.rules\nsudo udevadm control --reload-rules", 
+            "title": "4. Install udev rules"
+        }, 
+        {
+            "location": "/setup/linux_setup/#4-run-gcs", 
+            "text": "Launch the gcs with ./build/ground/gcs/bin/drgcs and connect to / flash your board.", 
+            "title": "4. Run GCS"
+        }, 
+        {
+            "location": "/arch/arch_overview/", 
+            "text": "Architecture Overview\n\n\nThere are a few core concepts required to understand Tau Labs software, and especially the firmware side.\n\n\nModules\n\n\nflight/Modules\n\n\n[[Modules|Development Modules]] are the core logical units on the firmware side. They are generally fairly compact logical components of the flight software, such as a module to get sensor data, or a module to estimate the attitude. Modules can only communicate either via drivers calls (PiOS) or by getting and setting data via UAVObjects.\n\n\nPiOS\n\n\nflight/PiOS\n\n\nPiOS (Pilot Operating System) is the hardware abstraction layer. It is divided into two main sections. The \nflight/PiOS/STM32Fxx\n sections which are hardware specific (currently only supporting STM32 F1, F3, and F4 series processors).  The \nflight/PiOS/Common\n directory contains drivers that run on all platforms via the hardware specific platforms.  PiOS contains all the [[drivers|Development Drivers]] for external sensor chips, PWM generation and input, PPM, serial communications, etc.\n\n\nUAVObjects\n\n\nshared/uavobjectdefinition\n\n\nDetails on adding a new UAVObject can be found \nhere\n\n\nUAVObjects are the data (and setting) representation used on both the firmware side and the GCS side.  They are implemented as data structures generated dynamically from xml definitions. These data objects are transferred from the firmware side to the ground control side and also used for inter-module communication on the firmware.\n\n\nOn the firmware side these interface via FreeRTOS primitives such as queues. Modules can block on updates from an object, so that when another module performs an update the first module resumes. Based on the meta data for that object, updates may be transferred to the ground control system with different frequencies.\n\n\nThe eventdispatcher ( \nflight/UAVObjects/eventdispatcher\n ) is responsible for performing these updates and handling the FreeRTOS interface as well as storage in the UAVObjectManager ( \nflight/UAVObjects/uavobjectmanager\n ).  The telemetry module performs the updates to the ground control system ( \nflight/Modules/Telemetry/telemetry\n ).\n\n\nUAVTalk\n\n\nflight/UAVTalk\n\n\n[[UAVTalk|Development UAVTalk Protocol]] is the protocol used to serialize UAVObjects, as well as send updates or request updates.", 
+            "title": "Architecture Overview"
+        }, 
+        {
+            "location": "/arch/arch_overview/#architecture-overview", 
+            "text": "There are a few core concepts required to understand Tau Labs software, and especially the firmware side.", 
+            "title": "Architecture Overview"
+        }, 
+        {
+            "location": "/arch/arch_overview/#modules", 
+            "text": "flight/Modules  [[Modules|Development Modules]] are the core logical units on the firmware side. They are generally fairly compact logical components of the flight software, such as a module to get sensor data, or a module to estimate the attitude. Modules can only communicate either via drivers calls (PiOS) or by getting and setting data via UAVObjects.", 
+            "title": "Modules"
+        }, 
+        {
+            "location": "/arch/arch_overview/#pios", 
+            "text": "flight/PiOS  PiOS (Pilot Operating System) is the hardware abstraction layer. It is divided into two main sections. The  flight/PiOS/STM32Fxx  sections which are hardware specific (currently only supporting STM32 F1, F3, and F4 series processors).  The  flight/PiOS/Common  directory contains drivers that run on all platforms via the hardware specific platforms.  PiOS contains all the [[drivers|Development Drivers]] for external sensor chips, PWM generation and input, PPM, serial communications, etc.", 
+            "title": "PiOS"
+        }, 
+        {
+            "location": "/arch/arch_overview/#uavobjects", 
+            "text": "shared/uavobjectdefinition  Details on adding a new UAVObject can be found  here  UAVObjects are the data (and setting) representation used on both the firmware side and the GCS side.  They are implemented as data structures generated dynamically from xml definitions. These data objects are transferred from the firmware side to the ground control side and also used for inter-module communication on the firmware.  On the firmware side these interface via FreeRTOS primitives such as queues. Modules can block on updates from an object, so that when another module performs an update the first module resumes. Based on the meta data for that object, updates may be transferred to the ground control system with different frequencies.  The eventdispatcher (  flight/UAVObjects/eventdispatcher  ) is responsible for performing these updates and handling the FreeRTOS interface as well as storage in the UAVObjectManager (  flight/UAVObjects/uavobjectmanager  ).  The telemetry module performs the updates to the ground control system (  flight/Modules/Telemetry/telemetry  ).", 
+            "title": "UAVObjects"
+        }, 
+        {
+            "location": "/arch/arch_overview/#uavtalk", 
+            "text": "flight/UAVTalk  [[UAVTalk|Development UAVTalk Protocol]] is the protocol used to serialize UAVObjects, as well as send updates or request updates.", 
+            "title": "UAVTalk"
+        }, 
+        {
+            "location": "/tutorials/test/", 
             "text": "", 
-            "title": "Tables"
-        }, 
-        {
-            "location": "/specimen/#striped-table", 
-            "text": "# \n         Head 1 \n         Head 2 \n         Head 3 \n       \n       \n       \n       \n         1 \n         Box 1 \n         Box 2 \n         Box 3 \n       \n         \n         2 \n         Box 4 \n         Box 5 \n         Box 6 \n       \n       \n         3 \n         Box 7 \n         Box 8 \n         Box 9", 
-            "title": "Striped Table"
-        }, 
-        {
-            "location": "/specimen/#bordered-table", 
-            "text": "# \n         Head 1 \n         Head 2 \n         Head 3 \n       \n       \n       \n       \n         1 \n         Box 1 \n         Box 2 \n         Box 3 \n       \n         \n         2 \n         Box 4 \n         Box 5 \n         Box 6 \n       \n       \n         3 \n         Box 7 \n         Box 8 \n         Box 9", 
-            "title": "Bordered Table"
-        }, 
-        {
-            "location": "/specimen/#buttons", 
-            "text": "", 
-            "title": "Buttons"
-        }, 
-        {
-            "location": "/specimen/#default-buttons", 
-            "text": "Link  Button", 
-            "title": "Default Buttons"
-        }, 
-        {
-            "location": "/specimen/#styled-buttons", 
-            "text": "Default   Primary   Success   Info   Warning   Danger", 
-            "title": "Styled Buttons"
-        }, 
-        {
-            "location": "/specimen/#button-sizes", 
-            "text": "Large button \n   Large button   \n   Default button \n   Default button   \n   Small button \n   Small button   \n   Extra small button \n   Extra small button", 
-            "title": "Button Sizes"
-        }, 
-        {
-            "location": "/specimen/#block-level-buttons", 
-            "text": "Block level button  Block level button", 
-            "title": "Block Level Buttons"
+            "title": "TestPage"
         }
     ]
 }

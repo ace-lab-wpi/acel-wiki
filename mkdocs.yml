@@ -12,4 +12,6 @@ pages:
       - 'Architecture Overview': 'arch/arch_overview.md'
   - Tutorials:
       - 'TestPage': 'tutorials/test.md'
+  - Contribute:
+      - 'General Guide': 'contribute/contributing.md'
 #  - Specimen: specimen.md
