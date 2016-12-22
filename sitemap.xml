@@ -10,11 +10,33 @@
     
 
     
+        
     <url>
-     <loc>/specimen/</loc>
+     <loc>/setup/linux_setup/</loc>
      <lastmod>2016-12-21</lastmod>
      <changefreq>daily</changefreq>
     </url>
+        
+    
+
+    
+        
+    <url>
+     <loc>/arch/arch_overview/</loc>
+     <lastmod>2016-12-21</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+        
+    <url>
+     <loc>/tutorials/test/</loc>
+     <lastmod>2016-12-21</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
     
 
 </urlset>
