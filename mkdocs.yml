@@ -4,14 +4,26 @@ site_author: dRonin
 site_description: "dRonin wiki pages organized using mkdocs with cinder theme"
 repo_url: "https://github.com/rxdu/dRonin-docs"
 copyright: "This documentation is © Copyright 2016 dRonin. Cinder theme is licensed under the <a href='https://github.com/chrissimpkins/cinder/blob/master/LICENSE.md'>MIT license</a>"
+google_analytics: ['UA-89355455-1', 'http://rdu.im/dronin-dev-guide/']
 pages:
   - Home: index.md
-  - Setup:
-      - 'Linux Setup': 'setup/linux_setup.md'
-  - Architecture:
-      - 'Architecture Overview': 'arch/arch_overview.md'
+#  - Setup:
+#      - 'Linux Setup': 'setup/linux_setup.md'
+  - Software:
+      - 'Setup Devlopment Environment': 'software/setup_dev_env.md'
+      - 'Firmware Architecture': 'software/firmware_arch.md'
+  - Hardware:
+#      - 'OpenPilot Revo': 'hardware/op_revo.md'
+#      - 'BrainFPV RE1': 'hardware/brainfpv_re1.md'
+       - 'Choosing A Flight Controller': 'hardware/choose_fc.md'
+       - 'Hardware IDs': 'hardware/hardware_id.md'
+       - 'Add A New Board Type': 'hardware/add_new_board.md'
   - Tutorials:
       - 'TestPage': 'tutorials/test.md'
   - Contribute:
       - 'General Guide': 'contribute/contributing.md'
+      - 'Coding Standards': 'contribute/coding_standards.md'
+#      - 'Tracking Development with Git': 'https://dronin.readme.io/docs/tracking-development-with-git'
+      - 'Pull Request Policy': 'contribute/pull_request.md'
+#      - 'Create a bug report': 'https://dronin.readme.io/docs/writing-good-bug-reports'
 #  - Specimen: specimen.md
