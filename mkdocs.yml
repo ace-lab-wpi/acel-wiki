@@ -1,4 +1,5 @@
 site_name: Development Guide - dRonin
+#theme: readthedocs
 theme_dir: cinder
 site_author: dRonin
 site_description: "dRonin wiki pages organized using mkdocs with cinder theme"
