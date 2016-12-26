@@ -12,7 +12,12 @@ pages:
 #      - 'Linux Setup': 'setup/linux_setup.md'
   - Software:
       - 'Setup Devlopment Environment': 'software/setup_dev_env.md'
+      - 'Flight Modes': 'software/flight_modes.md'
+      - 'UAVTalk Protocol': 'software/uavtalk_protocol.md'
+      - 'Introduction to Autotune': 'software/autotune.md'
       - 'Firmware Architecture': 'software/firmware_arch.md'
+      - 'Firmware Modules': 'software/firmware_modules.md'
+      - 'Build and Debug GCS using Qt Creator': 'software/gcs_qt_build.md'
   - Hardware:
 #      - 'OpenPilot Revo': 'hardware/op_revo.md'
 #      - 'BrainFPV RE1': 'hardware/brainfpv_re1.md'
@@ -20,11 +25,12 @@ pages:
        - 'Hardware IDs': 'hardware/hardware_id.md'
        - 'Add A New Board Type': 'hardware/add_new_board.md'
   - Tutorials:
-      - 'TestPage': 'tutorials/test.md'
+      - 'Create a New UAVObjects': 'tutorials/create_new_uavobjects.md'
   - Contribute:
       - 'General Guide': 'contribute/contributing.md'
       - 'Coding Standards': 'contribute/coding_standards.md'
 #      - 'Tracking Development with Git': 'https://dronin.readme.io/docs/tracking-development-with-git'
       - 'Pull Request Policy': 'contribute/pull_request.md'
+      - 'UAVObject to Widget Relations': 'contribute/uavo_widget_relations.md'
 #      - 'Create a bug report': 'https://dronin.readme.io/docs/writing-good-bug-reports'
 #  - Specimen: specimen.md

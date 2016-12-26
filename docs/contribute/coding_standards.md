@@ -58,6 +58,7 @@ Always defer to K&R conventions when not explicitly covered here.
 
 ## GCS Code (C++)
 Use [Qt style](http://wiki.qt-project.org/Coding_Style) and [Qt coding conventions](http://wiki.qt-project.org/Coding_Conventions)
+
 * Use 4 SPACES, not tabs
 * DON'T assume that returned pointers are non-null
-* Use [[dynamic UAVO relations|Development-UAVObject-to-Widget-Relations]] where you can, these will (soon) be checked at compile time against UAVO definitions
+* Use [dynamic UAVO relations](./uavo_widget_relations.md) where you can, these will (soon) be checked at compile time against UAVO definitions

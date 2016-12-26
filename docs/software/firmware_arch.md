@@ -6,7 +6,7 @@ There are a few core concepts required to understand Tau Labs software, and espe
 
 **flight/Modules**
 
-[[Modules|Development Modules]] are the core logical units on the firmware side. They are generally fairly compact logical components of the flight software, such as a module to get sensor data, or a module to estimate the attitude. Modules can only communicate either via drivers calls (PiOS) or by getting and setting data via UAVObjects.
+[Modules](./firmware_modules.md) are the core logical units on the firmware side. They are generally fairly compact logical components of the flight software, such as a module to get sensor data, or a module to estimate the attitude. Modules can only communicate either via drivers calls (PiOS) or by getting and setting data via UAVObjects.
 
 ## PiOS
 
@@ -18,7 +18,7 @@ PiOS (Pilot Operating System) is the hardware abstraction layer. It is divided i
 
 **shared/uavobjectdefinition**
 
-Details on adding a new UAVObject can be found [here](https://github.com/TauLabs/TauLabs/wiki/Development-UAVObjects)
+Details on adding a new UAVObject can be found [here](../tutorials/create_new_uavobjects.md)
 
 UAVObjects are the data (and setting) representation used on both the firmware side and the GCS side.  They are implemented as data structures generated dynamically from xml definitions. These data objects are transferred from the firmware side to the ground control side and also used for inter-module communication on the firmware.
 
@@ -30,4 +30,4 @@ The eventdispatcher ( **flight/UAVObjects/eventdispatcher** ) is responsible for
 
 **flight/UAVTalk**
 
-[[UAVTalk|Development UAVTalk Protocol]] is the protocol used to serialize UAVObjects, as well as send updates or request updates.
+[UAVTalk](./uavtalk_protocol.md) is the protocol used to serialize UAVObjects, as well as send updates or request updates.
