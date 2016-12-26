@@ -100,8 +100,38 @@
 
                         
                             
+<li >
+    <a href="../flight_modes/">Flight Modes</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../uavtalk_protocol/">UAVTalk Protocol</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../autotune/">Introduction to Autotune</a>
+</li>
+
+                        
+                            
 <li class="active">
     <a href="./">Firmware Architecture</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../firmware_modules/">Firmware Modules</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../gcs_qt_build/">Build and Debug GCS using Qt Creator</a>
 </li>
 
                         
@@ -143,7 +173,7 @@
                         
                             
 <li >
-    <a href="../../tutorials/test/">TestPage</a>
+    <a href="../../tutorials/create_new_uavobjects/">Create a New UAVObjects</a>
 </li>
 
                         
@@ -174,6 +204,12 @@
 </li>
 
                         
+                            
+<li >
+    <a href="../../contribute/uavo_widget_relations/">UAVObject to Widget Relations</a>
+</li>
+
+                        
                         </ul>
                     </li>
                 
@@ -189,12 +225,12 @@
                 </li>
                 
                     <li >
-                        <a rel="next" href="../setup_dev_env/">
+                        <a rel="next" href="../autotune/">
                             <i class="fa fa-arrow-left"></i> Previous
                         </a>
                     </li>
                     <li >
-                        <a rel="prev" href="../../hardware/choose_fc/">
+                        <a rel="prev" href="../firmware_modules/">
                             Next <i class="fa fa-arrow-right"></i>
                         </a>
                     </li>
@@ -242,19 +278,19 @@
 <p>There are a few core concepts required to understand Tau Labs software, and especially the firmware side.</p>
 <h2 id="modules">Modules</h2>
 <p><strong>flight/Modules</strong></p>
-<p>[[Modules|Development Modules]] are the core logical units on the firmware side. They are generally fairly compact logical components of the flight software, such as a module to get sensor data, or a module to estimate the attitude. Modules can only communicate either via drivers calls (PiOS) or by getting and setting data via UAVObjects.</p>
+<p><a href="../firmware_modules/">Modules</a> are the core logical units on the firmware side. They are generally fairly compact logical components of the flight software, such as a module to get sensor data, or a module to estimate the attitude. Modules can only communicate either via drivers calls (PiOS) or by getting and setting data via UAVObjects.</p>
 <h2 id="pios">PiOS</h2>
 <p><strong>flight/PiOS</strong></p>
 <p>PiOS (Pilot Operating System) is the hardware abstraction layer. It is divided into two main sections. The <strong>flight/PiOS/STM32Fxx</strong> sections which are hardware specific (currently only supporting STM32 F1, F3, and F4 series processors).  The <strong>flight/PiOS/Common</strong> directory contains drivers that run on all platforms via the hardware specific platforms.  PiOS contains all the [[drivers|Development Drivers]] for external sensor chips, PWM generation and input, PPM, serial communications, etc.</p>
 <h2 id="uavobjects">UAVObjects</h2>
 <p><strong>shared/uavobjectdefinition</strong></p>
-<p>Details on adding a new UAVObject can be found <a href="https://github.com/TauLabs/TauLabs/wiki/Development-UAVObjects">here</a></p>
+<p>Details on adding a new UAVObject can be found <a href="../../tutorials/create_new_uavobjects/">here</a></p>
 <p>UAVObjects are the data (and setting) representation used on both the firmware side and the GCS side.  They are implemented as data structures generated dynamically from xml definitions. These data objects are transferred from the firmware side to the ground control side and also used for inter-module communication on the firmware.</p>
 <p>On the firmware side these interface via FreeRTOS primitives such as queues. Modules can block on updates from an object, so that when another module performs an update the first module resumes. Based on the meta data for that object, updates may be transferred to the ground control system with different frequencies.</p>
 <p>The eventdispatcher ( <strong>flight/UAVObjects/eventdispatcher</strong> ) is responsible for performing these updates and handling the FreeRTOS interface as well as storage in the UAVObjectManager ( <strong>flight/UAVObjects/uavobjectmanager</strong> ).  The telemetry module performs the updates to the ground control system ( <strong>flight/Modules/Telemetry/telemetry</strong> ).</p>
 <h2 id="uavtalk">UAVTalk</h2>
 <p><strong>flight/UAVTalk</strong></p>
-<p>[[UAVTalk|Development UAVTalk Protocol]] is the protocol used to serialize UAVObjects, as well as send updates or request updates.</p></div>
+<p><a href="../uavtalk_protocol/">UAVTalk</a> is the protocol used to serialize UAVObjects, as well as send updates or request updates.</p></div>
         
     </div>
 

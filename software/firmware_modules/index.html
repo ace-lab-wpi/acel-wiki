@@ -7,18 +7,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="dRonin wiki pages organized using mkdocs with cinder theme"> 
     <meta name="author" content="dRonin">  
-    <link rel="shortcut icon" href="./img/favicon.ico">
+    <link rel="shortcut icon" href="../../img/favicon.ico">
 
-    <title>Home - Development Guide - dRonin</title>
+    <title>Firmware Modules - Development Guide - dRonin</title>
 
-    <link href="./css/bootstrap-custom.min.css" rel="stylesheet">
+    <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="//cdn.jsdelivr.net/font-hack/2.018/css/hack.min.css">
     <link href='//fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic&subset=latin-ext,latin' rel='stylesheet' type='text/css'>
     <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,600,700&subset=latin-ext,latin' rel='stylesheet' type='text/css'>
-    <link href="./css/base.css" rel="stylesheet">
-    <link href="./css/cinder.css" rel="stylesheet">
-    <link rel="stylesheet" href="./css/highlight.css">
+    <link href="../../css/base.css" rel="stylesheet">
+    <link href="../../css/cinder.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/highlight.css">
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -55,7 +55,7 @@
     
 </head>
 
-<body class="homepage" >
+<body>
 
     <div class="navbar navbar-default navbar-fixed-top" role="navigation">
     <div class="container">
@@ -73,7 +73,7 @@
             
 
             <!-- Main title -->
-            <a class="navbar-brand" href=".">Development Guide - dRonin</a>
+            <a class="navbar-brand" href="../..">Development Guide - dRonin</a>
         </div>
 
         <!-- Expanded navigation -->
@@ -83,55 +83,55 @@
                 <ul class="nav navbar-nav">
                 
                 
-                    <li class="active">
-                        <a href=".">Home</a>
+                    <li >
+                        <a href="../..">Home</a>
                     </li>
                 
                 
                 
-                    <li class="dropdown">
+                    <li class="dropdown active">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Software <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                         
                             
 <li >
-    <a href="software/setup_dev_env/">Setup Devlopment Environment</a>
+    <a href="../setup_dev_env/">Setup Devlopment Environment</a>
 </li>
 
                         
                             
 <li >
-    <a href="software/flight_modes/">Flight Modes</a>
+    <a href="../flight_modes/">Flight Modes</a>
 </li>
 
                         
                             
 <li >
-    <a href="software/uavtalk_protocol/">UAVTalk Protocol</a>
+    <a href="../uavtalk_protocol/">UAVTalk Protocol</a>
 </li>
 
                         
                             
 <li >
-    <a href="software/autotune/">Introduction to Autotune</a>
+    <a href="../autotune/">Introduction to Autotune</a>
 </li>
 
                         
                             
 <li >
-    <a href="software/firmware_arch/">Firmware Architecture</a>
+    <a href="../firmware_arch/">Firmware Architecture</a>
+</li>
+
+                        
+                            
+<li class="active">
+    <a href="./">Firmware Modules</a>
 </li>
 
                         
                             
 <li >
-    <a href="software/firmware_modules/">Firmware Modules</a>
-</li>
-
-                        
-                            
-<li >
-    <a href="software/gcs_qt_build/">Build and Debug GCS using Qt Creator</a>
+    <a href="../gcs_qt_build/">Build and Debug GCS using Qt Creator</a>
 </li>
 
                         
@@ -146,19 +146,19 @@
                         
                             
 <li >
-    <a href="hardware/choose_fc/">Choosing A Flight Controller</a>
+    <a href="../../hardware/choose_fc/">Choosing A Flight Controller</a>
 </li>
 
                         
                             
 <li >
-    <a href="hardware/hardware_id/">Hardware IDs</a>
+    <a href="../../hardware/hardware_id/">Hardware IDs</a>
 </li>
 
                         
                             
 <li >
-    <a href="hardware/add_new_board/">Add A New Board Type</a>
+    <a href="../../hardware/add_new_board/">Add A New Board Type</a>
 </li>
 
                         
@@ -173,7 +173,7 @@
                         
                             
 <li >
-    <a href="tutorials/create_new_uavobjects/">Create a New UAVObjects</a>
+    <a href="../../tutorials/create_new_uavobjects/">Create a New UAVObjects</a>
 </li>
 
                         
@@ -188,25 +188,25 @@
                         
                             
 <li >
-    <a href="contribute/contributing/">General Guide</a>
+    <a href="../../contribute/contributing/">General Guide</a>
 </li>
 
                         
                             
 <li >
-    <a href="contribute/coding_standards/">Coding Standards</a>
+    <a href="../../contribute/coding_standards/">Coding Standards</a>
 </li>
 
                         
                             
 <li >
-    <a href="contribute/pull_request/">Pull Request Policy</a>
+    <a href="../../contribute/pull_request/">Pull Request Policy</a>
 </li>
 
                         
                             
 <li >
-    <a href="contribute/uavo_widget_relations/">UAVObject to Widget Relations</a>
+    <a href="../../contribute/uavo_widget_relations/">UAVObject to Widget Relations</a>
 </li>
 
                         
@@ -224,13 +224,13 @@
                     </a>
                 </li>
                 
-                    <li class="disabled">
-                        <a rel="next" >
+                    <li >
+                        <a rel="next" href="../firmware_arch/">
                             <i class="fa fa-arrow-left"></i> Previous
                         </a>
                     </li>
                     <li >
-                        <a rel="prev" href="software/setup_dev_env/">
+                        <a rel="prev" href="../gcs_qt_build/">
                             Next <i class="fa fa-arrow-right"></i>
                         </a>
                     </li>
@@ -255,119 +255,68 @@
         <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
     
-        <li class="first-level active"><a href="#about">About</a></li>
+        <li class="first-level active"><a href="#firmware-modules">Firmware Modules</a></li>
         
-    
-        <li class="first-level "><a href="#software">Software</a></li>
-        
-            <li class="second-level"><a href="#common">Common</a></li>
-            
-                <li class="third-level"><a href="#-setup-devlopment-environment">- Setup Devlopment Environment</a></li>
-            
-                <li class="third-level"><a href="#-flight-modes">- Flight Modes</a></li>
-            
-                <li class="third-level"><a href="#-uavtalk-protocol">- UAVTalk Protocol</a></li>
-            
-                <li class="third-level"><a href="#-introduction-to-autotune">- Introduction to Autotune</a></li>
+            <li class="second-level"><a href="#overview-of-available-modules">Overview of Available Modules</a></li>
             
         
-            <li class="second-level"><a href="#firmware">Firmware</a></li>
+            <li class="second-level"><a href="#using-existing-modules">Using Existing Modules</a></li>
             
-                <li class="third-level"><a href="#-firmware-architecture">- Firmware Architecture</a></li>
+                <li class="third-level"><a href="#module-settings">Module Settings</a></li>
             
-                <li class="third-level"><a href="#-firmware-modules">- Firmware Modules</a></li>
+                <li class="third-level"><a href="#optional-modules">Optional Modules</a></li>
             
-        
-            <li class="second-level"><a href="#gcs">GCS</a></li>
-            
-                <li class="third-level"><a href="#-build-and-debug-gcs-using-qt-creator">- Build and Debug GCS using Qt Creator</a></li>
+                <li class="third-level"><a href="#built-in-modules">Built-in Modules</a></li>
             
         
-    
-        <li class="first-level "><a href="#hardware">Hardware</a></li>
-        
-            <li class="second-level"><a href="#-choose-a-flight-controller">- Choose A Flight Controller</a></li>
+            <li class="second-level"><a href="#adding-a-new-module-developer">Adding a New Module (Developer)</a></li>
             
-        
-            <li class="second-level"><a href="#-hardware-ids">- Hardware IDs</a></li>
-            
-        
-            <li class="second-level"><a href="#-add-a-new-board-type">- Add A New Board Type</a></li>
-            
-        
-    
-        <li class="first-level "><a href="#tutorials">Tutorials</a></li>
-        
-            <li class="second-level"><a href="#-create-a-new-uavobjects">- Create a New UAVObjects</a></li>
-            
-        
-    
-        <li class="first-level "><a href="#doxygen-docs">Doxygen Docs</a></li>
-        
-            <li class="second-level"><a href="#-flight">- Flight</a></li>
-            
-        
-            <li class="second-level"><a href="#-ground">- Ground</a></li>
-            
-        
-    
-        <li class="first-level "><a href="#contribute">Contribute</a></li>
-        
-            <li class="second-level"><a href="#-general-guide">- General Guide</a></li>
-            
-        
-            <li class="second-level"><a href="#-coding-standards">- Coding Standards</a></li>
-            
-        
-            <li class="second-level"><a href="#-tracking-development-with-git">- Tracking Development with Git</a></li>
-            
-        
-            <li class="second-level"><a href="#-pull-request-policy">- Pull Request Policy</a></li>
-            
-        
-            <li class="second-level"><a href="#-create-a-bug-report">- Create a bug report</a></li>
-            
-        
-    
-        <li class="first-level "><a href="#license">License</a></li>
         
     
     </ul>
 </div></div>
         <div class="col-md-9" role="main">
 
-<h1>Development Guide <small>for dRonin</small></h1>
-
-<h3 id="about">About</h3>
-<p>Welcome to the dRonin documentation. This guide is intended for developers. If you just want to lean how to setup and use the dRonin software, please refer to <a href="https://dronin.readme.io/docs/getting-started">this page</a>.</p>
-<h3 id="software">Software</h3>
-<h4 id="common">Common</h4>
-<h5 id="-setup-devlopment-environment">- <a href="software/setup_dev_env/">Setup Devlopment Environment</a></h5>
-<h5 id="-flight-modes">- <a href="software/flight_modes/">Flight Modes</a></h5>
-<h5 id="-uavtalk-protocol">- <a href="software/uavtalk_protocol/">UAVTalk Protocol</a></h5>
-<h5 id="-introduction-to-autotune">- <a href="software/autotune/">Introduction to Autotune</a></h5>
-<h4 id="firmware">Firmware</h4>
-<h5 id="-firmware-architecture">- <a href="software/firmware_arch/">Firmware Architecture</a></h5>
-<h5 id="-firmware-modules">- <a href="software/firmware_modules/">Firmware Modules</a></h5>
-<h4 id="gcs">GCS</h4>
-<h5 id="-build-and-debug-gcs-using-qt-creator">- <a href="software/gcs_qt_build/">Build and Debug GCS using Qt Creator</a></h5>
-<h3 id="hardware">Hardware</h3>
-<h5 id="-choose-a-flight-controller">- <a href="hardware/choose_fc/">Choose A Flight Controller</a></h5>
-<h5 id="-hardware-ids">- <a href="hardware/hardware_id/">Hardware IDs</a></h5>
-<h5 id="-add-a-new-board-type">- <a href="hardware/add_new_board/">Add A New Board Type</a></h5>
-<h3 id="tutorials">Tutorials</h3>
-<h5 id="-create-a-new-uavobjects">- <a href="tutorials/create_new_uavobjects/">Create a New UAVObjects</a></h5>
-<h3 id="doxygen-docs">Doxygen Docs</h3>
-<h5 id="-flight">- <a href="http://docs.dronin.tracer.nz/flight/html/">Flight</a></h5>
-<h5 id="-ground">- <a href="http://docs.dronin.tracer.nz/ground/html/">Ground</a></h5>
-<h3 id="contribute">Contribute</h3>
-<h5 id="-general-guide">- <a href="contribute/contributing/">General Guide</a></h5>
-<h5 id="-coding-standards">- <a href="contribute/coding_standards/">Coding Standards</a></h5>
-<h5 id="-tracking-development-with-git">- <a href="https://dronin.readme.io/docs/tracking-development-with-git">Tracking Development with Git</a></h5>
-<h5 id="-pull-request-policy">- <a href="contribute/pull_request/">Pull Request Policy</a></h5>
-<h5 id="-create-a-bug-report">- <a href="https://dronin.readme.io/docs/writing-good-bug-reports">Create a bug report</a></h5>
-<h3 id="license">License</h3>
-<p>This documentation is © Copyright 2016 dRonin. The license for this documentation is presently being determined; in the meantime, you are free to copy it for personal use.</p></div>
+<h1 id="firmware-modules">Firmware Modules</h1>
+<h2 id="overview-of-available-modules">Overview of Available Modules</h2>
+<p>The current list of modules (with documentation) is:</p>
+<ul>
+<li><a href="../autotune/">Autotune</a></li>
+<li><a href="">GenericI2CSensor</a> (to be added)</li>
+</ul>
+<p><strong>Note</strong>: Not all modules are present in all firmware images.</p>
+<p>Modules are included in a firmware image when it is listed in the <code>MODULES</code> or <code>OPTMODULES</code> list in the Makefile for the board firmware (see <code>./flight/targets/&lt;board&gt;/Makefile</code>).</p>
+<p>Modules listed in the <code>MODULES</code> list are called Built-in.  Modules listed in the <code>OPTMODULES</code> list are called Optional.</p>
+<h2 id="using-existing-modules">Using Existing Modules</h2>
+<h3 id="module-settings">Module Settings</h3>
+<p>The <code>ModuleSettings</code> UAVO is read by the firmware <strong>only once</strong> during board initialization.  The fields in this UAVO control the behaviour of the modules included in the firmware build.</p>
+<p><strong>Note</strong>: This UAVO may include settings for modules that are not present in the firmware.</p>
+<p><strong>Note</strong>: Some modules may require additional configuration before being able to start.</p>
+<p><strong>Note</strong>: Changes to the <code>ModuleSettings</code> UAVO only take effect on the next reboot of your board.</p>
+<h3 id="optional-modules">Optional Modules</h3>
+<p>Optional modules are built into a firmware image but do not run by default.  Optional modules only run when they are explicitly enabled in the <code>ModuleSettings.State</code> UAVO field.</p>
+<p>In many cases, an optional module will have a dedicated config tab in the GCS which will take care of enabling the module on the next boot.</p>
+<p>Optional modules may be enabled by setting the relevant entry in the <code>ModuleSettings.State</code> field to <code>Enabled</code>.</p>
+<h3 id="built-in-modules">Built-in Modules</h3>
+<p>Built-in modules will be started automatically during firmware initialization.</p>
+<p><strong>Note</strong>: Even built-in modules may requre additional configuration before being able to start.</p>
+<h2 id="adding-a-new-module-developer">Adding a New Module (Developer)</h2>
+<p>Here is a rough outline of what you'll need to do to create a new module and add it to a firmware image:
+<em> Create the new module directory
+  * <code>./flight/Modules/&lt;module-name&gt;</code>
+  * The <module-name> is typically written in CamelCase and should consist of only upper and lower-case letters.
+</em> Create one or more .c files that implement the code for your module
+  * <code>./flight/Modules/&lt;module-name&gt;/*.c</code>
+  * Find another module that you can use as a basis for your new module
+<em> Add the new module to <code>./flight/targets/&lt;board&gt;/fw/Makefile</code>
+  * Add your new module to the <code>MODULES</code> or <code>OPTMODULES</code> list
+</em> Add an entry for your module to the <code>ModuleSettings</code> UAVO
+  * see <code>./shared/uavobjectdefinition/modulesettings.xml</code>
+  * module should be added to the <code>ModuleSettings.State</code> field
+  * any module-specific settings should be added as new fields
+* Add your module's task (if any) to the <code>TaskInfo</code> UAVO
+  * see <code>./shared/uavobjectdefinition/taskinfo.xml</code>
+  * only required if your module has a task (most do)</p></div>
         
     </div>
 
@@ -379,15 +328,15 @@
         <small>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</p></small>
     </footer>
 
-    <script src="./js/jquery-1.10.2.min.js"></script>
-    <script src="./js/bootstrap-3.0.3.min.js"></script>
-    <script src="./js/highlight.pack.js"></script>
+    <script src="../../js/jquery-1.10.2.min.js"></script>
+    <script src="../../js/bootstrap-3.0.3.min.js"></script>
+    <script src="../../js/highlight.pack.js"></script>
     <script>hljs.initHighlightingOnLoad();</script>
     <script>
-    var base_url = '.';
+    var base_url = '../..';
     </script>
-    <script data-main="./mkdocs/js/search.js" src="./mkdocs/js/require.js"></script>
-    <script src="./js/base.js"></script>
+    <script data-main="../../mkdocs/js/search.js" src="../../mkdocs/js/require.js"></script>
+    <script src="../../js/base.js"></script>
 
     <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
         <div class="modal-dialog">
@@ -419,8 +368,3 @@
     </body>
 
 </html>
-
-<!--
-MkDocs version : 0.16.0
-Build Date UTC : 2016-12-26 22:46:09
--->

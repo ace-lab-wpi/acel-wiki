@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="dRonin wiki pages organized using mkdocs with cinder theme"> 
+    <meta name="author" content="dRonin">  
+    <link rel="shortcut icon" href="../../img/favicon.ico">
+
+    <title>Flight Modes - Development Guide - dRonin</title>
+
+    <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/font-hack/2.018/css/hack.min.css">
+    <link href='//fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic&subset=latin-ext,latin' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,600,700&subset=latin-ext,latin' rel='stylesheet' type='text/css'>
+    <link href="../../css/base.css" rel="stylesheet">
+    <link href="../../css/cinder.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/highlight.css">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js"></script>
+    <script>
+    WebFont.load({
+        google: {
+            families: ['Open Sans', 'PT Sans']
+        }
+    });
+    </script>
+
+    
+    <script>
+    (function(i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function() {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-89355455-1', 'http://rdu.im/dronin-dev-guide/');
+    ga('send', 'pageview');
+    </script>
+    
+</head>
+
+<body>
+
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+
+            <!-- Main title -->
+            <a class="navbar-brand" href="../..">Development Guide - dRonin</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+            
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                
+                
+                    <li >
+                        <a href="../..">Home</a>
+                    </li>
+                
+                
+                
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Software <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../setup_dev_env/">Setup Devlopment Environment</a>
+</li>
+
+                        
+                            
+<li class="active">
+    <a href="./">Flight Modes</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../uavtalk_protocol/">UAVTalk Protocol</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../autotune/">Introduction to Autotune</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../firmware_arch/">Firmware Architecture</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../firmware_modules/">Firmware Modules</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../gcs_qt_build/">Build and Debug GCS using Qt Creator</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Hardware <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../../hardware/choose_fc/">Choosing A Flight Controller</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../hardware/hardware_id/">Hardware IDs</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../hardware/add_new_board/">Add A New Board Type</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Tutorials <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../../tutorials/create_new_uavobjects/">Create a New UAVObjects</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Contribute <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../../contribute/contributing/">General Guide</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../contribute/coding_standards/">Coding Standards</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../contribute/pull_request/">Pull Request Policy</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../contribute/uavo_widget_relations/">UAVObject to Widget Relations</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                </ul>
+            
+
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                        <i class="fa fa-search"></i> Search
+                    </a>
+                </li>
+                
+                    <li >
+                        <a rel="next" href="../setup_dev_env/">
+                            <i class="fa fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="prev" href="../uavtalk_protocol/">
+                            Next <i class="fa fa-arrow-right"></i>
+                        </a>
+                    </li>
+                
+                
+                    <li>
+                        <a href="https://github.com/rxdu/dRonin-docs">
+                            
+                                <i class="fa fa-github"></i>
+                            
+                            GitHub
+                        </a>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+    <div class="container">
+        
+        <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+    
+        <li class="first-level active"><a href="#flight-modes">Flight Modes</a></li>
+        
+            <li class="second-level"><a href="#acro">Acro</a></li>
+            
+        
+            <li class="second-level"><a href="#acroplus-acro">AcroPlus (Acro+)</a></li>
+            
+        
+            <li class="second-level"><a href="#leveling">Leveling</a></li>
+            
+        
+            <li class="second-level"><a href="#virtualbar">VirtualBar</a></li>
+            
+        
+            <li class="second-level"><a href="#stabilized123">Stabilized{1,2,3}</a></li>
+            
+        
+            <li class="second-level"><a href="#altitude-hold">Altitude Hold</a></li>
+            
+                <li class="third-level"><a href="#altitude-hold-settings">Altitude Hold Settings</a></li>
+            
+        
+            <li class="second-level"><a href="#returntohome-positionhold-and-pathplanner">ReturnToHome. PositionHold and PathPlanner</a></li>
+            
+        
+            <li class="second-level"><a href="#individual-axis-modes">Individual axis modes</a></li>
+            
+                <li class="third-level"><a href="#none">None:</a></li>
+            
+                <li class="third-level"><a href="#rate">Rate:</a></li>
+            
+                <li class="third-level"><a href="#acroplus">AcroPlus:</a></li>
+            
+                <li class="third-level"><a href="#attitude">Attitude:</a></li>
+            
+                <li class="third-level"><a href="#axislock">AxisLock:</a></li>
+            
+                <li class="third-level"><a href="#weakleveling">WeakLeveling:</a></li>
+            
+                <li class="third-level"><a href="#virtualbar_1">VirtualBar:</a></li>
+            
+                <li class="third-level"><a href="#horizon">Horizon:</a></li>
+            
+                <li class="third-level"><a href="#ratemw">RateMW:</a></li>
+            
+                <li class="third-level"><a href="#systemident">SystemIdent:</a></li>
+            
+                <li class="third-level"><a href="#poi">POI:</a></li>
+            
+                <li class="third-level"><a href="#coordinatedflight">CoordinatedFlight:</a></li>
+            
+        
+    
+    </ul>
+</div></div>
+        <div class="col-md-9" role="main">
+
+<h1 id="flight-modes">Flight Modes</h1>
+<h3 id="acro">Acro</h3>
+<p>This means the fairly typical thing for what Acro mode is called. The roll and pitch axes are assigned to rate mode (see below for details and tuning) and the yaw axis is assigned to Axis Lock (slightly better tracking than rate).</p>
+<h3 id="acroplus-acro">AcroPlus (Acro+)</h3>
+<p>AcroPlus on both Roll and Pitch with Rate on Yaw. See <a href="#acroplus">below</a> for details on AcroPlus.</p>
+<h3 id="leveling">Leveling</h3>
+<p>This is a self levelling mode. The roll and pitch axes are set to Attitude (see below for details and tuning) and the yaw axis is assigned to Axis Lock.</p>
+<h3 id="virtualbar">VirtualBar</h3>
+<p><strong>Helicopter only!</strong> This is an advanced variant of rate that has its own PID and the ability to disable gyro and put a lot more throw on the output. This is required to properly actuate the cyclic. The roll and pitch axis are both set to Virtual Bar (see below for details and tuning) and the yaw axis is assigned to Axis Lock.</p>
+<p>In other words, this flight mode switches from acro with custom PID to manual.</p>
+<p>Do not use this flight-mode unless you've properly set the PID in the system setting (see below)!</p>
+<h3 id="stabilized123">Stabilized{1,2,3}</h3>
+<p>These modes are for customizing what each axis does. So, for example, Stabilized1 in the photo above will use Attitude for Roll and Pitch and AxisLock for Yaw. To understand what these individual axis selections do, please read below.</p>
+<h3 id="altitude-hold">Altitude Hold</h3>
+<p>In this mode, by default you will be flying in a vario mode. That means that if your throttle is high the aircraft will climb and if it is low it will descend. There is a deadband around mid throttle where it will hold the current altitude and an exponential component to the range to make it less sensitive in the middle.</p>
+<p>See examples of this mode https://vimeo.com/88439963 and https://vimeo.com/88549064</p>
+<p><em>To use this, make sure you enable the AltitudeHold module and reboot, or you will have a configuration error. Also with the current code you cannot arm in this mode so if you are disarmed and in AltitudeHold mode you will have an error.</em></p>
+<h4 id="altitude-hold-settings">Altitude Hold Settings</h4>
+<ul>
+<li>
+<p>Tuning is done through uavobjects in the object browser ([system] tab), there's no direct GCS interface.</p>
+</li>
+<li>
+<p><strong>AltitudeHoldSettings.AttitudeComp</strong>: In Altitude Hold mode there is compensation for the bank angle to allow the MR to hold altitude as it flies forward or bank left/right. This can be disabled by setting AltitudeHoldSettings.TiltCompensation to 0. TiltCompensation can also be adjusted if you find it drops as you start flying forward, by setting it to greater than 100%. Often values like 200% are needed. 150% is a good starting point.</p>
+</li>
+<li>
+<p><strong>AltitudeHoldSettings.{MaxClimbRate,MaxDescentRate}</strong>: To change the stick sensitivity.  Set this to zero if you do not want to be able to climb or descend and just want it to hold altitude. The default max climb rate of 40dm/s is a bit rough, 20dm/s makes the aircraft very docile.</p>
+</li>
+<li>
+<p><strong>AltitudeHoldSettings.Expo</strong>: adjustable exponential on the throttle around hover point. Increase to make it less sensitive near the middle. To be used in conjunction with <strong>.Deadband</strong> setting (see below).</p>
+</li>
+<li>
+<p><strong>AltitudeHoldSettings.Deadband</strong>: dead-band near the centre position where the board will just hold altitude. As a starting point with 10% dead-band and 20% expo one has to push the stick 4 clicks above hover point in order to change altitude significantly. Large <strong>.Deadband</strong> should not be used in conjunction with large .Expo: once the stick leaves the dead-band, it should not enters a section were expo switches from precise to large input commands.</p>
+</li>
+<li>
+<p><strong>AltitudeHoldSettings.{PositionKp,VelocityKp,VelocityKi}</strong>: PID settings for the altitude controller. There is an outer loop (that is tuned by PositionKp) that requests a faster desired velocity (up to MaxRate) the further from the set point the FC is. There is a VelocityKp and VelocityKi for the inner loop that goes from velocity error to throttle position. When moving the stick (requesting a change in height) only VelocityKp and VelocityKi matter as the stick sets the desired velocity.</p>
+</li>
+</ul>
+<h3 id="returntohome-positionhold-and-pathplanner">ReturnToHome. PositionHold and PathPlanner</h3>
+<p>Ask on the forums and make sure you fully understand how to attempt this before using these modes.</p>
+<h2 id="individual-axis-modes">Individual axis modes</h2>
+<h3 id="none">None:</h3>
+<p>No stabilization on this axis. Inputs are directly passed to outputs.</p>
+<h3 id="rate">Rate:</h3>
+<p>dRonin will aim for a target rate of turn around the axis. This target is defined by the manual control. When the manual control is neutral, dRonin will try to maintain zero rotation.
+E.g. on a multirotor, in "rate mode", the angle of the elevation/aileron sticks determines the rate of change of the pitch and roll axis. If you let go and return to a neutral position, the airframe will keep going in that (possibly inverted) direction. It's up to the pilot to return the craft to level, so it behaves like a "real" aircraft.</p>
+<h3 id="acroplus">AcroPlus:</h3>
+<p>Stabilization mode based on Rate inner loop featuring stick and multiplier based Gyro Suppression such as, but not limited to:
+- OpenPilot Rate with AcroPlus/~~PiroComp/CruiseControl~~ etc.
+- CleanFlight MultiWii Rewrite
+- TauLabs MWRate / MultiWii Rate</p>
+<p>The default Gyro Suppression is 40%, configured with the <code>StabilizationSettings.AcroInsanityFactor</code> UAVO or BrainFPV OSD Menu under Stick Scaling / Expo "Acro Insanity Factor". The name of the configuration UAVO was preserved to pay homage to the OpenPilot project's implementation.</p>
+<h3 id="attitude">Attitude:</h3>
+<p>dRonin will aim for a target attitude. This target is defined by the manual control. When the manual control is neutral, dRonin will steer towards level flight. This applies an offset (from TrimAnglesSettings) to the requested attitude. For details on how to trim this go [[here|Level-triming]]</p>
+<p>E.g. on a multirotor, in "attitude mode", the angle of the elevation/aileron sticks directly determines the set point for the pitch and the roll axis of the multirotor. If you let go and return the stick to a neutral position the multirotor would level and drift to a halt in hover.</p>
+<h3 id="axislock">AxisLock:</h3>
+<p>dRonin will try to keep the total amount of rotation on the selected axis on 0 when the stick is not touched. When dRonin detects 5 degrees of rotation, it will try and undo that. Axis lock essentially grabs the current position of the axis when you let go of the stick and tries to stay there.</p>
+<p>This feels similar to rate mode but can provide a more locked in feeling.</p>
+<h3 id="weakleveling">WeakLeveling:</h3>
+<p>Weak leveling is basically rate mode with a slow component to make the attitude go towards zero. In weak leveling your aircraft slowly drifts back to level - sort of rate mode with an assist. Note that it's not recommended for yaw because it basically will turn your nose facing forward again.</p>
+<h3 id="virtualbar_1">VirtualBar:</h3>
+<p>This mode can be compared to a standard flybarless controller. It is meant for heli, but for multi rotors a much more aggressive roll and flip rate "could" be achieved, as it deactivates the gyro, allowing for full motor output on aggressive manoeuvrers. Please note, this flight mode was tested with mixed-success on multicopter; fly Acro+ for these characteristics instead.</p>
+<p>As a starting point one is advised to define a high level of stick input before deactivating gyro.</p>
+<ul>
+<li>Tuning is done through uavobjects in the object browser ([system] tab), there's no direct GCS interface.</li>
+<li>Autotune does not set vBar PIDs (leaves them untouched)</li>
+</ul>
+<p>Remember this mode has its own PID settings! As a starting point one should copy the standard PID settings to the vBar settings and define a proper stick position for Gyro deactivation.</p>
+<p>[Settings] &gt; [StabilizationSettings]
+<em> [vBarSensitivity] : as a starting point copy [iLimit] values from [PitchRatePID] [RollRatePID] [YawRatePID]
+</em> [vBarRollPID] : as a starting point copy [Kp],[Ki],[Kd] values from [RollRatePID]
+<em> [vBarPitchPID] : as a starting point copy [Kp],[Ki],[Kd] values from [PitchRatePID]
+</em> [vBarYawPID] : as a starting point copy [Kp],[Ki],[Kd] values from [YawRatePID]
+<em> [VbarTau] Default value is 0.5. <strong> TODO </strong>
+</em> [VbarGyroSuppress] : Use 50% as a starting point, the default value of 30% is really aggressive.
+<em> [VbarPiroComp] Default value is false. <strong> TODO ; to be tested on a heli! </strong>
+</em> [VBarMaxAngle] Default value is 10°. <strong> TODO </strong></p>
+<h3 id="horizon">Horizon:</h3>
+<p>Horizon is based on MultiiWii Horizon mode. It smoothly transitions from attitude mode in the middle to rate mode on the stick extremes. It uses the tuning from the separate modes so once they are both well tuned it should work well. This is useful for FPV where you might want tight self leveling and control plus rate mode.</p>
+<h3 id="ratemw">RateMW:</h3>
+<p>RateMW is based on MultiiWii Acro mode. This mode has its own PID settings. Please see Stabilization / MultiWiiRate. NOTE: As of January 2016, there are some ongoing discussion regarding the future of this flight mode. Judging from the current enhancement requests, supressing it would free some memory and make the ground station more homogeneous...</p>
+<h3 id="systemident">SystemIdent:</h3>
+<p>??? These modes are used by relay tuning for automatically tuning your airframe. Not recommended for normal use.</p>
+<h3 id="poi">POI:</h3>
+<p>This is used for tracking a point-of-interest, usually provided by a tablet.</p>
+<h3 id="coordinatedflight">CoordinatedFlight:</h3>
+<p>This mode is used for planes with a rudder and will apply rudder during turns to try and have zero side slip. This mode should <strong>only</strong> be used on planes yaw axis.</p></div>
+        
+    </div>
+
+    <footer class="col-md-12 text-center">
+        <hr>
+        <p>
+        <small>This documentation is © Copyright 2016 dRonin. Cinder theme is licensed under the <a href='https://github.com/chrissimpkins/cinder/blob/master/LICENSE.md'>MIT license</a><br></small>
+        
+        <small>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</p></small>
+    </footer>
+
+    <script src="../../js/jquery-1.10.2.min.js"></script>
+    <script src="../../js/bootstrap-3.0.3.min.js"></script>
+    <script src="../../js/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script>
+    var base_url = '../..';
+    </script>
+    <script data-main="../../mkdocs/js/search.js" src="../../mkdocs/js/require.js"></script>
+    <script src="../../js/base.js"></script>
+
+    <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">
+                        <span aria-hidden="true">&times;</span>
+                        <span class="sr-only">Close</span>
+                    </button>
+                    <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        From here you can search these documents. Enter your search terms below.
+                    </p>
+                    <form role="form">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
+                        </div>
+                    </form>
+                    <div id="mkdocs-search-results"></div>
+                </div>
+                <div class="modal-footer">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </body>
+
+</html>

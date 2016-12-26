@@ -4,7 +4,7 @@
     
     <url>
      <loc>/</loc>
-     <lastmod>2016-12-23</lastmod>
+     <lastmod>2016-12-26</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -13,13 +13,43 @@
         
     <url>
      <loc>/software/setup_dev_env/</loc>
-     <lastmod>2016-12-23</lastmod>
+     <lastmod>2016-12-26</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/software/flight_modes/</loc>
+     <lastmod>2016-12-26</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/software/uavtalk_protocol/</loc>
+     <lastmod>2016-12-26</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/software/autotune/</loc>
+     <lastmod>2016-12-26</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/software/firmware_arch/</loc>
-     <lastmod>2016-12-23</lastmod>
+     <lastmod>2016-12-26</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/software/firmware_modules/</loc>
+     <lastmod>2016-12-26</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/software/gcs_qt_build/</loc>
+     <lastmod>2016-12-26</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -29,19 +59,19 @@
         
     <url>
      <loc>/hardware/choose_fc/</loc>
-     <lastmod>2016-12-23</lastmod>
+     <lastmod>2016-12-26</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/hardware/hardware_id/</loc>
-     <lastmod>2016-12-23</lastmod>
+     <lastmod>2016-12-26</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/hardware/add_new_board/</loc>
-     <lastmod>2016-12-23</lastmod>
+     <lastmod>2016-12-26</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -50,8 +80,8 @@
     
         
     <url>
-     <loc>/tutorials/test/</loc>
-     <lastmod>2016-12-23</lastmod>
+     <loc>/tutorials/create_new_uavobjects/</loc>
+     <lastmod>2016-12-26</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -61,19 +91,25 @@
         
     <url>
      <loc>/contribute/contributing/</loc>
-     <lastmod>2016-12-23</lastmod>
+     <lastmod>2016-12-26</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/contribute/coding_standards/</loc>
-     <lastmod>2016-12-23</lastmod>
+     <lastmod>2016-12-26</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/contribute/pull_request/</loc>
-     <lastmod>2016-12-23</lastmod>
+     <lastmod>2016-12-26</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/contribute/uavo_widget_relations/</loc>
+     <lastmod>2016-12-26</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
