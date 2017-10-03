@@ -1,36 +1,24 @@
-site_name: Development Guide - dRonin
+site_name: ACEL Wiki
 #theme: readthedocs
 theme_dir: cinder
-site_author: dRonin
-site_description: "dRonin wiki pages organized using mkdocs with cinder theme"
-repo_url: "https://github.com/rxdu/dRonin-docs"
-copyright: "This documentation is © Copyright 2016 dRonin. Cinder theme is licensed under the <a href='https://github.com/chrissimpkins/cinder/blob/master/LICENSE.md'>MIT license</a>"
-google_analytics: ['UA-89355455-1', 'http://rdu.im/dronin-dev-guide/']
+site_author: acel
+site_description: "ACEL wiki pages organized using mkdocs with cinder theme"
+repo_url: "https://github.com/ace-lab-wpi/acel-wiki.git"
+copyright: "This documentation is © Copyright 2017 ACEL."
+#google_analytics: ['UA-89355455-1', 'http://rdu.im/dronin-dev-guide/']
 pages:
   - Home: index.md
 #  - Setup:
 #      - 'Linux Setup': 'setup/linux_setup.md'
-  - Software:
+  - Projects:
       - 'Setup Devlopment Environment': 'software/setup_dev_env.md'
-      - 'Flight Modes': 'software/flight_modes.md'
-      - 'UAVTalk Protocol': 'software/uavtalk_protocol.md'
-      - 'Introduction to Autotune': 'software/autotune.md'
-      - 'Firmware Architecture': 'software/firmware_arch.md'
-      - 'Firmware Modules': 'software/firmware_modules.md'
-      - 'Build and Debug GCS using Qt Creator': 'software/gcs_qt_build.md'
-  - Hardware:
-#      - 'OpenPilot Revo': 'hardware/op_revo.md'
-#      - 'BrainFPV RE1': 'hardware/brainfpv_re1.md'
-       - 'Choosing A Flight Controller': 'hardware/choose_fc.md'
-       - 'Hardware IDs': 'hardware/hardware_id.md'
-       - 'Add A New Board Type': 'hardware/add_new_board.md'
-  - Tutorials:
+  - HOW-TOs:
       - 'Create a New UAVObjects': 'tutorials/create_new_uavobjects.md'
   - Contribute:
       - 'General Guide': 'contribute/contributing.md'
-      - 'Coding Standards': 'contribute/coding_standards.md'
+      # - 'Coding Standards': 'contribute/coding_standards.md'
 #      - 'Tracking Development with Git': 'https://dronin.readme.io/docs/tracking-development-with-git'
-      - 'Pull Request Policy': 'contribute/pull_request.md'
-      - 'UAVObject to Widget Relations': 'contribute/uavo_widget_relations.md'
+      # - 'Pull Request Policy': 'contribute/pull_request.md'
+      # - 'UAVObject to Widget Relations': 'contribute/uavo_widget_relations.md'
 #      - 'Create a bug report': 'https://dronin.readme.io/docs/writing-good-bug-reports'
 #  - Specimen: specimen.md
