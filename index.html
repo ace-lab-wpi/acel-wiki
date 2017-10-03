@@ -5,11 +5,11 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="dRonin wiki pages organized using mkdocs with cinder theme"> 
-    <meta name="author" content="dRonin">  
+    <meta name="description" content="ACEL wiki pages organized using mkdocs with cinder theme"> 
+    <meta name="author" content="acel">  
     <link rel="shortcut icon" href="./img/favicon.ico">
 
-    <title>Home - Development Guide - dRonin</title>
+    <title>Home - ACEL Wiki</title>
 
     <link href="./css/bootstrap-custom.min.css" rel="stylesheet">
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
@@ -36,23 +36,6 @@
     </script>
 
     
-    <script>
-    (function(i, s, o, g, r, a, m) {
-        i['GoogleAnalyticsObject'] = r;
-        i[r] = i[r] || function() {
-            (i[r].q = i[r].q || []).push(arguments)
-        }, i[r].l = 1 * new Date();
-        a = s.createElement(o),
-        m = s.getElementsByTagName(o)[0];
-        a.async = 1;
-        a.src = g;
-        m.parentNode.insertBefore(a, m)
-    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
-
-    ga('create', 'UA-89355455-1', 'http://rdu.im/dronin-dev-guide/');
-    ga('send', 'pageview');
-    </script>
-    
 </head>
 
 <body class="homepage" >
@@ -73,7 +56,7 @@
             
 
             <!-- Main title -->
-            <a class="navbar-brand" href=".">Development Guide - dRonin</a>
+            <a class="navbar-brand" href=".">ACEL Wiki</a>
         </div>
 
         <!-- Expanded navigation -->
@@ -90,90 +73,18 @@
                 
                 
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Software <b class="caret"></b></a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">General <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                         
                             
 <li >
-    <a href="software/setup_dev_env/">Setup Devlopment Environment</a>
+    <a href="general/workbench/">Workbench</a>
 </li>
 
                         
                             
 <li >
-    <a href="software/flight_modes/">Flight Modes</a>
-</li>
-
-                        
-                            
-<li >
-    <a href="software/uavtalk_protocol/">UAVTalk Protocol</a>
-</li>
-
-                        
-                            
-<li >
-    <a href="software/autotune/">Introduction to Autotune</a>
-</li>
-
-                        
-                            
-<li >
-    <a href="software/firmware_arch/">Firmware Architecture</a>
-</li>
-
-                        
-                            
-<li >
-    <a href="software/firmware_modules/">Firmware Modules</a>
-</li>
-
-                        
-                            
-<li >
-    <a href="software/gcs_qt_build/">Build and Debug GCS using Qt Creator</a>
-</li>
-
-                        
-                        </ul>
-                    </li>
-                
-                
-                
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Hardware <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                        
-                            
-<li >
-    <a href="hardware/choose_fc/">Choosing A Flight Controller</a>
-</li>
-
-                        
-                            
-<li >
-    <a href="hardware/hardware_id/">Hardware IDs</a>
-</li>
-
-                        
-                            
-<li >
-    <a href="hardware/add_new_board/">Add A New Board Type</a>
-</li>
-
-                        
-                        </ul>
-                    </li>
-                
-                
-                
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Tutorials <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                        
-                            
-<li >
-    <a href="tutorials/create_new_uavobjects/">Create a New UAVObjects</a>
+    <a href="general/robots/">Robot Platforms</a>
 </li>
 
                         
@@ -189,24 +100,6 @@
                             
 <li >
     <a href="contribute/contributing/">General Guide</a>
-</li>
-
-                        
-                            
-<li >
-    <a href="contribute/coding_standards/">Coding Standards</a>
-</li>
-
-                        
-                            
-<li >
-    <a href="contribute/pull_request/">Pull Request Policy</a>
-</li>
-
-                        
-                            
-<li >
-    <a href="contribute/uavo_widget_relations/">UAVObject to Widget Relations</a>
 </li>
 
                         
@@ -230,14 +123,14 @@
                         </a>
                     </li>
                     <li >
-                        <a rel="prev" href="software/setup_dev_env/">
+                        <a rel="prev" href="general/workbench/">
                             Next <i class="fa fa-arrow-right"></i>
                         </a>
                     </li>
                 
                 
                     <li>
-                        <a href="https://github.com/rxdu/dRonin-docs">
+                        <a href="https://github.com/ace-lab-wpi/acel-wiki.git">
                             
                                 <i class="fa fa-github"></i>
                             
@@ -255,126 +148,48 @@
         <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
     
-        <li class="first-level active"><a href="#about">About</a></li>
+        <li class="first-level active"><a href="#general">General</a></li>
         
-    
-        <li class="first-level "><a href="#software">Software</a></li>
-        
-            <li class="second-level"><a href="#common">Common</a></li>
-            
-                <li class="third-level"><a href="#-setup-devlopment-environment">- Setup Devlopment Environment</a></li>
-            
-                <li class="third-level"><a href="#-flight-modes">- Flight Modes</a></li>
-            
-                <li class="third-level"><a href="#-uavtalk-protocol">- UAVTalk Protocol</a></li>
-            
-                <li class="third-level"><a href="#-introduction-to-autotune">- Introduction to Autotune</a></li>
+            <li class="second-level"><a href="#-workbench">- Workbench</a></li>
             
         
-            <li class="second-level"><a href="#firmware">Firmware</a></li>
-            
-                <li class="third-level"><a href="#-firmware-architecture">- Firmware Architecture</a></li>
-            
-                <li class="third-level"><a href="#-firmware-modules">- Firmware Modules</a></li>
-            
-        
-            <li class="second-level"><a href="#gcs">GCS</a></li>
-            
-                <li class="third-level"><a href="#-build-and-debug-gcs-using-qt-creator">- Build and Debug GCS using Qt Creator</a></li>
+            <li class="second-level"><a href="#-robot-platforms">- Robot platforms</a></li>
             
         
     
-        <li class="first-level "><a href="#hardware">Hardware</a></li>
+        <li class="first-level "><a href="#how-tos">HOW-TOs</a></li>
         
-            <li class="second-level"><a href="#-choose-a-flight-controller">- Choose A Flight Controller</a></li>
-            
-        
-            <li class="second-level"><a href="#-hardware-ids">- Hardware IDs</a></li>
-            
-        
-            <li class="second-level"><a href="#-add-a-new-board-type">- Add A New Board Type</a></li>
-            
-        
-    
-        <li class="first-level "><a href="#tutorials">Tutorials</a></li>
-        
-            <li class="second-level"><a href="#-create-a-new-uavobjects">- Create a New UAVObjects</a></li>
-            
-        
-    
-        <li class="first-level "><a href="#doxygen-docs">Doxygen Docs</a></li>
-        
-            <li class="second-level"><a href="#-flight">- Flight</a></li>
-            
-        
-            <li class="second-level"><a href="#-ground">- Ground</a></li>
+            <li class="second-level"><a href="#-how-to-connect-a-raspberry-pi-to-wpi-wireless-network">- How to connect a Raspberry Pi to WPI wireless network</a></li>
             
         
     
         <li class="first-level "><a href="#contribute">Contribute</a></li>
         
-            <li class="second-level"><a href="#-general-guide">- General Guide</a></li>
+            <li class="second-level"><a href="#-add-a-wiki-page">- Add a Wiki Page</a></li>
             
-        
-            <li class="second-level"><a href="#-coding-standards">- Coding Standards</a></li>
-            
-        
-            <li class="second-level"><a href="#-tracking-development-with-git">- Tracking Development with Git</a></li>
-            
-        
-            <li class="second-level"><a href="#-pull-request-policy">- Pull Request Policy</a></li>
-            
-        
-            <li class="second-level"><a href="#-create-a-bug-report">- Create a bug report</a></li>
-            
-        
-    
-        <li class="first-level "><a href="#license">License</a></li>
         
     
     </ul>
 </div></div>
         <div class="col-md-9" role="main">
 
-<h1>Development Guide <small>for dRonin</small></h1>
+<h1>Welcome<small> ACEL Wiki </small></h1>
 
-<h3 id="about">About</h3>
-<p>Welcome to the dRonin documentation. This guide is intended for developers. If you just want to lean how to setup and use the dRonin software, please refer to <a href="https://dronin.readme.io/docs/getting-started">this page</a>.</p>
-<h3 id="software">Software</h3>
-<h4 id="common">Common</h4>
-<h5 id="-setup-devlopment-environment">- <a href="software/setup_dev_env/">Setup Devlopment Environment</a></h5>
-<h5 id="-flight-modes">- <a href="software/flight_modes/">Flight Modes</a></h5>
-<h5 id="-uavtalk-protocol">- <a href="software/uavtalk_protocol/">UAVTalk Protocol</a></h5>
-<h5 id="-introduction-to-autotune">- <a href="software/autotune/">Introduction to Autotune</a></h5>
-<h4 id="firmware">Firmware</h4>
-<h5 id="-firmware-architecture">- <a href="software/firmware_arch/">Firmware Architecture</a></h5>
-<h5 id="-firmware-modules">- <a href="software/firmware_modules/">Firmware Modules</a></h5>
-<h4 id="gcs">GCS</h4>
-<h5 id="-build-and-debug-gcs-using-qt-creator">- <a href="software/gcs_qt_build/">Build and Debug GCS using Qt Creator</a></h5>
-<h3 id="hardware">Hardware</h3>
-<h5 id="-choose-a-flight-controller">- <a href="hardware/choose_fc/">Choose A Flight Controller</a></h5>
-<h5 id="-hardware-ids">- <a href="hardware/hardware_id/">Hardware IDs</a></h5>
-<h5 id="-add-a-new-board-type">- <a href="hardware/add_new_board/">Add A New Board Type</a></h5>
-<h3 id="tutorials">Tutorials</h3>
-<h5 id="-create-a-new-uavobjects">- <a href="tutorials/create_new_uavobjects/">Create a New UAVObjects</a></h5>
-<h3 id="doxygen-docs">Doxygen Docs</h3>
-<h5 id="-flight">- <a href="http://docs.dronin.tracer.nz/flight/html/">Flight</a></h5>
-<h5 id="-ground">- <a href="http://docs.dronin.tracer.nz/ground/html/">Ground</a></h5>
+<p>Welcome to the wiki of Autonomy, Control, and Estimation Lab (ACEL) at WPI.</p>
+<h3 id="general">General</h3>
+<h4 id="-workbench">- <a href="general/workbench/">Workbench</a></h4>
+<h4 id="-robot-platforms">- <a href="general/robots/">Robot platforms</a></h4>
+<h3 id="how-tos">HOW-TOs</h3>
+<h4 id="-how-to-connect-a-raspberry-pi-to-wpi-wireless-network">- <a href="http://wiki.rdu.im/_pages/Projects/Application-Notes/HOWTOs/howto-connect-rpi-to-wpi-wireless.html">How to connect a Raspberry Pi to WPI wireless network</a></h4>
 <h3 id="contribute">Contribute</h3>
-<h5 id="-general-guide">- <a href="contribute/contributing/">General Guide</a></h5>
-<h5 id="-coding-standards">- <a href="contribute/coding_standards/">Coding Standards</a></h5>
-<h5 id="-tracking-development-with-git">- <a href="https://dronin.readme.io/docs/tracking-development-with-git">Tracking Development with Git</a></h5>
-<h5 id="-pull-request-policy">- <a href="contribute/pull_request/">Pull Request Policy</a></h5>
-<h5 id="-create-a-bug-report">- <a href="https://dronin.readme.io/docs/writing-good-bug-reports">Create a bug report</a></h5>
-<h3 id="license">License</h3>
-<p>This documentation is © Copyright 2016 dRonin. The license for this documentation is presently being determined; in the meantime, you are free to copy it for personal use.</p></div>
+<h4 id="-add-a-wiki-page">- <a href="contribute/contributing/">Add a Wiki Page</a></h4></div>
         
     </div>
 
     <footer class="col-md-12 text-center">
         <hr>
         <p>
-        <small>This documentation is © Copyright 2016 dRonin. Cinder theme is licensed under the <a href='https://github.com/chrissimpkins/cinder/blob/master/LICENSE.md'>MIT license</a><br></small>
+        <small>This documentation is © Copyright 2017 ACEL.<br></small>
         
         <small>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</p></small>
     </footer>
@@ -421,6 +236,6 @@
 </html>
 
 <!--
-MkDocs version : 0.16.0
-Build Date UTC : 2016-12-26 22:46:09
+MkDocs version : 0.16.3
+Build Date UTC : 2017-10-03 22:01:22
 -->

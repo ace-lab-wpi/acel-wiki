@@ -2,113 +2,33 @@
     "docs": [
         {
             "location": "/", 
-            "text": "Development Guide \nfor dRonin\n\n\n\nAbout\n\n\nWelcome to the dRonin documentation. This guide is intended for developers. If you just want to lean how to setup and use the dRonin software, please refer to \nthis page\n.\n\n\nSoftware\n\n\nCommon\n\n\n- \nSetup Devlopment Environment\n\n\n- \nFlight Modes\n\n\n- \nUAVTalk Protocol\n\n\n- \nIntroduction to Autotune\n\n\nFirmware\n\n\n- \nFirmware Architecture\n\n\n- \nFirmware Modules\n\n\nGCS\n\n\n- \nBuild and Debug GCS using Qt Creator\n\n\nHardware\n\n\n- \nChoose A Flight Controller\n\n\n- \nHardware IDs\n\n\n- \nAdd A New Board Type\n\n\nTutorials\n\n\n- \nCreate a New UAVObjects\n\n\nDoxygen Docs\n\n\n- \nFlight\n\n\n- \nGround\n\n\nContribute\n\n\n- \nGeneral Guide\n\n\n- \nCoding Standards\n\n\n- \nTracking Development with Git\n\n\n- \nPull Request Policy\n\n\n- \nCreate a bug report\n\n\nLicense\n\n\nThis documentation is \u00a9 Copyright 2016 dRonin. The license for this documentation is presently being determined; in the meantime, you are free to copy it for personal use.", 
+            "text": "Welcome\n ACEL Wiki \n\n\n\nWelcome to the wiki of Autonomy, Control, and Estimation Lab (ACEL) at WPI.\n\n\nGeneral\n\n\n- \nWorkbench\n\n\n- \nRobot platforms\n\n\nHOW-TOs\n\n\n- \nHow to connect a Raspberry Pi to WPI wireless network\n\n\nContribute\n\n\n- \nAdd a Wiki Page", 
             "title": "Home"
         }, 
         {
-            "location": "/#about", 
-            "text": "Welcome to the dRonin documentation. This guide is intended for developers. If you just want to lean how to setup and use the dRonin software, please refer to  this page .", 
-            "title": "About"
+            "location": "/#general", 
+            "text": "", 
+            "title": "General"
         }, 
         {
-            "location": "/#software", 
+            "location": "/#-workbench", 
             "text": "", 
-            "title": "Software"
+            "title": "- Workbench"
         }, 
         {
-            "location": "/#common", 
+            "location": "/#-robot-platforms", 
             "text": "", 
-            "title": "Common"
+            "title": "- Robot platforms"
         }, 
         {
-            "location": "/#-setup-devlopment-environment", 
+            "location": "/#how-tos", 
             "text": "", 
-            "title": "- Setup Devlopment Environment"
+            "title": "HOW-TOs"
         }, 
         {
-            "location": "/#-flight-modes", 
+            "location": "/#-how-to-connect-a-raspberry-pi-to-wpi-wireless-network", 
             "text": "", 
-            "title": "- Flight Modes"
-        }, 
-        {
-            "location": "/#-uavtalk-protocol", 
-            "text": "", 
-            "title": "- UAVTalk Protocol"
-        }, 
-        {
-            "location": "/#-introduction-to-autotune", 
-            "text": "", 
-            "title": "- Introduction to Autotune"
-        }, 
-        {
-            "location": "/#firmware", 
-            "text": "", 
-            "title": "Firmware"
-        }, 
-        {
-            "location": "/#-firmware-architecture", 
-            "text": "", 
-            "title": "- Firmware Architecture"
-        }, 
-        {
-            "location": "/#-firmware-modules", 
-            "text": "", 
-            "title": "- Firmware Modules"
-        }, 
-        {
-            "location": "/#gcs", 
-            "text": "", 
-            "title": "GCS"
-        }, 
-        {
-            "location": "/#-build-and-debug-gcs-using-qt-creator", 
-            "text": "", 
-            "title": "- Build and Debug GCS using Qt Creator"
-        }, 
-        {
-            "location": "/#hardware", 
-            "text": "", 
-            "title": "Hardware"
-        }, 
-        {
-            "location": "/#-choose-a-flight-controller", 
-            "text": "", 
-            "title": "- Choose A Flight Controller"
-        }, 
-        {
-            "location": "/#-hardware-ids", 
-            "text": "", 
-            "title": "- Hardware IDs"
-        }, 
-        {
-            "location": "/#-add-a-new-board-type", 
-            "text": "", 
-            "title": "- Add A New Board Type"
-        }, 
-        {
-            "location": "/#tutorials", 
-            "text": "", 
-            "title": "Tutorials"
-        }, 
-        {
-            "location": "/#-create-a-new-uavobjects", 
-            "text": "", 
-            "title": "- Create a New UAVObjects"
-        }, 
-        {
-            "location": "/#doxygen-docs", 
-            "text": "", 
-            "title": "Doxygen Docs"
-        }, 
-        {
-            "location": "/#-flight", 
-            "text": "", 
-            "title": "- Flight"
-        }, 
-        {
-            "location": "/#-ground", 
-            "text": "", 
-            "title": "- Ground"
+            "title": "- How to connect a Raspberry Pi to WPI wireless network"
         }, 
         {
             "location": "/#contribute", 
@@ -116,629 +36,59 @@
             "title": "Contribute"
         }, 
         {
-            "location": "/#-general-guide", 
+            "location": "/#-add-a-wiki-page", 
             "text": "", 
-            "title": "- General Guide"
+            "title": "- Add a Wiki Page"
         }, 
         {
-            "location": "/#-coding-standards", 
+            "location": "/general/workbench/", 
+            "text": "Lab Workbench\n\n\nWhat's on the workbench:\n\n\n\n\nPC with Ubuntu 16.04 64-bit, Windows 7\n\n\nOscilloscope: Rigol DS4204 with upgraded 350M bandwidth, UART/I2C/SPI/CAN decoding\n\n\n\n\nGeneral Rules", 
+            "title": "Workbench"
+        }, 
+        {
+            "location": "/general/workbench/#lab-workbench", 
+            "text": "What's on the workbench:   PC with Ubuntu 16.04 64-bit, Windows 7  Oscilloscope: Rigol DS4204 with upgraded 350M bandwidth, UART/I2C/SPI/CAN decoding", 
+            "title": "Lab Workbench"
+        }, 
+        {
+            "location": "/general/workbench/#general-rules", 
             "text": "", 
-            "title": "- Coding Standards"
+            "title": "General Rules"
         }, 
         {
-            "location": "/#-tracking-development-with-git", 
-            "text": "", 
-            "title": "- Tracking Development with Git"
+            "location": "/general/robots/", 
+            "text": "Robots\n\n\nUAVObjects use code that is dynamically generated by the uavobjectgenerator. The specification for a UAVObject is an XML file placed in \nshared/uavobjectdefinition\n. There a few key steps to creating a new UAVObjects:", 
+            "title": "Robot Platforms"
         }, 
         {
-            "location": "/#-pull-request-policy", 
-            "text": "", 
-            "title": "- Pull Request Policy"
-        }, 
-        {
-            "location": "/#-create-a-bug-report", 
-            "text": "", 
-            "title": "- Create a bug report"
-        }, 
-        {
-            "location": "/#license", 
-            "text": "This documentation is \u00a9 Copyright 2016 dRonin. The license for this documentation is presently being determined; in the meantime, you are free to copy it for personal use.", 
-            "title": "License"
-        }, 
-        {
-            "location": "/software/setup_dev_env/", 
-            "text": "Setup Devlopment Environment\n\n\n\n\nDevelopment Setup: Linux\n\n\nDevelopment Setup: Windows\n\n\nDevelopment Setup: OS X", 
-            "title": "Setup Devlopment Environment"
-        }, 
-        {
-            "location": "/software/setup_dev_env/#setup-devlopment-environment", 
-            "text": "Development Setup: Linux  Development Setup: Windows  Development Setup: OS X", 
-            "title": "Setup Devlopment Environment"
-        }, 
-        {
-            "location": "/software/flight_modes/", 
-            "text": "Flight Modes\n\n\nAcro\n\n\nThis means the fairly typical thing for what Acro mode is called. The roll and pitch axes are assigned to rate mode (see below for details and tuning) and the yaw axis is assigned to Axis Lock (slightly better tracking than rate).\n\n\nAcroPlus (Acro+)\n\n\nAcroPlus on both Roll and Pitch with Rate on Yaw. See \nbelow\n for details on AcroPlus.\n\n\nLeveling\n\n\nThis is a self levelling mode. The roll and pitch axes are set to Attitude (see below for details and tuning) and the yaw axis is assigned to Axis Lock.\n\n\nVirtualBar\n\n\nHelicopter only!\n This is an advanced variant of rate that has its own PID and the ability to disable gyro and put a lot more throw on the output. This is required to properly actuate the cyclic. The roll and pitch axis are both set to Virtual Bar (see below for details and tuning) and the yaw axis is assigned to Axis Lock.\n\n\nIn other words, this flight mode switches from acro with custom PID to manual.\n\n\nDo not use this flight-mode unless you've properly set the PID in the system setting (see below)!\n\n\nStabilized{1,2,3}\n\n\nThese modes are for customizing what each axis does. So, for example, Stabilized1 in the photo above will use Attitude for Roll and Pitch and AxisLock for Yaw. To understand what these individual axis selections do, please read below.\n\n\nAltitude Hold\n\n\nIn this mode, by default you will be flying in a vario mode. That means that if your throttle is high the aircraft will climb and if it is low it will descend. There is a deadband around mid throttle where it will hold the current altitude and an exponential component to the range to make it less sensitive in the middle.\n\n\nSee examples of this mode https://vimeo.com/88439963 and https://vimeo.com/88549064\n\n\nTo use this, make sure you enable the AltitudeHold module and reboot, or you will have a configuration error. Also with the current code you cannot arm in this mode so if you are disarmed and in AltitudeHold mode you will have an error.\n\n\nAltitude Hold Settings\n\n\n\n\n\n\nTuning is done through uavobjects in the object browser ([system] tab), there's no direct GCS interface.\n\n\n\n\n\n\nAltitudeHoldSettings.AttitudeComp\n: In Altitude Hold mode there is compensation for the bank angle to allow the MR to hold altitude as it flies forward or bank left/right. This can be disabled by setting AltitudeHoldSettings.TiltCompensation to 0. TiltCompensation can also be adjusted if you find it drops as you start flying forward, by setting it to greater than 100%. Often values like 200% are needed. 150% is a good starting point.\n\n\n\n\n\n\nAltitudeHoldSettings.{MaxClimbRate,MaxDescentRate}\n: To change the stick sensitivity.  Set this to zero if you do not want to be able to climb or descend and just want it to hold altitude. The default max climb rate of 40dm/s is a bit rough, 20dm/s makes the aircraft very docile.\n\n\n\n\n\n\nAltitudeHoldSettings.Expo\n: adjustable exponential on the throttle around hover point. Increase to make it less sensitive near the middle. To be used in conjunction with \n.Deadband\n setting (see below).\n\n\n\n\n\n\nAltitudeHoldSettings.Deadband\n: dead-band near the centre position where the board will just hold altitude. As a starting point with 10% dead-band and 20% expo one has to push the stick 4 clicks above hover point in order to change altitude significantly. Large \n.Deadband\n should not be used in conjunction with large .Expo: once the stick leaves the dead-band, it should not enters a section were expo switches from precise to large input commands.\n\n\n\n\n\n\nAltitudeHoldSettings.{PositionKp,VelocityKp,VelocityKi}\n: PID settings for the altitude controller. There is an outer loop (that is tuned by PositionKp) that requests a faster desired velocity (up to MaxRate) the further from the set point the FC is. There is a VelocityKp and VelocityKi for the inner loop that goes from velocity error to throttle position. When moving the stick (requesting a change in height) only VelocityKp and VelocityKi matter as the stick sets the desired velocity.\n\n\n\n\n\n\nReturnToHome. PositionHold and PathPlanner\n\n\nAsk on the forums and make sure you fully understand how to attempt this before using these modes.\n\n\nIndividual axis modes\n\n\nNone:\n\n\nNo stabilization on this axis. Inputs are directly passed to outputs.\n\n\nRate:\n\n\ndRonin will aim for a target rate of turn around the axis. This target is defined by the manual control. When the manual control is neutral, dRonin will try to maintain zero rotation.\nE.g. on a multirotor, in \"rate mode\", the angle of the elevation/aileron sticks determines the rate of change of the pitch and roll axis. If you let go and return to a neutral position, the airframe will keep going in that (possibly inverted) direction. It's up to the pilot to return the craft to level, so it behaves like a \"real\" aircraft.\n\n\nAcroPlus:\n\n\nStabilization mode based on Rate inner loop featuring stick and multiplier based Gyro Suppression such as, but not limited to:\n- OpenPilot Rate with AcroPlus/~~PiroComp/CruiseControl~~ etc.\n- CleanFlight MultiWii Rewrite\n- TauLabs MWRate / MultiWii Rate\n\n\nThe default Gyro Suppression is 40%, configured with the \nStabilizationSettings.AcroInsanityFactor\n UAVO or BrainFPV OSD Menu under Stick Scaling / Expo \"Acro Insanity Factor\". The name of the configuration UAVO was preserved to pay homage to the OpenPilot project's implementation.\n\n\nAttitude:\n\n\ndRonin will aim for a target attitude. This target is defined by the manual control. When the manual control is neutral, dRonin will steer towards level flight. This applies an offset (from TrimAnglesSettings) to the requested attitude. For details on how to trim this go [[here|Level-triming]]\n\n\nE.g. on a multirotor, in \"attitude mode\", the angle of the elevation/aileron sticks directly determines the set point for the pitch and the roll axis of the multirotor. If you let go and return the stick to a neutral position the multirotor would level and drift to a halt in hover.\n\n\nAxisLock:\n\n\ndRonin will try to keep the total amount of rotation on the selected axis on 0 when the stick is not touched. When dRonin detects 5 degrees of rotation, it will try and undo that. Axis lock essentially grabs the current position of the axis when you let go of the stick and tries to stay there.\n\n\nThis feels similar to rate mode but can provide a more locked in feeling.\n\n\nWeakLeveling:\n\n\nWeak leveling is basically rate mode with a slow component to make the attitude go towards zero. In weak leveling your aircraft slowly drifts back to level - sort of rate mode with an assist. Note that it's not recommended for yaw because it basically will turn your nose facing forward again.\n\n\nVirtualBar:\n\n\nThis mode can be compared to a standard flybarless controller. It is meant for heli, but for multi rotors a much more aggressive roll and flip rate \"could\" be achieved, as it deactivates the gyro, allowing for full motor output on aggressive manoeuvrers. Please note, this flight mode was tested with mixed-success on multicopter; fly Acro+ for these characteristics instead.\n\n\nAs a starting point one is advised to define a high level of stick input before deactivating gyro.\n\n\n\n\nTuning is done through uavobjects in the object browser ([system] tab), there's no direct GCS interface.\n\n\nAutotune does not set vBar PIDs (leaves them untouched)\n\n\n\n\nRemember this mode has its own PID settings! As a starting point one should copy the standard PID settings to the vBar settings and define a proper stick position for Gyro deactivation.\n\n\n[Settings] \n [StabilizationSettings]\n\n [vBarSensitivity] : as a starting point copy [iLimit] values from [PitchRatePID] [RollRatePID] [YawRatePID]\n\n [vBarRollPID] : as a starting point copy [Kp],[Ki],[Kd] values from [RollRatePID]\n\n [vBarPitchPID] : as a starting point copy [Kp],[Ki],[Kd] values from [PitchRatePID]\n\n [vBarYawPID] : as a starting point copy [Kp],[Ki],[Kd] values from [YawRatePID]\n\n [VbarTau] Default value is 0.5. \n TODO \n\n\n [VbarGyroSuppress] : Use 50% as a starting point, the default value of 30% is really aggressive.\n\n [VbarPiroComp] Default value is false. \n TODO ; to be tested on a heli! \n\n\n [VBarMaxAngle] Default value is 10\u00b0. \n TODO \n\n\nHorizon:\n\n\nHorizon is based on MultiiWii Horizon mode. It smoothly transitions from attitude mode in the middle to rate mode on the stick extremes. It uses the tuning from the separate modes so once they are both well tuned it should work well. This is useful for FPV where you might want tight self leveling and control plus rate mode.\n\n\nRateMW:\n\n\nRateMW is based on MultiiWii Acro mode. This mode has its own PID settings. Please see Stabilization / MultiWiiRate. NOTE: As of January 2016, there are some ongoing discussion regarding the future of this flight mode. Judging from the current enhancement requests, supressing it would free some memory and make the ground station more homogeneous...\n\n\nSystemIdent:\n\n\n??? These modes are used by relay tuning for automatically tuning your airframe. Not recommended for normal use.\n\n\nPOI:\n\n\nThis is used for tracking a point-of-interest, usually provided by a tablet.\n\n\nCoordinatedFlight:\n\n\nThis mode is used for planes with a rudder and will apply rudder during turns to try and have zero side slip. This mode should \nonly\n be used on planes yaw axis.", 
-            "title": "Flight Modes"
-        }, 
-        {
-            "location": "/software/flight_modes/#flight-modes", 
-            "text": "", 
-            "title": "Flight Modes"
-        }, 
-        {
-            "location": "/software/flight_modes/#acro", 
-            "text": "This means the fairly typical thing for what Acro mode is called. The roll and pitch axes are assigned to rate mode (see below for details and tuning) and the yaw axis is assigned to Axis Lock (slightly better tracking than rate).", 
-            "title": "Acro"
-        }, 
-        {
-            "location": "/software/flight_modes/#acroplus-acro", 
-            "text": "AcroPlus on both Roll and Pitch with Rate on Yaw. See  below  for details on AcroPlus.", 
-            "title": "AcroPlus (Acro+)"
-        }, 
-        {
-            "location": "/software/flight_modes/#leveling", 
-            "text": "This is a self levelling mode. The roll and pitch axes are set to Attitude (see below for details and tuning) and the yaw axis is assigned to Axis Lock.", 
-            "title": "Leveling"
-        }, 
-        {
-            "location": "/software/flight_modes/#virtualbar", 
-            "text": "Helicopter only!  This is an advanced variant of rate that has its own PID and the ability to disable gyro and put a lot more throw on the output. This is required to properly actuate the cyclic. The roll and pitch axis are both set to Virtual Bar (see below for details and tuning) and the yaw axis is assigned to Axis Lock.  In other words, this flight mode switches from acro with custom PID to manual.  Do not use this flight-mode unless you've properly set the PID in the system setting (see below)!", 
-            "title": "VirtualBar"
-        }, 
-        {
-            "location": "/software/flight_modes/#stabilized123", 
-            "text": "These modes are for customizing what each axis does. So, for example, Stabilized1 in the photo above will use Attitude for Roll and Pitch and AxisLock for Yaw. To understand what these individual axis selections do, please read below.", 
-            "title": "Stabilized{1,2,3}"
-        }, 
-        {
-            "location": "/software/flight_modes/#altitude-hold", 
-            "text": "In this mode, by default you will be flying in a vario mode. That means that if your throttle is high the aircraft will climb and if it is low it will descend. There is a deadband around mid throttle where it will hold the current altitude and an exponential component to the range to make it less sensitive in the middle.  See examples of this mode https://vimeo.com/88439963 and https://vimeo.com/88549064  To use this, make sure you enable the AltitudeHold module and reboot, or you will have a configuration error. Also with the current code you cannot arm in this mode so if you are disarmed and in AltitudeHold mode you will have an error.", 
-            "title": "Altitude Hold"
-        }, 
-        {
-            "location": "/software/flight_modes/#altitude-hold-settings", 
-            "text": "Tuning is done through uavobjects in the object browser ([system] tab), there's no direct GCS interface.    AltitudeHoldSettings.AttitudeComp : In Altitude Hold mode there is compensation for the bank angle to allow the MR to hold altitude as it flies forward or bank left/right. This can be disabled by setting AltitudeHoldSettings.TiltCompensation to 0. TiltCompensation can also be adjusted if you find it drops as you start flying forward, by setting it to greater than 100%. Often values like 200% are needed. 150% is a good starting point.    AltitudeHoldSettings.{MaxClimbRate,MaxDescentRate} : To change the stick sensitivity.  Set this to zero if you do not want to be able to climb or descend and just want it to hold altitude. The default max climb rate of 40dm/s is a bit rough, 20dm/s makes the aircraft very docile.    AltitudeHoldSettings.Expo : adjustable exponential on the throttle around hover point. Increase to make it less sensitive near the middle. To be used in conjunction with  .Deadband  setting (see below).    AltitudeHoldSettings.Deadband : dead-band near the centre position where the board will just hold altitude. As a starting point with 10% dead-band and 20% expo one has to push the stick 4 clicks above hover point in order to change altitude significantly. Large  .Deadband  should not be used in conjunction with large .Expo: once the stick leaves the dead-band, it should not enters a section were expo switches from precise to large input commands.    AltitudeHoldSettings.{PositionKp,VelocityKp,VelocityKi} : PID settings for the altitude controller. There is an outer loop (that is tuned by PositionKp) that requests a faster desired velocity (up to MaxRate) the further from the set point the FC is. There is a VelocityKp and VelocityKi for the inner loop that goes from velocity error to throttle position. When moving the stick (requesting a change in height) only VelocityKp and VelocityKi matter as the stick sets the desired velocity.", 
-            "title": "Altitude Hold Settings"
-        }, 
-        {
-            "location": "/software/flight_modes/#returntohome-positionhold-and-pathplanner", 
-            "text": "Ask on the forums and make sure you fully understand how to attempt this before using these modes.", 
-            "title": "ReturnToHome. PositionHold and PathPlanner"
-        }, 
-        {
-            "location": "/software/flight_modes/#individual-axis-modes", 
-            "text": "", 
-            "title": "Individual axis modes"
-        }, 
-        {
-            "location": "/software/flight_modes/#none", 
-            "text": "No stabilization on this axis. Inputs are directly passed to outputs.", 
-            "title": "None:"
-        }, 
-        {
-            "location": "/software/flight_modes/#rate", 
-            "text": "dRonin will aim for a target rate of turn around the axis. This target is defined by the manual control. When the manual control is neutral, dRonin will try to maintain zero rotation.\nE.g. on a multirotor, in \"rate mode\", the angle of the elevation/aileron sticks determines the rate of change of the pitch and roll axis. If you let go and return to a neutral position, the airframe will keep going in that (possibly inverted) direction. It's up to the pilot to return the craft to level, so it behaves like a \"real\" aircraft.", 
-            "title": "Rate:"
-        }, 
-        {
-            "location": "/software/flight_modes/#acroplus", 
-            "text": "Stabilization mode based on Rate inner loop featuring stick and multiplier based Gyro Suppression such as, but not limited to:\n- OpenPilot Rate with AcroPlus/~~PiroComp/CruiseControl~~ etc.\n- CleanFlight MultiWii Rewrite\n- TauLabs MWRate / MultiWii Rate  The default Gyro Suppression is 40%, configured with the  StabilizationSettings.AcroInsanityFactor  UAVO or BrainFPV OSD Menu under Stick Scaling / Expo \"Acro Insanity Factor\". The name of the configuration UAVO was preserved to pay homage to the OpenPilot project's implementation.", 
-            "title": "AcroPlus:"
-        }, 
-        {
-            "location": "/software/flight_modes/#attitude", 
-            "text": "dRonin will aim for a target attitude. This target is defined by the manual control. When the manual control is neutral, dRonin will steer towards level flight. This applies an offset (from TrimAnglesSettings) to the requested attitude. For details on how to trim this go [[here|Level-triming]]  E.g. on a multirotor, in \"attitude mode\", the angle of the elevation/aileron sticks directly determines the set point for the pitch and the roll axis of the multirotor. If you let go and return the stick to a neutral position the multirotor would level and drift to a halt in hover.", 
-            "title": "Attitude:"
-        }, 
-        {
-            "location": "/software/flight_modes/#axislock", 
-            "text": "dRonin will try to keep the total amount of rotation on the selected axis on 0 when the stick is not touched. When dRonin detects 5 degrees of rotation, it will try and undo that. Axis lock essentially grabs the current position of the axis when you let go of the stick and tries to stay there.  This feels similar to rate mode but can provide a more locked in feeling.", 
-            "title": "AxisLock:"
-        }, 
-        {
-            "location": "/software/flight_modes/#weakleveling", 
-            "text": "Weak leveling is basically rate mode with a slow component to make the attitude go towards zero. In weak leveling your aircraft slowly drifts back to level - sort of rate mode with an assist. Note that it's not recommended for yaw because it basically will turn your nose facing forward again.", 
-            "title": "WeakLeveling:"
-        }, 
-        {
-            "location": "/software/flight_modes/#virtualbar_1", 
-            "text": "This mode can be compared to a standard flybarless controller. It is meant for heli, but for multi rotors a much more aggressive roll and flip rate \"could\" be achieved, as it deactivates the gyro, allowing for full motor output on aggressive manoeuvrers. Please note, this flight mode was tested with mixed-success on multicopter; fly Acro+ for these characteristics instead.  As a starting point one is advised to define a high level of stick input before deactivating gyro.   Tuning is done through uavobjects in the object browser ([system] tab), there's no direct GCS interface.  Autotune does not set vBar PIDs (leaves them untouched)   Remember this mode has its own PID settings! As a starting point one should copy the standard PID settings to the vBar settings and define a proper stick position for Gyro deactivation.  [Settings]   [StabilizationSettings]  [vBarSensitivity] : as a starting point copy [iLimit] values from [PitchRatePID] [RollRatePID] [YawRatePID]  [vBarRollPID] : as a starting point copy [Kp],[Ki],[Kd] values from [RollRatePID]  [vBarPitchPID] : as a starting point copy [Kp],[Ki],[Kd] values from [PitchRatePID]  [vBarYawPID] : as a starting point copy [Kp],[Ki],[Kd] values from [YawRatePID]  [VbarTau] Default value is 0.5.   TODO    [VbarGyroSuppress] : Use 50% as a starting point, the default value of 30% is really aggressive.  [VbarPiroComp] Default value is false.   TODO ; to be tested on a heli!    [VBarMaxAngle] Default value is 10\u00b0.   TODO", 
-            "title": "VirtualBar:"
-        }, 
-        {
-            "location": "/software/flight_modes/#horizon", 
-            "text": "Horizon is based on MultiiWii Horizon mode. It smoothly transitions from attitude mode in the middle to rate mode on the stick extremes. It uses the tuning from the separate modes so once they are both well tuned it should work well. This is useful for FPV where you might want tight self leveling and control plus rate mode.", 
-            "title": "Horizon:"
-        }, 
-        {
-            "location": "/software/flight_modes/#ratemw", 
-            "text": "RateMW is based on MultiiWii Acro mode. This mode has its own PID settings. Please see Stabilization / MultiWiiRate. NOTE: As of January 2016, there are some ongoing discussion regarding the future of this flight mode. Judging from the current enhancement requests, supressing it would free some memory and make the ground station more homogeneous...", 
-            "title": "RateMW:"
-        }, 
-        {
-            "location": "/software/flight_modes/#systemident", 
-            "text": "??? These modes are used by relay tuning for automatically tuning your airframe. Not recommended for normal use.", 
-            "title": "SystemIdent:"
-        }, 
-        {
-            "location": "/software/flight_modes/#poi", 
-            "text": "This is used for tracking a point-of-interest, usually provided by a tablet.", 
-            "title": "POI:"
-        }, 
-        {
-            "location": "/software/flight_modes/#coordinatedflight", 
-            "text": "This mode is used for planes with a rudder and will apply rudder during turns to try and have zero side slip. This mode should  only  be used on planes yaw axis.", 
-            "title": "CoordinatedFlight:"
-        }, 
-        {
-            "location": "/software/uavtalk_protocol/", 
-            "text": "UAVTalk Protocol\n\n\nIntroduction\n\n\nUAVTalk is a highly efficient, extremely flexible and completely open binary protocol designed specifically for communication with UAVs. It is licensed under the Creative Commons BY-SA license so it can be implemented in commercial as well as Free software.\n\n\nThe UAVTalk Protocol uses the concept of telemetry objects, this object orientation makes the protocol extremely flexible and scalable. The object based design also allows the protocol to be optimised for low speed telemetry channels but conversely can also be configured for rapid update times and large object payloads for high bandwidth links.\n\n\nThe protocol is channel independent since it is expected that it will be used over a variety of wireless modems and channels. All channels are expected to support bi-directional communication. Although many channels will be half-duplex , full-duplex operation will be emulated in most cases (e.g. Xbee modems are half-duplex over the wireless channel but behave as full duplex over the serial link). The downlink will support telemetry messages containing GPS, leveler, navigation and other information that is needed by the GCS. The uplink will be used to control the autopilot, limited access to the SD memory will also be given for updating flight-plans, settings and possibly plug-ins. Some precautions will need to be taken to avoid transferring large files or possibly limiting some commands during flight.\n\n\nTo support a variety of data objects, the low level protocol is not aware of the structure of the data transmitted. Packing, unpacking and interpretation of the data is handled by the upper layers. The diagram below shows the structure of the protocol and it is described in more detail in the following sections.\n\n\nThe UAVTalk Protocol\n\n\nThe UAVTalk protocol implements the low level communication between the GCS and the autopilot. It simply provides the transport of the data structures defined by the UAVObjects. To make the addition of UAVObjects easier, the UAVTalk protocol does not need to know the details of the data structure as this is handled by the UAVObject instead. UAVTalk is only responsible of sending byte arrays and routing received byte arrays to the correct object for unpacking.\n\n\nThe packet format is shown below.\n\n\n\n\nField\nLength (bytes)\nValue\n\n\nSync Val\n1\n0x3C\n\n\nMessage type\n1\nObject (OBJ): 0x20, Object request (OBJ_REQ): 0x21, Object with acknowledge request (OBJ_ACK): 0x22, Acknowledge (ACK): 0x23, Negative-Acknowledge (NACK) : 0x24. If the flag 0x80 is present it indicates this is a timestamped packet. Note: The most significant 4 bits indicate the protocol version (v2 current).  \n\n\nLength\n2\nNot needed since object ID predicts this but useful for blind parsing.  Length of header and data, not checksum.\n\n\nObject ID\n4\nUnique object ID (generated by parser, also used for framing and version control)\n\n\nInstance ID (optional)\n2\nUnique object instance ID. Only present in UAVObjects that are NOT of type 'single instance'\n\n\nTimestamp (optional)\n2\nFor packet types with the timestamp flag (0x80 set) this field will contain a two byte timestamp in milliseconds\n\n\nData\n0-255\nSerialized (packed) object. The length of data is inherent knowledge about that particular object's size as identified by ObjectID.\n\n\nChecksum\n1\nCRC-8 checksum\n\n\n\n\n\nThere are currently a total of three different type of transactions, each one is described below.\n\n\nThe data field is packed with values stored as little endian.  This is consistent with x86, and ARM in the default little endian mode, but requires translation for big endian processors.\n\n\nProtocol Version\n\n\nBits 7 to 4 of the message type field are used to indicate the UAVTalk version used in the message. Packets with unrecognised protocol versions should be ignored.\n\n\nObject Message (OBJ)\n\n\nThe object message is a simple one way update of an object. Once this message is received the unpack function of the corresponding object is invoked and the object fields are updated. No response is sent on OBJ messages and they are typically used on periodic updates (see below).\n\n\nObject Request Message (OBJ_REQ)\n\n\nObject requests are sent whenever the latest value of an object is required by the sender. The OBJ_REQ message has no payload (length field is zero) and the recipient immediately responds by packing the object data and sending an OBJ message.\n\n\nIn case the ObjectID requested is not found, the receiver will answer with a NACK message, instead of the OBJ message (see description of NACK below).\n\n\nObject with Acknowledge Request Message (OBJ_ACK)\n\n\nThe OBJ_ACK message is similar to a regular OBJ message but this time an acknowledgment shall be sent back to the sender to confirm that the object was received by the remote end. The acknowledgement is in the form of an ACK message with no payload.  It does have the instance ID in the case of a multiple instance object.\n\n\nProposed (pending) precision: in case the receiver of the message does not know about the Object that is being sent (i.e. the object's ObjecID is unknown on the receiving end), then it will reply with a NACK message.\n\n\nNegative-Acknowledge Message (NACK)\n\n\nNACK is a message with no payload except an optional Instance ID based on the object type (none for a single instance object)\n\n\nNACK is sent in response to a OBJ_REQ message, whenever the requested ObjectID does not exist on the remote side. The non-existent requested objectID is sent back with the NACK message so that the sender can take into account the absence of this ObjectID on the remote side, and act accordingly.\n\n\nProposed (pending) change: a NACK message shall be sent in case the receiver receives an Acknowledged Object message (OBJ_ACK) and does not recognize the ObjectID of that object.\n\n\nObject ID\n\n\nThe object ID is a unique 32-bit integer identifying the object the message data represent. The UAVTalk layer routes all received payloads to the appropriate object for unpacking. The object ID is automatically generated by the parser by applying a hash on the XML definition of the object. This has two advantages, first the ID is unique (very small probability of collision exists but it is insignificant) so there is no need for a centralized database of IDs, objects can be added without worrying about choosing a unique ID. Second each time the object definition is changed the ID will also change, this is a convenient way to make sure that UAVObjects on the GCS and autopilot have the same definition (i.e. have the same version).\n\n\nFraming\n\n\nThe message type and object ID fields (first 5 bytes) also serve as framing bytes and used to detect the start of a packet. There are only a very small set of values out of all possible combinations of the first 5 bytes that are used for actual messages. In other words, the probability that the first five bytes randomly form a valid object header is very small and therefore they can be used for framing.\n\n\nAutomatic updates\n\n\nThe UAVTalk layer is also responsible for periodic object updates. Each registered object has a timer associated with it, when the timer expires an OBJ message is sent. The timer values can be dynamically updated.\n\n\nTelemetry handshake\n\n\nTelemetry between Copter Control and GCS over a serial link is established by a sequence of changes in the Status field of the FlightTelemetryStatus and GCSTelemetryStatus UAVObjects.  The sequence passes through Status values DISCONNECTED = 0, HANDSHAKEREQ = 1, HANDSHAKEACK = 2, and CONNECTED = 3 as in this example from the Feb 1, 2012 release.\n\n\nUAVObjects and the Parser\n\n\nUAVObjects are the actual object containers and are the main interface to the plugins and core application for both the GCS and autopilot. Normally the UAVTalk layer is only used through the UAVObjects and not directly by the application. The UAVObjects maintain a number of data fields and provide the packing and unpacking functions to the UAVTalk layer. The actual code for the UAVObject is generated by the parser based on an XML definition of the object and its fields. The parser will then generate the necessary autopilot and GCS code of the UAVObject. There will be multiple UAVObjects one for each object defined in the XML. It is expected that each plugin will have its own XML and set of UAVObjects. In addition the parser will generate the functions required for generic access to the data, this will be used by parts of the GCS that does not need to know the actual object type (e.g. the GCS plotting feature).\n\n\nThe parser will also generate the fields required to remotely configure the period of the automatic object updates.\n\n\nExample \u2013 Updating navigation data\n\n\nThis is a fairly straight forward example, the fields of the navigation object will be defined in an XML and the parser will generate the necessary UAVObject for the GCS and autopilot. The autopilot will use the generated UAVObject for sharing the navigation data internally (with plugins for example) and with the GCS. At a configurable interval the object will be packed and sent to the GCS.\n\n\nExample \u2013 Accessing airframe configuration options\n\n\nThe airframe configuration can be easily represented by an UAVObject, the different configuration fields and their type will be defined in a XML file. The parser will generate the UAVObject code for the GCS and autopilot. On power-up the autopilot will load the airframe configuration from the ini file stored in the SD card and initialize the object fields. Every time a field needs to be updated the GCS application will simply update the corresponding field in the GCS UAVObject and through the UAVTalk layer the update will be propagated to the autopilot.\n\n\nExample \u2013 Log recording and replay\n\n\nLog recording can also easily achieved by the UAVTalk layer. On configurable intervals the objects will be packed and stored in SD memory with a time stamp. The same log can then be replayed in the GCS by feeding the recorded objects in the UAVTalk layer, the UAVObjects and application will not be aware that the updates are coming from a recorded log. A similar approach can be used for plotting the data from a log or exporting them to a text file.", 
-            "title": "UAVTalk Protocol"
-        }, 
-        {
-            "location": "/software/uavtalk_protocol/#uavtalk-protocol", 
-            "text": "", 
-            "title": "UAVTalk Protocol"
-        }, 
-        {
-            "location": "/software/uavtalk_protocol/#introduction", 
-            "text": "UAVTalk is a highly efficient, extremely flexible and completely open binary protocol designed specifically for communication with UAVs. It is licensed under the Creative Commons BY-SA license so it can be implemented in commercial as well as Free software.  The UAVTalk Protocol uses the concept of telemetry objects, this object orientation makes the protocol extremely flexible and scalable. The object based design also allows the protocol to be optimised for low speed telemetry channels but conversely can also be configured for rapid update times and large object payloads for high bandwidth links.  The protocol is channel independent since it is expected that it will be used over a variety of wireless modems and channels. All channels are expected to support bi-directional communication. Although many channels will be half-duplex , full-duplex operation will be emulated in most cases (e.g. Xbee modems are half-duplex over the wireless channel but behave as full duplex over the serial link). The downlink will support telemetry messages containing GPS, leveler, navigation and other information that is needed by the GCS. The uplink will be used to control the autopilot, limited access to the SD memory will also be given for updating flight-plans, settings and possibly plug-ins. Some precautions will need to be taken to avoid transferring large files or possibly limiting some commands during flight.  To support a variety of data objects, the low level protocol is not aware of the structure of the data transmitted. Packing, unpacking and interpretation of the data is handled by the upper layers. The diagram below shows the structure of the protocol and it is described in more detail in the following sections.", 
-            "title": "Introduction"
-        }, 
-        {
-            "location": "/software/uavtalk_protocol/#the-uavtalk-protocol", 
-            "text": "The UAVTalk protocol implements the low level communication between the GCS and the autopilot. It simply provides the transport of the data structures defined by the UAVObjects. To make the addition of UAVObjects easier, the UAVTalk protocol does not need to know the details of the data structure as this is handled by the UAVObject instead. UAVTalk is only responsible of sending byte arrays and routing received byte arrays to the correct object for unpacking.  The packet format is shown below.   Field Length (bytes) Value  Sync Val 1 0x3C  Message type 1 Object (OBJ): 0x20, Object request (OBJ_REQ): 0x21, Object with acknowledge request (OBJ_ACK): 0x22, Acknowledge (ACK): 0x23, Negative-Acknowledge (NACK) : 0x24. If the flag 0x80 is present it indicates this is a timestamped packet. Note: The most significant 4 bits indicate the protocol version (v2 current).    Length 2 Not needed since object ID predicts this but useful for blind parsing.  Length of header and data, not checksum.  Object ID 4 Unique object ID (generated by parser, also used for framing and version control)  Instance ID (optional) 2 Unique object instance ID. Only present in UAVObjects that are NOT of type 'single instance'  Timestamp (optional) 2 For packet types with the timestamp flag (0x80 set) this field will contain a two byte timestamp in milliseconds  Data 0-255 Serialized (packed) object. The length of data is inherent knowledge about that particular object's size as identified by ObjectID.  Checksum 1 CRC-8 checksum   There are currently a total of three different type of transactions, each one is described below.  The data field is packed with values stored as little endian.  This is consistent with x86, and ARM in the default little endian mode, but requires translation for big endian processors.", 
-            "title": "The UAVTalk Protocol"
-        }, 
-        {
-            "location": "/software/uavtalk_protocol/#protocol-version", 
-            "text": "Bits 7 to 4 of the message type field are used to indicate the UAVTalk version used in the message. Packets with unrecognised protocol versions should be ignored.", 
-            "title": "Protocol Version"
-        }, 
-        {
-            "location": "/software/uavtalk_protocol/#object-message-obj", 
-            "text": "The object message is a simple one way update of an object. Once this message is received the unpack function of the corresponding object is invoked and the object fields are updated. No response is sent on OBJ messages and they are typically used on periodic updates (see below).", 
-            "title": "Object Message (OBJ)"
-        }, 
-        {
-            "location": "/software/uavtalk_protocol/#object-request-message-obj_req", 
-            "text": "Object requests are sent whenever the latest value of an object is required by the sender. The OBJ_REQ message has no payload (length field is zero) and the recipient immediately responds by packing the object data and sending an OBJ message.  In case the ObjectID requested is not found, the receiver will answer with a NACK message, instead of the OBJ message (see description of NACK below).", 
-            "title": "Object Request Message (OBJ_REQ)"
-        }, 
-        {
-            "location": "/software/uavtalk_protocol/#object-with-acknowledge-request-message-obj_ack", 
-            "text": "The OBJ_ACK message is similar to a regular OBJ message but this time an acknowledgment shall be sent back to the sender to confirm that the object was received by the remote end. The acknowledgement is in the form of an ACK message with no payload.  It does have the instance ID in the case of a multiple instance object.  Proposed (pending) precision: in case the receiver of the message does not know about the Object that is being sent (i.e. the object's ObjecID is unknown on the receiving end), then it will reply with a NACK message.", 
-            "title": "Object with Acknowledge Request Message (OBJ_ACK)"
-        }, 
-        {
-            "location": "/software/uavtalk_protocol/#negative-acknowledge-message-nack", 
-            "text": "NACK is a message with no payload except an optional Instance ID based on the object type (none for a single instance object)  NACK is sent in response to a OBJ_REQ message, whenever the requested ObjectID does not exist on the remote side. The non-existent requested objectID is sent back with the NACK message so that the sender can take into account the absence of this ObjectID on the remote side, and act accordingly.  Proposed (pending) change: a NACK message shall be sent in case the receiver receives an Acknowledged Object message (OBJ_ACK) and does not recognize the ObjectID of that object.", 
-            "title": "Negative-Acknowledge Message (NACK)"
-        }, 
-        {
-            "location": "/software/uavtalk_protocol/#object-id", 
-            "text": "The object ID is a unique 32-bit integer identifying the object the message data represent. The UAVTalk layer routes all received payloads to the appropriate object for unpacking. The object ID is automatically generated by the parser by applying a hash on the XML definition of the object. This has two advantages, first the ID is unique (very small probability of collision exists but it is insignificant) so there is no need for a centralized database of IDs, objects can be added without worrying about choosing a unique ID. Second each time the object definition is changed the ID will also change, this is a convenient way to make sure that UAVObjects on the GCS and autopilot have the same definition (i.e. have the same version).", 
-            "title": "Object ID"
-        }, 
-        {
-            "location": "/software/uavtalk_protocol/#framing", 
-            "text": "The message type and object ID fields (first 5 bytes) also serve as framing bytes and used to detect the start of a packet. There are only a very small set of values out of all possible combinations of the first 5 bytes that are used for actual messages. In other words, the probability that the first five bytes randomly form a valid object header is very small and therefore they can be used for framing.", 
-            "title": "Framing"
-        }, 
-        {
-            "location": "/software/uavtalk_protocol/#automatic-updates", 
-            "text": "The UAVTalk layer is also responsible for periodic object updates. Each registered object has a timer associated with it, when the timer expires an OBJ message is sent. The timer values can be dynamically updated.", 
-            "title": "Automatic updates"
-        }, 
-        {
-            "location": "/software/uavtalk_protocol/#telemetry-handshake", 
-            "text": "Telemetry between Copter Control and GCS over a serial link is established by a sequence of changes in the Status field of the FlightTelemetryStatus and GCSTelemetryStatus UAVObjects.  The sequence passes through Status values DISCONNECTED = 0, HANDSHAKEREQ = 1, HANDSHAKEACK = 2, and CONNECTED = 3 as in this example from the Feb 1, 2012 release.", 
-            "title": "Telemetry handshake"
-        }, 
-        {
-            "location": "/software/uavtalk_protocol/#uavobjects-and-the-parser", 
-            "text": "UAVObjects are the actual object containers and are the main interface to the plugins and core application for both the GCS and autopilot. Normally the UAVTalk layer is only used through the UAVObjects and not directly by the application. The UAVObjects maintain a number of data fields and provide the packing and unpacking functions to the UAVTalk layer. The actual code for the UAVObject is generated by the parser based on an XML definition of the object and its fields. The parser will then generate the necessary autopilot and GCS code of the UAVObject. There will be multiple UAVObjects one for each object defined in the XML. It is expected that each plugin will have its own XML and set of UAVObjects. In addition the parser will generate the functions required for generic access to the data, this will be used by parts of the GCS that does not need to know the actual object type (e.g. the GCS plotting feature).  The parser will also generate the fields required to remotely configure the period of the automatic object updates.", 
-            "title": "UAVObjects and the Parser"
-        }, 
-        {
-            "location": "/software/uavtalk_protocol/#example-updating-navigation-data", 
-            "text": "This is a fairly straight forward example, the fields of the navigation object will be defined in an XML and the parser will generate the necessary UAVObject for the GCS and autopilot. The autopilot will use the generated UAVObject for sharing the navigation data internally (with plugins for example) and with the GCS. At a configurable interval the object will be packed and sent to the GCS.", 
-            "title": "Example \u2013 Updating navigation data"
-        }, 
-        {
-            "location": "/software/uavtalk_protocol/#example-accessing-airframe-configuration-options", 
-            "text": "The airframe configuration can be easily represented by an UAVObject, the different configuration fields and their type will be defined in a XML file. The parser will generate the UAVObject code for the GCS and autopilot. On power-up the autopilot will load the airframe configuration from the ini file stored in the SD card and initialize the object fields. Every time a field needs to be updated the GCS application will simply update the corresponding field in the GCS UAVObject and through the UAVTalk layer the update will be propagated to the autopilot.", 
-            "title": "Example \u2013 Accessing airframe configuration options"
-        }, 
-        {
-            "location": "/software/uavtalk_protocol/#example-log-recording-and-replay", 
-            "text": "Log recording can also easily achieved by the UAVTalk layer. On configurable intervals the objects will be packed and stored in SD memory with a time stamp. The same log can then be replayed in the GCS by feeding the recorded objects in the UAVTalk layer, the UAVObjects and application will not be aware that the updates are coming from a recorded log. A similar approach can be used for plotting the data from a log or exporting them to a text file.", 
-            "title": "Example \u2013 Log recording and replay"
-        }, 
-        {
-            "location": "/software/autotune/", 
-            "text": "Introduction to Autotune\n\n\nAutotune is an exciting feature originally developed on TauLabs and thoroughly improved in dRonin. The concept is to let the aircraft perform a calibration routine and try to come up with sane stability values without any user configuration.\n\n\nWith this module one can reconfigure his airframe in the field and perform an autotune on the spot to give a solid flying platform without manually trying to retune values for optimal performance.\n\n\nAutotune used to be a complex step by step procedure, it has now reached a level of simplicity that makes documentation unnecessary. This page is mainly present to state how simple autotune is and to encourage anyone to try it without loosing to much time on the numerous deprecated procedures that can be find elsewhere and applicable to old OpenPilot or even Taulab.\n\n\nWarning\n\n\n\n\nOnly Roll and Pitch are automatically tuned, for yaw tuning you will have to post/share your tunes (see below).\n\n\nCurrently this feature is intended for Multirotor Aircraft ONLY!\n\n\nThis plugin uses lots of resources. On CC3D boards, you should disable other modules (such as TxPID) before activating autotune, and use less than 5 inputs, preferably in PPM mode. PWM and DSM do use more resources.\n\n\nThis plugin is going to make your aircraft shake, etc, so test with some reasonable space.  \n\n\nOnce again: perform this operation in an open and safe environment, the aircraft is likely to gain altitude when the test starts and shed altitude when it ends (approx. 1m).\n\n\nIf your original PIDs are totally wrong, the aircraft is likely to shake a lot during the process. The better the aircraft flies before autotune, the less it will shake during the autotune process.\n\n\n\n\nAutotune Process\n\n\nTo use autotune, here are the steps:\n\n\nAdd Autotune to the Flight Mode switch\n\n\n\n\nOn the GCS Configuration page, select the Input section.\n\n\nIn the Input section, select the Flight Mode Switch Settings tab.\n\n\nSet one of the Flight Mode Switch Positions settings to Autotune in the pull-down menu.\n\n\nClick \u201cSave\u201d\n\n\n\n\nEnable Autotune\n\n\n\n\nOn the GCS Configuration page, select the Autotune section.\n\n\nIn the Autotune section, select the Pre-Autotune tab and check the \u201cEnable Autotune Module\u201d box.\n\n\nClick \u201cSave\u201d.\n\n\nPower cycle your board, i.e disconnect both battery \n USB!\n\n\n\n\nAutotune the flight controller\n\n\n\n\nBefore you start Autotune, make a note of your current PID settings, you'll need these settings to compare them with the calculated values.\n\n\nTake off normally and hover\n\n\nActivate Autotune by moving Flight Mode switch into the selected position.\n\n\nThe aircraft will gain altitude and begin to oscillate.  Each axis takes approximately 30 seconds to calibrate, so expect this oscillation behaviour to last around 60 seconds.\n\n\nUse your normal control inputs to maintain a hover in the general area, but try to minimize control inputs to the degree this is practical. The aircraft will stop oscillating and descend when Autotune cycle is complete.\n\n\nWith the craft still in Autotune mode, land the aircraft normally and disarm the flight-controller (this saves the calculation).\n\n\nCheck the controller is properly DISARMED, and shut-off the aircraft\n\n\n\n\nNote that unlike Taulabs and early pre-release, your autotune calculations are Saved! To do so, disarm while in autotune mode. On the contrary, if you change flightmode without disarming, autotune values will be discarded. Note2 in future release the settings could/will be saved as soon as the autotune has been fully completed (no need to disarm). To be confirmed...\n\n\nFor the record in Taulabs or early pre-release one had to leave the aircraft powered and maintain the flightmode to autotune otherwise Autotune calculations would have been lost. Older Taulab/OpenPilot documentation do reflect this and are crowded with complex procedures and safety measures aimed at not deleting the autotune data. dRonin autotune is much more simple in every way.\n\n\nVerify and apply the settings\n\n\n\n\nConnect the flight controller to the GCS\n\n\nOn the Configuration page, select the Autotune section.\n\n\nLook at the \u201cComputed Values\u201d and compare them to your previous PID settings.\n\n\nMove the damping and sensitivity slider so as to adjust the computed values to your flying style.\n\n\nIf the computed values are vastly different than the settings you were previously using, only use these new settings with caution.\n\n\nIf the Tau values are reported to big, just try another autotune without any outside wind turbulence to see if the Tau gets better. If the Tau still remains high (\n 0.05), you will probably have to reduce the damping value.\n\n\nIf you want to save the settings generated with Autotune to the board, click the \u201cApply Computed Values\u201d button. This will apply the computed values in the [stabilization] tab. Note: your settings are not already saved on the flight controller yet.\n\n\nMove to [stabilization], check the values again and click the \u201cSave\u201d button.\n\n\n\n\nFine tune\n\n\n\n\nGo back to the field and test the aircraft with your favourite flight mode, DO NOT ACTIVATE the autotune flightmode as you could reset the previously calculated settings!\n\n\nIf you do not like the feel, just get back to the GCS, and adjust the damping / noise settings, until the behaviour suits your flying style. You can just repeat this damping/sensitivity adjustment as many time as necessary, with this respect dRonin is much more comprehensive than earlier OpenPilot \n Taulab firmware (not presuming the progress on Taulab as of 2016 though).\n\n\nOnce everything is satisfactory, just share your autotune results! As a bonus you'll get a guideline for Yaw fine tuning!\n\n\n\n\nDisable Autotune\n\n\n\n\nRemove Autotune from your Flight Mode switch.\n\n\nDisable Autotune by selecting the Pre-Autotune tab and unchecking the \u201cEnable Autotune Module\u201d box.\n\n\nClick the \u201cSave\u201d button.\n\n\nPower cycle your board, i.e disconnect both battery \n USB.\n\n\n\n\nFurther readings : \nPIDs Tuning by R. James Cotton", 
-            "title": "Introduction to Autotune"
-        }, 
-        {
-            "location": "/software/autotune/#introduction-to-autotune", 
-            "text": "Autotune is an exciting feature originally developed on TauLabs and thoroughly improved in dRonin. The concept is to let the aircraft perform a calibration routine and try to come up with sane stability values without any user configuration.  With this module one can reconfigure his airframe in the field and perform an autotune on the spot to give a solid flying platform without manually trying to retune values for optimal performance.  Autotune used to be a complex step by step procedure, it has now reached a level of simplicity that makes documentation unnecessary. This page is mainly present to state how simple autotune is and to encourage anyone to try it without loosing to much time on the numerous deprecated procedures that can be find elsewhere and applicable to old OpenPilot or even Taulab.", 
-            "title": "Introduction to Autotune"
-        }, 
-        {
-            "location": "/software/autotune/#warning", 
-            "text": "Only Roll and Pitch are automatically tuned, for yaw tuning you will have to post/share your tunes (see below).  Currently this feature is intended for Multirotor Aircraft ONLY!  This plugin uses lots of resources. On CC3D boards, you should disable other modules (such as TxPID) before activating autotune, and use less than 5 inputs, preferably in PPM mode. PWM and DSM do use more resources.  This plugin is going to make your aircraft shake, etc, so test with some reasonable space.    Once again: perform this operation in an open and safe environment, the aircraft is likely to gain altitude when the test starts and shed altitude when it ends (approx. 1m).  If your original PIDs are totally wrong, the aircraft is likely to shake a lot during the process. The better the aircraft flies before autotune, the less it will shake during the autotune process.", 
-            "title": "Warning"
-        }, 
-        {
-            "location": "/software/autotune/#autotune-process", 
-            "text": "To use autotune, here are the steps:", 
-            "title": "Autotune Process"
-        }, 
-        {
-            "location": "/software/autotune/#add-autotune-to-the-flight-mode-switch", 
-            "text": "On the GCS Configuration page, select the Input section.  In the Input section, select the Flight Mode Switch Settings tab.  Set one of the Flight Mode Switch Positions settings to Autotune in the pull-down menu.  Click \u201cSave\u201d", 
-            "title": "Add Autotune to the Flight Mode switch"
-        }, 
-        {
-            "location": "/software/autotune/#enable-autotune", 
-            "text": "On the GCS Configuration page, select the Autotune section.  In the Autotune section, select the Pre-Autotune tab and check the \u201cEnable Autotune Module\u201d box.  Click \u201cSave\u201d.  Power cycle your board, i.e disconnect both battery   USB!", 
-            "title": "Enable Autotune"
-        }, 
-        {
-            "location": "/software/autotune/#autotune-the-flight-controller", 
-            "text": "Before you start Autotune, make a note of your current PID settings, you'll need these settings to compare them with the calculated values.  Take off normally and hover  Activate Autotune by moving Flight Mode switch into the selected position.  The aircraft will gain altitude and begin to oscillate.  Each axis takes approximately 30 seconds to calibrate, so expect this oscillation behaviour to last around 60 seconds.  Use your normal control inputs to maintain a hover in the general area, but try to minimize control inputs to the degree this is practical. The aircraft will stop oscillating and descend when Autotune cycle is complete.  With the craft still in Autotune mode, land the aircraft normally and disarm the flight-controller (this saves the calculation).  Check the controller is properly DISARMED, and shut-off the aircraft   Note that unlike Taulabs and early pre-release, your autotune calculations are Saved! To do so, disarm while in autotune mode. On the contrary, if you change flightmode without disarming, autotune values will be discarded. Note2 in future release the settings could/will be saved as soon as the autotune has been fully completed (no need to disarm). To be confirmed...  For the record in Taulabs or early pre-release one had to leave the aircraft powered and maintain the flightmode to autotune otherwise Autotune calculations would have been lost. Older Taulab/OpenPilot documentation do reflect this and are crowded with complex procedures and safety measures aimed at not deleting the autotune data. dRonin autotune is much more simple in every way.", 
-            "title": "Autotune the flight controller"
-        }, 
-        {
-            "location": "/software/autotune/#verify-and-apply-the-settings", 
-            "text": "Connect the flight controller to the GCS  On the Configuration page, select the Autotune section.  Look at the \u201cComputed Values\u201d and compare them to your previous PID settings.  Move the damping and sensitivity slider so as to adjust the computed values to your flying style.  If the computed values are vastly different than the settings you were previously using, only use these new settings with caution.  If the Tau values are reported to big, just try another autotune without any outside wind turbulence to see if the Tau gets better. If the Tau still remains high (  0.05), you will probably have to reduce the damping value.  If you want to save the settings generated with Autotune to the board, click the \u201cApply Computed Values\u201d button. This will apply the computed values in the [stabilization] tab. Note: your settings are not already saved on the flight controller yet.  Move to [stabilization], check the values again and click the \u201cSave\u201d button.", 
-            "title": "Verify and apply the settings"
-        }, 
-        {
-            "location": "/software/autotune/#fine-tune", 
-            "text": "Go back to the field and test the aircraft with your favourite flight mode, DO NOT ACTIVATE the autotune flightmode as you could reset the previously calculated settings!  If you do not like the feel, just get back to the GCS, and adjust the damping / noise settings, until the behaviour suits your flying style. You can just repeat this damping/sensitivity adjustment as many time as necessary, with this respect dRonin is much more comprehensive than earlier OpenPilot   Taulab firmware (not presuming the progress on Taulab as of 2016 though).  Once everything is satisfactory, just share your autotune results! As a bonus you'll get a guideline for Yaw fine tuning!", 
-            "title": "Fine tune"
-        }, 
-        {
-            "location": "/software/autotune/#disable-autotune", 
-            "text": "Remove Autotune from your Flight Mode switch.  Disable Autotune by selecting the Pre-Autotune tab and unchecking the \u201cEnable Autotune Module\u201d box.  Click the \u201cSave\u201d button.  Power cycle your board, i.e disconnect both battery   USB.   Further readings :  PIDs Tuning by R. James Cotton", 
-            "title": "Disable Autotune"
-        }, 
-        {
-            "location": "/software/firmware_arch/", 
-            "text": "Architecture Overview\n\n\nThere are a few core concepts required to understand Tau Labs software, and especially the firmware side.\n\n\nModules\n\n\nflight/Modules\n\n\nModules\n are the core logical units on the firmware side. They are generally fairly compact logical components of the flight software, such as a module to get sensor data, or a module to estimate the attitude. Modules can only communicate either via drivers calls (PiOS) or by getting and setting data via UAVObjects.\n\n\nPiOS\n\n\nflight/PiOS\n\n\nPiOS (Pilot Operating System) is the hardware abstraction layer. It is divided into two main sections. The \nflight/PiOS/STM32Fxx\n sections which are hardware specific (currently only supporting STM32 F1, F3, and F4 series processors).  The \nflight/PiOS/Common\n directory contains drivers that run on all platforms via the hardware specific platforms.  PiOS contains all the [[drivers|Development Drivers]] for external sensor chips, PWM generation and input, PPM, serial communications, etc.\n\n\nUAVObjects\n\n\nshared/uavobjectdefinition\n\n\nDetails on adding a new UAVObject can be found \nhere\n\n\nUAVObjects are the data (and setting) representation used on both the firmware side and the GCS side.  They are implemented as data structures generated dynamically from xml definitions. These data objects are transferred from the firmware side to the ground control side and also used for inter-module communication on the firmware.\n\n\nOn the firmware side these interface via FreeRTOS primitives such as queues. Modules can block on updates from an object, so that when another module performs an update the first module resumes. Based on the meta data for that object, updates may be transferred to the ground control system with different frequencies.\n\n\nThe eventdispatcher ( \nflight/UAVObjects/eventdispatcher\n ) is responsible for performing these updates and handling the FreeRTOS interface as well as storage in the UAVObjectManager ( \nflight/UAVObjects/uavobjectmanager\n ).  The telemetry module performs the updates to the ground control system ( \nflight/Modules/Telemetry/telemetry\n ).\n\n\nUAVTalk\n\n\nflight/UAVTalk\n\n\nUAVTalk\n is the protocol used to serialize UAVObjects, as well as send updates or request updates.", 
-            "title": "Firmware Architecture"
-        }, 
-        {
-            "location": "/software/firmware_arch/#architecture-overview", 
-            "text": "There are a few core concepts required to understand Tau Labs software, and especially the firmware side.", 
-            "title": "Architecture Overview"
-        }, 
-        {
-            "location": "/software/firmware_arch/#modules", 
-            "text": "flight/Modules  Modules  are the core logical units on the firmware side. They are generally fairly compact logical components of the flight software, such as a module to get sensor data, or a module to estimate the attitude. Modules can only communicate either via drivers calls (PiOS) or by getting and setting data via UAVObjects.", 
-            "title": "Modules"
-        }, 
-        {
-            "location": "/software/firmware_arch/#pios", 
-            "text": "flight/PiOS  PiOS (Pilot Operating System) is the hardware abstraction layer. It is divided into two main sections. The  flight/PiOS/STM32Fxx  sections which are hardware specific (currently only supporting STM32 F1, F3, and F4 series processors).  The  flight/PiOS/Common  directory contains drivers that run on all platforms via the hardware specific platforms.  PiOS contains all the [[drivers|Development Drivers]] for external sensor chips, PWM generation and input, PPM, serial communications, etc.", 
-            "title": "PiOS"
-        }, 
-        {
-            "location": "/software/firmware_arch/#uavobjects", 
-            "text": "shared/uavobjectdefinition  Details on adding a new UAVObject can be found  here  UAVObjects are the data (and setting) representation used on both the firmware side and the GCS side.  They are implemented as data structures generated dynamically from xml definitions. These data objects are transferred from the firmware side to the ground control side and also used for inter-module communication on the firmware.  On the firmware side these interface via FreeRTOS primitives such as queues. Modules can block on updates from an object, so that when another module performs an update the first module resumes. Based on the meta data for that object, updates may be transferred to the ground control system with different frequencies.  The eventdispatcher (  flight/UAVObjects/eventdispatcher  ) is responsible for performing these updates and handling the FreeRTOS interface as well as storage in the UAVObjectManager (  flight/UAVObjects/uavobjectmanager  ).  The telemetry module performs the updates to the ground control system (  flight/Modules/Telemetry/telemetry  ).", 
-            "title": "UAVObjects"
-        }, 
-        {
-            "location": "/software/firmware_arch/#uavtalk", 
-            "text": "flight/UAVTalk  UAVTalk  is the protocol used to serialize UAVObjects, as well as send updates or request updates.", 
-            "title": "UAVTalk"
-        }, 
-        {
-            "location": "/software/firmware_modules/", 
-            "text": "Firmware Modules\n\n\nOverview of Available Modules\n\n\nThe current list of modules (with documentation) is:\n\n\n\n\nAutotune\n\n\nGenericI2CSensor\n (to be added)\n\n\n\n\nNote\n: Not all modules are present in all firmware images.\n\n\nModules are included in a firmware image when it is listed in the \nMODULES\n or \nOPTMODULES\n list in the Makefile for the board firmware (see \n./flight/targets/\nboard\n/Makefile\n).\n\n\nModules listed in the \nMODULES\n list are called Built-in.  Modules listed in the \nOPTMODULES\n list are called Optional.\n\n\nUsing Existing Modules\n\n\nModule Settings\n\n\nThe \nModuleSettings\n UAVO is read by the firmware \nonly once\n during board initialization.  The fields in this UAVO control the behaviour of the modules included in the firmware build.\n\n\nNote\n: This UAVO may include settings for modules that are not present in the firmware.\n\n\nNote\n: Some modules may require additional configuration before being able to start.\n\n\nNote\n: Changes to the \nModuleSettings\n UAVO only take effect on the next reboot of your board.\n\n\nOptional Modules\n\n\nOptional modules are built into a firmware image but do not run by default.  Optional modules only run when they are explicitly enabled in the \nModuleSettings.State\n UAVO field.\n\n\nIn many cases, an optional module will have a dedicated config tab in the GCS which will take care of enabling the module on the next boot.\n\n\nOptional modules may be enabled by setting the relevant entry in the \nModuleSettings.State\n field to \nEnabled\n.\n\n\nBuilt-in Modules\n\n\nBuilt-in modules will be started automatically during firmware initialization.\n\n\nNote\n: Even built-in modules may requre additional configuration before being able to start.\n\n\nAdding a New Module (Developer)\n\n\nHere is a rough outline of what you'll need to do to create a new module and add it to a firmware image:\n\n Create the new module directory\n  * \n./flight/Modules/\nmodule-name\n\n  * The \n is typically written in CamelCase and should consist of only upper and lower-case letters.\n\n Create one or more .c files that implement the code for your module\n  * \n./flight/Modules/\nmodule-name\n/*.c\n\n  * Find another module that you can use as a basis for your new module\n\n Add the new module to \n./flight/targets/\nboard\n/fw/Makefile\n\n  * Add your new module to the \nMODULES\n or \nOPTMODULES\n list\n\n Add an entry for your module to the \nModuleSettings\n UAVO\n  * see \n./shared/uavobjectdefinition/modulesettings.xml\n\n  * module should be added to the \nModuleSettings.State\n field\n  * any module-specific settings should be added as new fields\n* Add your module's task (if any) to the \nTaskInfo\n UAVO\n  * see \n./shared/uavobjectdefinition/taskinfo.xml\n\n  * only required if your module has a task (most do)", 
-            "title": "Firmware Modules"
-        }, 
-        {
-            "location": "/software/firmware_modules/#firmware-modules", 
-            "text": "", 
-            "title": "Firmware Modules"
-        }, 
-        {
-            "location": "/software/firmware_modules/#overview-of-available-modules", 
-            "text": "The current list of modules (with documentation) is:   Autotune  GenericI2CSensor  (to be added)   Note : Not all modules are present in all firmware images.  Modules are included in a firmware image when it is listed in the  MODULES  or  OPTMODULES  list in the Makefile for the board firmware (see  ./flight/targets/ board /Makefile ).  Modules listed in the  MODULES  list are called Built-in.  Modules listed in the  OPTMODULES  list are called Optional.", 
-            "title": "Overview of Available Modules"
-        }, 
-        {
-            "location": "/software/firmware_modules/#using-existing-modules", 
-            "text": "", 
-            "title": "Using Existing Modules"
-        }, 
-        {
-            "location": "/software/firmware_modules/#module-settings", 
-            "text": "The  ModuleSettings  UAVO is read by the firmware  only once  during board initialization.  The fields in this UAVO control the behaviour of the modules included in the firmware build.  Note : This UAVO may include settings for modules that are not present in the firmware.  Note : Some modules may require additional configuration before being able to start.  Note : Changes to the  ModuleSettings  UAVO only take effect on the next reboot of your board.", 
-            "title": "Module Settings"
-        }, 
-        {
-            "location": "/software/firmware_modules/#optional-modules", 
-            "text": "Optional modules are built into a firmware image but do not run by default.  Optional modules only run when they are explicitly enabled in the  ModuleSettings.State  UAVO field.  In many cases, an optional module will have a dedicated config tab in the GCS which will take care of enabling the module on the next boot.  Optional modules may be enabled by setting the relevant entry in the  ModuleSettings.State  field to  Enabled .", 
-            "title": "Optional Modules"
-        }, 
-        {
-            "location": "/software/firmware_modules/#built-in-modules", 
-            "text": "Built-in modules will be started automatically during firmware initialization.  Note : Even built-in modules may requre additional configuration before being able to start.", 
-            "title": "Built-in Modules"
-        }, 
-        {
-            "location": "/software/firmware_modules/#adding-a-new-module-developer", 
-            "text": "Here is a rough outline of what you'll need to do to create a new module and add it to a firmware image:  Create the new module directory\n  *  ./flight/Modules/ module-name \n  * The   is typically written in CamelCase and should consist of only upper and lower-case letters.  Create one or more .c files that implement the code for your module\n  *  ./flight/Modules/ module-name /*.c \n  * Find another module that you can use as a basis for your new module  Add the new module to  ./flight/targets/ board /fw/Makefile \n  * Add your new module to the  MODULES  or  OPTMODULES  list  Add an entry for your module to the  ModuleSettings  UAVO\n  * see  ./shared/uavobjectdefinition/modulesettings.xml \n  * module should be added to the  ModuleSettings.State  field\n  * any module-specific settings should be added as new fields\n* Add your module's task (if any) to the  TaskInfo  UAVO\n  * see  ./shared/uavobjectdefinition/taskinfo.xml \n  * only required if your module has a task (most do)", 
-            "title": "Adding a New Module (Developer)"
-        }, 
-        {
-            "location": "/software/gcs_qt_build/", 
-            "text": "Build and Debug GCS using Qt Creator\n\n\nIt is possible to use Qt Creator to build and debug GCS.\nYou should open the /ground/ground.pro project file with Qt Creator. The next step is to set the shadow library and change the build directory to /build/ground.\n\n\nQt Creator\n\n\nNOTE\nIf you get an error related to \"backendcapabilities.h: No such file or directory\" change line #include \"backendcapabilities.h\" to #include \"phonon/backendcapabilities.h\"\n\n\nWINDOWS NOTES\n\n\nYou may need to run Creator as admin.\n\n\nMake sure Creator can find your Python27 install (i.e. put it in system path).", 
-            "title": "Build and Debug GCS using Qt Creator"
-        }, 
-        {
-            "location": "/software/gcs_qt_build/#build-and-debug-gcs-using-qt-creator", 
-            "text": "It is possible to use Qt Creator to build and debug GCS.\nYou should open the /ground/ground.pro project file with Qt Creator. The next step is to set the shadow library and change the build directory to /build/ground.  Qt Creator  NOTE\nIf you get an error related to \"backendcapabilities.h: No such file or directory\" change line #include \"backendcapabilities.h\" to #include \"phonon/backendcapabilities.h\"  WINDOWS NOTES  You may need to run Creator as admin.  Make sure Creator can find your Python27 install (i.e. put it in system path).", 
-            "title": "Build and Debug GCS using Qt Creator"
-        }, 
-        {
-            "location": "/hardware/choose_fc/", 
-            "text": "Choose a flight controller for dRonin\n\n\ndRonin supports many different flight controller boards. Which one you choose depends on your model, the capabilities you want, and your budget. You can build a quadcopter or a plane for less than $60 using the most affordable boards, or you can spend $100 on the flight controller alone.\n\n\nSupported controllers\n\n\nSTM32F4 Controllers\n\n\nThese boards support all features (subject to hardware limitations).\n\n \nBrainFPV\n Small and light with integrated OSD\n\n \nBrainFPV RE1\n Next generation BrainFPV\n\n \nAeroQuad32\n\n\n [[Sparky2]] - more powerful version of Sparky1 with integrated radio.\n\n [[Revolution|RevoMini]] - OpenPilot Revolution board.\n\n \nQuanton\n - Powerful platform with large amounts of connectivity including 8 PWM in and 8 PWM out, and four serial ports.\n* \nGemini\n - Mini FPV hex racer from Team Black Sheep that uses the Colibri flight controller, a derivative of the Quanton\n\n\nSTM32F3 Controllers\n\n\nThese boards support all features except PicoC scripting (subject to hardware limitations).\n\n \nLumenier LUX\n F3 based flight controlled for FPV racing.\n\n [[Sparky]] - Small single sided flight controller. Fully supported.\n* DTFc Integrated PDB board from DTFUHF\n\n\nThese boards are not supported!\n* SPRF3 (a.k.a seriously pro racing F3): the hardware is more than often poor and cannot be flashed easily ( see \ndronin on sp f3 flight controller\n )\n\n\nSTM32F1 Controllers\n\n\nThese boards support only a limited feature set. Navigation is not supported.\n\n [[OpenNaze/Naze32|OpenNaze Naze32]] - Popular platform, basic support, can't yet be flashed from GCS. dRonin also works on Naze32-based brushed flight controllers such as the Quanum Pico/Micro Scisky32.\n\n \nCC3D\n - Popular older platform, easy to setup and well documented, see [[Getting started|Configuring-your-new-board-for-basic-flight]]\n\n\nPopular setups\n\n\nTo build a micro brushed multicopter\n\n\nThe easiest way to build a micro brushed multicopter is with a board that has integrated brushed motor drivers, and can run on 1S batteries (3.7V) without additional equipment. Some of these boards even integrate a radio receiver or transceiver.\n\n\nFor the easiest build, you'll want a board with at least four integrated brushed motor drivers, unless you're using an external brushed motor driver. Your choices are many.  You can go with the Brushed Sparky2, which is the only brushed STM32F4 flight controller on the market. It supports all dRonin features including navigation if you add a GPS. If you want a more affordable board, like one of the numerous Naze32-based flight controllers listed below.\n\n\nHere should be a brushed micro board comparison table.\n\n The \nBrushed Sparky2\n has an integrated OpenLRS 433MHz transceiver and STM32F4, as well as powerful FETs.\n\n The \nQuanum Pico (a.k.a Micro Scisky 32)\n has an integrated DSM2 receiver and is very affordable.\n* The \nBBB32 (a.k.a Beef's Brushed Board)\n\n\nThere are others that should work, like NANO-B-FC and LulFro.\n\n\nTo build a brushless multicopter\n\n\nWhile you can build a larger multicopter with a basic STM32F1 board like the Naze32 or CC3D, it is preferable that you use a STM32F4 or STM32F3 board for better performance and access to the full features of dRonin.\n\n\nIf you want to build an FPV multicopter, the BrainFPV is probably the best choice, as there is an integrated OSD. If you don't require the integrated OSD, two great boards are the Sparky2 and the Revolution. Of course, dRonin will work great on any of the supported STM32F4 boards.", 
-            "title": "Choosing A Flight Controller"
-        }, 
-        {
-            "location": "/hardware/choose_fc/#choose-a-flight-controller-for-dronin", 
-            "text": "dRonin supports many different flight controller boards. Which one you choose depends on your model, the capabilities you want, and your budget. You can build a quadcopter or a plane for less than $60 using the most affordable boards, or you can spend $100 on the flight controller alone.", 
-            "title": "Choose a flight controller for dRonin"
-        }, 
-        {
-            "location": "/hardware/choose_fc/#supported-controllers", 
-            "text": "", 
-            "title": "Supported controllers"
-        }, 
-        {
-            "location": "/hardware/choose_fc/#stm32f4-controllers", 
-            "text": "These boards support all features (subject to hardware limitations).   BrainFPV  Small and light with integrated OSD   BrainFPV RE1  Next generation BrainFPV   AeroQuad32   [[Sparky2]] - more powerful version of Sparky1 with integrated radio.  [[Revolution|RevoMini]] - OpenPilot Revolution board.   Quanton  - Powerful platform with large amounts of connectivity including 8 PWM in and 8 PWM out, and four serial ports.\n*  Gemini  - Mini FPV hex racer from Team Black Sheep that uses the Colibri flight controller, a derivative of the Quanton", 
-            "title": "STM32F4 Controllers"
-        }, 
-        {
-            "location": "/hardware/choose_fc/#stm32f3-controllers", 
-            "text": "These boards support all features except PicoC scripting (subject to hardware limitations).   Lumenier LUX  F3 based flight controlled for FPV racing.  [[Sparky]] - Small single sided flight controller. Fully supported.\n* DTFc Integrated PDB board from DTFUHF  These boards are not supported!\n* SPRF3 (a.k.a seriously pro racing F3): the hardware is more than often poor and cannot be flashed easily ( see  dronin on sp f3 flight controller  )", 
-            "title": "STM32F3 Controllers"
-        }, 
-        {
-            "location": "/hardware/choose_fc/#stm32f1-controllers", 
-            "text": "These boards support only a limited feature set. Navigation is not supported.  [[OpenNaze/Naze32|OpenNaze Naze32]] - Popular platform, basic support, can't yet be flashed from GCS. dRonin also works on Naze32-based brushed flight controllers such as the Quanum Pico/Micro Scisky32.   CC3D  - Popular older platform, easy to setup and well documented, see [[Getting started|Configuring-your-new-board-for-basic-flight]]", 
-            "title": "STM32F1 Controllers"
-        }, 
-        {
-            "location": "/hardware/choose_fc/#popular-setups", 
-            "text": "", 
-            "title": "Popular setups"
-        }, 
-        {
-            "location": "/hardware/choose_fc/#to-build-a-micro-brushed-multicopter", 
-            "text": "The easiest way to build a micro brushed multicopter is with a board that has integrated brushed motor drivers, and can run on 1S batteries (3.7V) without additional equipment. Some of these boards even integrate a radio receiver or transceiver.  For the easiest build, you'll want a board with at least four integrated brushed motor drivers, unless you're using an external brushed motor driver. Your choices are many.  You can go with the Brushed Sparky2, which is the only brushed STM32F4 flight controller on the market. It supports all dRonin features including navigation if you add a GPS. If you want a more affordable board, like one of the numerous Naze32-based flight controllers listed below.  Here should be a brushed micro board comparison table.  The  Brushed Sparky2  has an integrated OpenLRS 433MHz transceiver and STM32F4, as well as powerful FETs.  The  Quanum Pico (a.k.a Micro Scisky 32)  has an integrated DSM2 receiver and is very affordable.\n* The  BBB32 (a.k.a Beef's Brushed Board)  There are others that should work, like NANO-B-FC and LulFro.", 
-            "title": "To build a micro brushed multicopter"
-        }, 
-        {
-            "location": "/hardware/choose_fc/#to-build-a-brushless-multicopter", 
-            "text": "While you can build a larger multicopter with a basic STM32F1 board like the Naze32 or CC3D, it is preferable that you use a STM32F4 or STM32F3 board for better performance and access to the full features of dRonin.  If you want to build an FPV multicopter, the BrainFPV is probably the best choice, as there is an integrated OSD. If you don't require the integrated OSD, two great boards are the Sparky2 and the Revolution. Of course, dRonin will work great on any of the supported STM32F4 boards.", 
-            "title": "To build a brushless multicopter"
-        }, 
-        {
-            "location": "/hardware/hardware_id/", 
-            "text": "Hardware IDs\n\n\n\n\nBOARD_TYPE and BOARD_REVISION are being stored permanently in the \npios_board_info\n blob on the device flash at the end of the bootloader section. They are being exposed to ground control station via the \nFirmwareIAPObj\n UAVO.\n\n\nUDB_VID and USB_PID are being used by the \nboard_manager\n within ground control station.\n\n\n\n\n\n\n\n\n\n\nName\n\n\nBOARD_TYPE\n\n\nBOARD_REVISION\n\n\nUSB_VID\n\n\nUSB_PID\n\n\nRemarks\n\n\n\n\n\n\n\n\n\n\nPipXtreme\n\n\n0x03\n\n\n0x01\n\n\n0x20a0\n\n\n0x415c\n\n\n\n\n\n\n\n\nCoptercontrol\n\n\n0x04\n\n\n0x01\n\n\n0x20a0\n\n\n0x415b\n\n\n\n\n\n\n\n\nCoptercontrol 3D\n\n\n0x04\n\n\n0x02\n\n\n0x20a0\n\n\n0x415b\n\n\n\n\n\n\n\n\nOSD\n\n\n0x05\n\n\n0x01\n\n\n0x20a0\n\n\n0x4194\n\n\n\n\n\n\n\n\nESC\n\n\n0x08\n\n\n0x01\n\n\n-\n\n\n-\n\n\n\n\n\n\n\n\nRevolution\n\n\n0x7f\n\n\n0x02\n\n\n0x20a0\n\n\n0x415e\n\n\n\n\n\n\n\n\nRevoMini\n\n\n0x09\n\n\n0x03\n\n\n0x20a0\n\n\n0x415e\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFreedom\n\n\n0x81\n\n\n0x01\n\n\n0x20a0\n\n\n0x41d0\n\n\n\n\n\n\n\n\nFlyingF3\n\n\n0x82\n\n\n0x01\n\n\n0x20a0\n\n\n0x4195\n\n\n\n\n\n\n\n\nDiscoveryF3\n\n\n0x83\n\n\n0x01\n\n\n0x20a0\n\n\n0x4195\n\n\ncurrently unused\n\n\n\n\n\n\nFlyingF4\n\n\n0x84\n\n\n0x01\n\n\n0x20a0\n\n\n0x4195\n\n\ncurrently unused\n\n\n\n\n\n\nDiscoveryF4\n\n\n0x85\n\n\n0x01\n\n\n0x20a0\n\n\n0x4195\n\n\n\n\n\n\n\n\nQuanton\n\n\n0x86\n\n\n0x01\n\n\n0x0fda\n\n\n0x0100\n\n\n\n\n\n\n\n\nSparky\n\n\n0x88\n\n\n0x02\n\n\n0x20a0\n\n\n0x41d0\n\n\n\n\n\n\n\n\nCoreF4\n\n\n0x89\n\n\n0x01\n\n\n0x20a0\n\n\n0x4195\n\n\n\n\n\n\n\n\nBrain\n\n\n0x8A\n\n\n0x01\n\n\n0x20a0\n\n\n0x4242\n\n\n\n\n\n\n\n\nBrain RE1\n\n\n0x8B\n\n\n0x01\n\n\n0x20a0\n\n\n0x4242\n\n\n\n\n\n\n\n\nAeroCore\n\n\n0x90\n\n\n0x01\n\n\n0x20a0\n\n\n0x41d0\n\n\n\n\n\n\n\n\nColibri\n\n\n0x91\n\n\n0x01\n\n\n0x20a0\n\n\n0x4235\n\n\n\n\n\n\n\n\nAeroQuad32\n\n\n0x94\n\n\n0x01\n\n\n0x20a0\n\n\n0x4284\n\n\n\n\n\n\n\n\nOpenNaze/Naze Family\n\n\n0xA0\n\n\n0x01\n\n\nvarious\n\n\nvarious\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLumenier LUX\n\n\n0xCA\n\n\n0x02\n\n\n0x1209\n\n\n0xf3fc\n\n\n\n\n\n\n\n\nPlayUAVOSD\n\n\n0xCB\n\n\n0x01\n\n\n0x20a0\n\n\n0x4250\n\n\n\n\n\n\n\n\nDTFc\n\n\n0xD7\n\n\n0x04\n\n\n0x16D0\n\n\n0xd7fc\n\n\n\n\n\n\n\n\n\n\nnotes:\n\n BOARD_TYPE 0x00 to 0x7f is informally reserved for OpenPilot.  Tau Labs will not assign any new BOARD_TYPE values in that range.\n\n Hardware manufacturers using Tau Labs firmware are politely asked to contact Tau Labs for assigning a BOARD_TYPE in the 0x80-0xFF range to prevent conflicts", 
-            "title": "Hardware IDs"
-        }, 
-        {
-            "location": "/hardware/hardware_id/#hardware-ids", 
-            "text": "BOARD_TYPE and BOARD_REVISION are being stored permanently in the  pios_board_info  blob on the device flash at the end of the bootloader section. They are being exposed to ground control station via the  FirmwareIAPObj  UAVO.  UDB_VID and USB_PID are being used by the  board_manager  within ground control station.      Name  BOARD_TYPE  BOARD_REVISION  USB_VID  USB_PID  Remarks      PipXtreme  0x03  0x01  0x20a0  0x415c     Coptercontrol  0x04  0x01  0x20a0  0x415b     Coptercontrol 3D  0x04  0x02  0x20a0  0x415b     OSD  0x05  0x01  0x20a0  0x4194     ESC  0x08  0x01  -  -     Revolution  0x7f  0x02  0x20a0  0x415e     RevoMini  0x09  0x03  0x20a0  0x415e             Freedom  0x81  0x01  0x20a0  0x41d0     FlyingF3  0x82  0x01  0x20a0  0x4195     DiscoveryF3  0x83  0x01  0x20a0  0x4195  currently unused    FlyingF4  0x84  0x01  0x20a0  0x4195  currently unused    DiscoveryF4  0x85  0x01  0x20a0  0x4195     Quanton  0x86  0x01  0x0fda  0x0100     Sparky  0x88  0x02  0x20a0  0x41d0     CoreF4  0x89  0x01  0x20a0  0x4195     Brain  0x8A  0x01  0x20a0  0x4242     Brain RE1  0x8B  0x01  0x20a0  0x4242     AeroCore  0x90  0x01  0x20a0  0x41d0     Colibri  0x91  0x01  0x20a0  0x4235     AeroQuad32  0x94  0x01  0x20a0  0x4284     OpenNaze/Naze Family  0xA0  0x01  various  various             Lumenier LUX  0xCA  0x02  0x1209  0xf3fc     PlayUAVOSD  0xCB  0x01  0x20a0  0x4250     DTFc  0xD7  0x04  0x16D0  0xd7fc      notes:  BOARD_TYPE 0x00 to 0x7f is informally reserved for OpenPilot.  Tau Labs will not assign any new BOARD_TYPE values in that range.  Hardware manufacturers using Tau Labs firmware are politely asked to contact Tau Labs for assigning a BOARD_TYPE in the 0x80-0xFF range to prevent conflicts", 
-            "title": "Hardware IDs"
-        }, 
-        {
-            "location": "/hardware/add_new_board/", 
-            "text": "Add a New Board Type\n\n\nHere are the steps to add a new hardware target. This assumes that the CPU architecture is supported already.\n\n\nFor an overview of the software architecture please \nread this\n\n\nFirmware code changes\n\n\nThe changes you will need to make for your target should be largely confined to the \nflight/targets/\nboard name\n directory, which you will need to create. It is probably easiest to start by copying a directory of a board most similar to yours.\n\n if you are doing an F1 board, start with \nflight/targets/coptercontrol\n\n\n if you are doing an F3 board, start with \nflight/targets/sparky\n\n* if you are doing an F4 board, start with \nflight/targets/quanton\n\nand copy that file to your \nflight/targets/\nboard name\n where \nboard name\n is what you want to call your new target.\n\n\nMain Makefile\n\n\nflight/targets/\nboard name\n/fw/Makefile\n\n\nAdd your board name (lowercase) to the \"ALL_BOARDS\" variable\nAdd your board name (capitalised) to the Friendly names variable\nIf necessary, exclude your board from the boot loader updater targets.\n\n\nBoard-level definitions\n\n\nBefore being able to compile a firmware for this board, you have to configure the build environment so that the PiOS HAL is mapped to the way the MCU peripherals are configured on your target, how memory is mapped, how the target is programmed, etc.\n\n\nUpdate the \nboard-info.mk\n file\n\n\n./flight/targets/\nboard name\n/board-info/board-info.mk\n\n\nThis file defines the actual hardware chip used by the board, memory mapping, CPU frequency and programming methods. It also contains PiOS-related: board model, revision, type.\n\n\nThis contains a lot of the meta information for your target that is packaged into the boot loader and determines details about the memory layout, as well as the unique board ID. For the board id (BOARD_TYPE) make sure you are not conflicting with the \nexisting targets\n.\n\n\nBoard hardware description and power initialization code\n\n\nflight/targets/\nboard name\n/board-info/board_hw_defs.c\n\n\nThis is one of the most important files for your target, and contains the majority of the hardware mappings. See other examples for the conventions. It is used by both the main firmware and the bootloader.\n\n\nflight/targets/\nboard name\n/fw/pios_board.c\n\n\nThis file is the one that predominantly uses \nboard_hw_defs.c\n to power up the board and contains most of the remainder of the board specific information.\n\n\nAdd your target to the boards.h file\n\n\nflight/PiOS/inc/pios_board_info.h\n\n\nadd a board define for your board (for instance STM32F4xx_Revolution.h)\nupdate pios_board.h to include this define.\n\n\nThis file is largely historical and more information has been migrating to \nboard_hw_defs.c\n and \npios_board.c\n, but still contains various defines for the various peripherals of the MCU are configured for this target (used by the PiOS drivers):\n   - Bootloader Settings\n   - LED defines\n   - SPI\n   - Watchdog\n   - I2C\n   - Serial ports\n   - USB\n\n\nIt also contains application settings such as:\n   - Temetry stack\n   - RC Receiver settings (channels, protocols)\n\n\nIt defines low-level hardware configuration specific to the board:\n   - Clocks, IRQ, DMA\n\n\nBootloader\n\n\nIf the other files are changed properly, no changes should be needed here.\n\n\nGetting your target into the main code base\n\n\nThere are a number of requirements for adding a target to the main repository:\n\n\n\n\nclean implementation consistent with the changes above\n\n\nperson willing to maintain that target if there are problems\n\n\nhave your unique board ID added to the \nlist of targets\n\n\nopen source hardware with the hardware files included in \nflight/target/\nboard name\n/hw\n\n\n\n\nOnce those requirements are met, upload your code to github and \ncreate a pull request\n.\n\n\nIf you are unsure of things, feel free to upload your code and either point us to it on the forums or create a pull request and ask questions.", 
-            "title": "Add A New Board Type"
-        }, 
-        {
-            "location": "/hardware/add_new_board/#add-a-new-board-type", 
-            "text": "Here are the steps to add a new hardware target. This assumes that the CPU architecture is supported already.  For an overview of the software architecture please  read this", 
-            "title": "Add a New Board Type"
-        }, 
-        {
-            "location": "/hardware/add_new_board/#firmware-code-changes", 
-            "text": "The changes you will need to make for your target should be largely confined to the  flight/targets/ board name  directory, which you will need to create. It is probably easiest to start by copying a directory of a board most similar to yours.  if you are doing an F1 board, start with  flight/targets/coptercontrol   if you are doing an F3 board, start with  flight/targets/sparky \n* if you are doing an F4 board, start with  flight/targets/quanton \nand copy that file to your  flight/targets/ board name  where  board name  is what you want to call your new target.", 
-            "title": "Firmware code changes"
-        }, 
-        {
-            "location": "/hardware/add_new_board/#main-makefile", 
-            "text": "flight/targets/ board name /fw/Makefile  Add your board name (lowercase) to the \"ALL_BOARDS\" variable\nAdd your board name (capitalised) to the Friendly names variable\nIf necessary, exclude your board from the boot loader updater targets.", 
-            "title": "Main Makefile"
-        }, 
-        {
-            "location": "/hardware/add_new_board/#board-level-definitions", 
-            "text": "Before being able to compile a firmware for this board, you have to configure the build environment so that the PiOS HAL is mapped to the way the MCU peripherals are configured on your target, how memory is mapped, how the target is programmed, etc.", 
-            "title": "Board-level definitions"
-        }, 
-        {
-            "location": "/hardware/add_new_board/#update-the-board-infomk-file", 
-            "text": "./flight/targets/ board name /board-info/board-info.mk  This file defines the actual hardware chip used by the board, memory mapping, CPU frequency and programming methods. It also contains PiOS-related: board model, revision, type.  This contains a lot of the meta information for your target that is packaged into the boot loader and determines details about the memory layout, as well as the unique board ID. For the board id (BOARD_TYPE) make sure you are not conflicting with the  existing targets .", 
-            "title": "Update the board-info.mk file"
-        }, 
-        {
-            "location": "/hardware/add_new_board/#board-hardware-description-and-power-initialization-code", 
-            "text": "flight/targets/ board name /board-info/board_hw_defs.c  This is one of the most important files for your target, and contains the majority of the hardware mappings. See other examples for the conventions. It is used by both the main firmware and the bootloader.  flight/targets/ board name /fw/pios_board.c  This file is the one that predominantly uses  board_hw_defs.c  to power up the board and contains most of the remainder of the board specific information.", 
-            "title": "Board hardware description and power initialization code"
-        }, 
-        {
-            "location": "/hardware/add_new_board/#add-your-target-to-the-boardsh-file", 
-            "text": "flight/PiOS/inc/pios_board_info.h  add a board define for your board (for instance STM32F4xx_Revolution.h)\nupdate pios_board.h to include this define.  This file is largely historical and more information has been migrating to  board_hw_defs.c  and  pios_board.c , but still contains various defines for the various peripherals of the MCU are configured for this target (used by the PiOS drivers):\n   - Bootloader Settings\n   - LED defines\n   - SPI\n   - Watchdog\n   - I2C\n   - Serial ports\n   - USB  It also contains application settings such as:\n   - Temetry stack\n   - RC Receiver settings (channels, protocols)  It defines low-level hardware configuration specific to the board:\n   - Clocks, IRQ, DMA", 
-            "title": "Add your target to the boards.h file"
-        }, 
-        {
-            "location": "/hardware/add_new_board/#bootloader", 
-            "text": "If the other files are changed properly, no changes should be needed here.", 
-            "title": "Bootloader"
-        }, 
-        {
-            "location": "/hardware/add_new_board/#getting-your-target-into-the-main-code-base", 
-            "text": "There are a number of requirements for adding a target to the main repository:   clean implementation consistent with the changes above  person willing to maintain that target if there are problems  have your unique board ID added to the  list of targets  open source hardware with the hardware files included in  flight/target/ board name /hw   Once those requirements are met, upload your code to github and  create a pull request .  If you are unsure of things, feel free to upload your code and either point us to it on the forums or create a pull request and ask questions.", 
-            "title": "Getting your target into the main code base"
-        }, 
-        {
-            "location": "/tutorials/create_new_uavobjects/", 
-            "text": "Create a New UAVObjects\n\n\nUAVObjects use code that is dynamically generated by the uavobjectgenerator. The specification for a UAVObject is an XML file placed in \nshared/uavobjectdefinition\n. There a few key steps to creating a new UAVObjects:\n\n\n\n\nplace the XML file in \nshared/uavobjectdefinition\n\n\nadd the object in your \nflight/targets/\ntargetname\n/fw/UAVObject.inc\n file\n\n\nadd the object in \nground/gcs/src/plugins/uavobjects/uavobjects.pro\n (make sure to add it both in the headers and source section)\n\n\nin your module that uses it include the file \n#include \"\nobjectname.h\n\"\n and then initialize it \nObjectNameInitialize()\n in the ModuleInitialize section of the code", 
-            "title": "Create a New UAVObjects"
-        }, 
-        {
-            "location": "/tutorials/create_new_uavobjects/#create-a-new-uavobjects", 
-            "text": "UAVObjects use code that is dynamically generated by the uavobjectgenerator. The specification for a UAVObject is an XML file placed in  shared/uavobjectdefinition . There a few key steps to creating a new UAVObjects:   place the XML file in  shared/uavobjectdefinition  add the object in your  flight/targets/ targetname /fw/UAVObject.inc  file  add the object in  ground/gcs/src/plugins/uavobjects/uavobjects.pro  (make sure to add it both in the headers and source section)  in your module that uses it include the file  #include \" objectname.h \"  and then initialize it  ObjectNameInitialize()  in the ModuleInitialize section of the code", 
-            "title": "Create a New UAVObjects"
+            "location": "/general/robots/#robots", 
+            "text": "UAVObjects use code that is dynamically generated by the uavobjectgenerator. The specification for a UAVObject is an XML file placed in  shared/uavobjectdefinition . There a few key steps to creating a new UAVObjects:", 
+            "title": "Robots"
         }, 
         {
             "location": "/contribute/contributing/", 
-            "text": "Contributing\n\n\nSo you'd like to contribute? Wonderful! Opensource projects like these are driven by volunteers, so the more, the merrier.\n\n\nIf you haven't done so already, head over to the \nDevelopment Environments\n wiki page.  That page will walk you through the steps to get the code and set up a development environment.\n\n\nNot a coder?\n\n\nThat's not a problem.  There are several ways you can help still\n\n Join the \nforum\n and \nIRC\n to help out other users\n\n Contribute to the documentation on the wiki\n* [[Help test new code|Reviews-needing-flight-testing]]\n\n\nContacting the developers?\n\n\nThe developers can be found in two main places:\n\n The \ndRonin forum\n\n\n The \n#dronin chat channel\n on freenode.net\n\n\nLooking for something to work on?\n\n\nIf you have your own idea that you want to explore, great! But if you'd like to look a list of issues that are already opened, we have helpfully labeled tasks that we think are good for getting familiar with the code. Just look for the \"difficulty/low\" tag in the \nlist of open issues\n.\n\n\nFound a bug?\n\n\nFirst, check if the issue you've found has already been reported:\n\n Search the \nlist of open issues\n.\n\n Search the \ndRonin\n google group for any open discussion on the issue.\n\n\nIf you don't see the issue in any of those places, head over the the \nissue tracker\n and write up your bug report.\n\n\nIf you're also planning on contributing a fix for this issue, mention that in your bug report so that we know you're working on it.\n\n\nIt's always best to briefly describe how you plan to fix the issue as a reply to the bug report and then to check back often to see if the developers have provided any suggestions for you.\n\n\nWant to add a new feature?\n\n\nIf you have your own idea that you want to explore, great!\n\n\nBefore you get started, you'll want to find out if anyone else is already working on something similar (or identical!).  If this feature has been requested already, there might also be some good discussion about how to get it done.\n\n Search the \nlist of open issues\n.\n\n Search the \ndRonin\n google group for any open discussion on the feature.\n\n\nIf you don't see any sign of the feature you want to add in any of those places, you should start a discussion thread in the \ndRonin\n google group describing your feature as clearly as possible.  This thread will be the place where other users and developers can help you work out some of the details about how best to implement the feature.  Once some of the details have been worked out, you can get started with the code.\n\n\nWhen adding your first feature to the code base, you might want to ask if one of the developers is available to mentor you through the process.  It's not that difficult but you might find it easier with a guide for the first time.\n\n\nIf you're stuck at any point, \nplease\n don't hesitate to ask for some help.\n\n\nSubmitting your code\n\n\nOnce you're done with your bug-fix or feature, the last step is submitting a pull request. This is as easy as \nclicking a button\n. Once your pull request is started, the continuous integration server (Jenkins) will automatically start to compile the new code, making sure that it builds for all targets. If everything is okay, then Jenkins will report that the build succeeded. If not, then Jenkins will report back with an error, visible on the Github pull request page, like shown:\n[[http://i.imgur.com/OOb5Zue.png|alt=Jenkins Results]]\n\n\nClicking the \"Details\" link will take you to the Jenkins build. Click \"Console Output\" on the left menu to see full build output. Tip: Ctrl+F and search for \"error\".\n\n\nAfter submitting your pull request, dRonin developers will be informed that a pull has been requested and they will review your code.  Please be patient during this stage since proper code reviews take time.  You should also be prepared to address any feedback that you get during the code review.  Once you've fixed any issues identified during review, your code will be merged into the upstream \nnext\n branch which is where the active development lands.\n\n\nPlease see these notes for [[Development-Coding-standards]] to make sure your new features are incorporated as quickly as possible.\n\n\nNotes for various parts of the code\n\n\n\n\n[[Math Libraries|math]]", 
+            "text": "Contributing\n\n\n1. Install MkDocs\n\n\n2. Edit page\n\n\n3. Deploy static site", 
             "title": "General Guide"
         }, 
         {
             "location": "/contribute/contributing/#contributing", 
-            "text": "So you'd like to contribute? Wonderful! Opensource projects like these are driven by volunteers, so the more, the merrier.  If you haven't done so already, head over to the  Development Environments  wiki page.  That page will walk you through the steps to get the code and set up a development environment.", 
+            "text": "", 
             "title": "Contributing"
         }, 
         {
-            "location": "/contribute/contributing/#not-a-coder", 
-            "text": "That's not a problem.  There are several ways you can help still  Join the  forum  and  IRC  to help out other users  Contribute to the documentation on the wiki\n* [[Help test new code|Reviews-needing-flight-testing]]", 
-            "title": "Not a coder?"
-        }, 
-        {
-            "location": "/contribute/contributing/#contacting-the-developers", 
-            "text": "The developers can be found in two main places:  The  dRonin forum   The  #dronin chat channel  on freenode.net", 
-            "title": "Contacting the developers?"
-        }, 
-        {
-            "location": "/contribute/contributing/#looking-for-something-to-work-on", 
-            "text": "If you have your own idea that you want to explore, great! But if you'd like to look a list of issues that are already opened, we have helpfully labeled tasks that we think are good for getting familiar with the code. Just look for the \"difficulty/low\" tag in the  list of open issues .", 
-            "title": "Looking for something to work on?"
-        }, 
-        {
-            "location": "/contribute/contributing/#found-a-bug", 
-            "text": "First, check if the issue you've found has already been reported:  Search the  list of open issues .  Search the  dRonin  google group for any open discussion on the issue.  If you don't see the issue in any of those places, head over the the  issue tracker  and write up your bug report.  If you're also planning on contributing a fix for this issue, mention that in your bug report so that we know you're working on it.  It's always best to briefly describe how you plan to fix the issue as a reply to the bug report and then to check back often to see if the developers have provided any suggestions for you.", 
-            "title": "Found a bug?"
-        }, 
-        {
-            "location": "/contribute/contributing/#want-to-add-a-new-feature", 
-            "text": "If you have your own idea that you want to explore, great!  Before you get started, you'll want to find out if anyone else is already working on something similar (or identical!).  If this feature has been requested already, there might also be some good discussion about how to get it done.  Search the  list of open issues .  Search the  dRonin  google group for any open discussion on the feature.  If you don't see any sign of the feature you want to add in any of those places, you should start a discussion thread in the  dRonin  google group describing your feature as clearly as possible.  This thread will be the place where other users and developers can help you work out some of the details about how best to implement the feature.  Once some of the details have been worked out, you can get started with the code.  When adding your first feature to the code base, you might want to ask if one of the developers is available to mentor you through the process.  It's not that difficult but you might find it easier with a guide for the first time.  If you're stuck at any point,  please  don't hesitate to ask for some help.", 
-            "title": "Want to add a new feature?"
-        }, 
-        {
-            "location": "/contribute/contributing/#submitting-your-code", 
-            "text": "Once you're done with your bug-fix or feature, the last step is submitting a pull request. This is as easy as  clicking a button . Once your pull request is started, the continuous integration server (Jenkins) will automatically start to compile the new code, making sure that it builds for all targets. If everything is okay, then Jenkins will report that the build succeeded. If not, then Jenkins will report back with an error, visible on the Github pull request page, like shown:\n[[http://i.imgur.com/OOb5Zue.png|alt=Jenkins Results]]  Clicking the \"Details\" link will take you to the Jenkins build. Click \"Console Output\" on the left menu to see full build output. Tip: Ctrl+F and search for \"error\".  After submitting your pull request, dRonin developers will be informed that a pull has been requested and they will review your code.  Please be patient during this stage since proper code reviews take time.  You should also be prepared to address any feedback that you get during the code review.  Once you've fixed any issues identified during review, your code will be merged into the upstream  next  branch which is where the active development lands.  Please see these notes for [[Development-Coding-standards]] to make sure your new features are incorporated as quickly as possible.", 
-            "title": "Submitting your code"
-        }, 
-        {
-            "location": "/contribute/contributing/#notes-for-various-parts-of-the-code", 
-            "text": "[[Math Libraries|math]]", 
-            "title": "Notes for various parts of the code"
-        }, 
-        {
-            "location": "/contribute/coding_standards/", 
-            "text": "Development Coding standards\n\n\nAll Code\n\n\n\n\nPlease use Linux line-endings (LF, no CR).\n\n\nPlease try to keep diff minimal. If you really feel some re-formatting is necessary, please do it in a separate commit to ease review\n\n\nKeep lines reasonably short (80 chars is a good guide), break statements over multiple lines where necessary\n\n\nUse \ndefault\n cases in \nswitch\n statements only where you \nreally\n intend it, they neuter compile-time checking of missed code when new enumerations are introduced\n\n\n\n\nFlight Code (C)\n\n\nThe flight side code has historically tried to stick as much as possible with the \nlinux kernel style\n.\n\n\nNew Draft Guidelines\n\n\nAlways defer to K\nR conventions when not explicitly covered here.\n\n Use TABS, not spaces\n\n Use typedefs only when strictly necessary\n    - One exception is for device handles where they appear in public declarations of PiOS drivers\n\n \ncase\n statements are indented at the same level as the parent \nswitch\n\n\n Use spaces around parentheses for \nif\n, \nswitch\n, etc., but not for functions.\n* Opening braces are on the same line as \nif\n, \nswitch\n, etc. \nelse\n is on the same line as previous closing brace, e.g.\n\n\n```c\nif (this_thing) {\n    switch (this_thing) {\n    case THING_1:\n        do_some_stuff();\n        break;\n    case THING_2:\n        do_other_stuff();\n        break;\n    }\n} else {\n    do_that_other_thing();\n}\n```\n\n\n\n\n\n\n\nBraces are optional for single statement \nif\ns, but ONLY if all branches have no braces. e.g. Okay:\n\n\nc\nif (this_thing)\n    do_stuff();\nelse if (other_thing)\n    do_other_stuff();\nelse\n    return NULL;\n\n\nNOT okay:\n\n\nc\nif (this_thing)\n    do_stuff();\nelse {\n    PIOS_DEBUG_Assert(false);\n    return NULL;\n}\n\n* ... more to come ...\n\n\n\n\n\n\nGCS Code (C++)\n\n\nUse \nQt style\n and \nQt coding conventions\n\n\n\n\nUse 4 SPACES, not tabs\n\n\nDON'T assume that returned pointers are non-null\n\n\nUse \ndynamic UAVO relations\n where you can, these will (soon) be checked at compile time against UAVO definitions", 
-            "title": "Coding Standards"
-        }, 
-        {
-            "location": "/contribute/coding_standards/#development-coding-standards", 
+            "location": "/contribute/contributing/#1-install-mkdocs", 
             "text": "", 
-            "title": "Development Coding standards"
+            "title": "1. Install MkDocs"
         }, 
         {
-            "location": "/contribute/coding_standards/#all-code", 
-            "text": "Please use Linux line-endings (LF, no CR).  Please try to keep diff minimal. If you really feel some re-formatting is necessary, please do it in a separate commit to ease review  Keep lines reasonably short (80 chars is a good guide), break statements over multiple lines where necessary  Use  default  cases in  switch  statements only where you  really  intend it, they neuter compile-time checking of missed code when new enumerations are introduced", 
-            "title": "All Code"
-        }, 
-        {
-            "location": "/contribute/coding_standards/#flight-code-c", 
-            "text": "The flight side code has historically tried to stick as much as possible with the  linux kernel style .", 
-            "title": "Flight Code (C)"
-        }, 
-        {
-            "location": "/contribute/coding_standards/#new-draft-guidelines", 
-            "text": "Always defer to K R conventions when not explicitly covered here.  Use TABS, not spaces  Use typedefs only when strictly necessary\n    - One exception is for device handles where they appear in public declarations of PiOS drivers   case  statements are indented at the same level as the parent  switch   Use spaces around parentheses for  if ,  switch , etc., but not for functions.\n* Opening braces are on the same line as  if ,  switch , etc.  else  is on the same line as previous closing brace, e.g.  ```c\nif (this_thing) {\n    switch (this_thing) {\n    case THING_1:\n        do_some_stuff();\n        break;\n    case THING_2:\n        do_other_stuff();\n        break;\n    }\n} else {\n    do_that_other_thing();\n}\n```    Braces are optional for single statement  if s, but ONLY if all branches have no braces. e.g. Okay:  c\nif (this_thing)\n    do_stuff();\nelse if (other_thing)\n    do_other_stuff();\nelse\n    return NULL;  NOT okay:  c\nif (this_thing)\n    do_stuff();\nelse {\n    PIOS_DEBUG_Assert(false);\n    return NULL;\n} \n* ... more to come ...", 
-            "title": "New Draft Guidelines"
-        }, 
-        {
-            "location": "/contribute/coding_standards/#gcs-code-c", 
-            "text": "Use  Qt style  and  Qt coding conventions   Use 4 SPACES, not tabs  DON'T assume that returned pointers are non-null  Use  dynamic UAVO relations  where you can, these will (soon) be checked at compile time against UAVO definitions", 
-            "title": "GCS Code (C++)"
-        }, 
-        {
-            "location": "/contribute/pull_request/", 
-            "text": "Pull Requests Policy\n\n\nGoals\n\n\nThis policy is intended to make collaborative development for Tau Labs as efficient as possible, while maintaining safe code development as a priority. To achieve this, we try to keep the time from request to resolution as well as the number of open requests as small as possible. This benefits authors, reviewers and users as well. Authors will be encouraged to contribute more and will be able to scope their work easier, reviewers can more efficiently evaluate the relevant changes, and users get new features and bug fixes quicker.\n\n\nPhilosophy\n\n\nWhen you submit code by creating a pull request, it is your obligation to prove that your code is good to merge. \nAll\n changes submitted for merging must be reviewed. It is your obligation as the author to find someone willing to invest time into reviewing your work and discussing and resolving all issues or concerns raised during the review. As author, you are expected to fix anything found during review; it is not the reviewer's responsibility to fix it for you. You should strive to make your code as easy as possible to review.\n\n\nCreation\n\n\n\n\nA pull request should be focused on one specific feature / bug fix / problem. The smaller the scope, the better. The less scope mixing, the better. Try to make commits as atomic as possible to ease merging as well as review. Consider splitting up big features into multiple requests.\n\n\nKeep in mind while writing and commenting your code that someone will have to review it. The better job you do at making clear what you are doing, the faster you will get through review.\n\n\nNever mix formatting fixes with semantic changes within a single commit.\n\n\nWrite a proper summary and include potential pitfalls for the reviewer to ease his job.\n\n\n\n\nThings we like to see as pull requests\n\n\n\n\nBugfixes (one bug per request)\n\n\nNew features (one feature per request)\n\n\nRequest for comments (if explicitly stated)\n\n\n\n\nThings we don't like to see as pull requests\n\n\n\n\nI don't like color xyz, so i changed it to abc\n\n\nI don't like name of variable abc so i changed it to def\n\n\nChanges without proper logical reason\n\n\n\n\nReview\n\n\nAfter submitting a pull request, one or more reviewers will go through your code and write comments. For anything more than trivial changes, at least one reviewer \nmust\n be a core developer. The quicker you respond to those comments by fixing mistakes or clarifying things, the sooner your code will be merged. You can always add commits to a running pull request. Just push them to the branch which is going to be merged.\n\n\nMerge or Close\n\n\nWhen the review is done, the reviewer will write a summary of his findings and vote for merge or close, sometimes adding conditions (e.g. something has to be fixed before merge).\nWhen there is consensus between author and reviewer that code will not be merged in the current state and has to be redone, the request will be closed. When a simple majority of core developer vote to merge or close, the request will be merged or closed accordingly.\n\n\nIf a pull request has been reviewed and is dormant because issues need to be addressed or the author is not resolving issues, the request will be closed. It can be reopened again later. This keeps the list of pending requests open to actionable items.\n\n\nAuthors will not merge their own pull requests.\n\n\nAppeals\n\n\nEvery effort should be made to resolve issues and concerns within the standard review process. If, however, after three months from the date of the pull request opening, an agreement cannot be reached to merge or close the pull request, an appeal to the project governing board can be made. Once an appeal is made, no changes will be allowed on the branch. Board members will be notified and shall have one months from the date of notification to vote merge or close, or explicitly abstain. The board will not discuss technical merit after an appeal is made, but shall only review comments made prior to the appeal. No board member will need to explain their rationale for voting. The majority vote for merge or close shall govern.\n\n\nThis process is intentionally lengthy and should only be a means of last resort.  Again, every effort should be made to resolve issues and concerns within the standard review process.", 
-            "title": "Pull Request Policy"
-        }, 
-        {
-            "location": "/contribute/pull_request/#pull-requests-policy", 
+            "location": "/contribute/contributing/#2-edit-page", 
             "text": "", 
-            "title": "Pull Requests Policy"
+            "title": "2. Edit page"
         }, 
         {
-            "location": "/contribute/pull_request/#goals", 
-            "text": "This policy is intended to make collaborative development for Tau Labs as efficient as possible, while maintaining safe code development as a priority. To achieve this, we try to keep the time from request to resolution as well as the number of open requests as small as possible. This benefits authors, reviewers and users as well. Authors will be encouraged to contribute more and will be able to scope their work easier, reviewers can more efficiently evaluate the relevant changes, and users get new features and bug fixes quicker.", 
-            "title": "Goals"
-        }, 
-        {
-            "location": "/contribute/pull_request/#philosophy", 
-            "text": "When you submit code by creating a pull request, it is your obligation to prove that your code is good to merge.  All  changes submitted for merging must be reviewed. It is your obligation as the author to find someone willing to invest time into reviewing your work and discussing and resolving all issues or concerns raised during the review. As author, you are expected to fix anything found during review; it is not the reviewer's responsibility to fix it for you. You should strive to make your code as easy as possible to review.", 
-            "title": "Philosophy"
-        }, 
-        {
-            "location": "/contribute/pull_request/#creation", 
-            "text": "A pull request should be focused on one specific feature / bug fix / problem. The smaller the scope, the better. The less scope mixing, the better. Try to make commits as atomic as possible to ease merging as well as review. Consider splitting up big features into multiple requests.  Keep in mind while writing and commenting your code that someone will have to review it. The better job you do at making clear what you are doing, the faster you will get through review.  Never mix formatting fixes with semantic changes within a single commit.  Write a proper summary and include potential pitfalls for the reviewer to ease his job.", 
-            "title": "Creation"
-        }, 
-        {
-            "location": "/contribute/pull_request/#things-we-like-to-see-as-pull-requests", 
-            "text": "Bugfixes (one bug per request)  New features (one feature per request)  Request for comments (if explicitly stated)", 
-            "title": "Things we like to see as pull requests"
-        }, 
-        {
-            "location": "/contribute/pull_request/#things-we-dont-like-to-see-as-pull-requests", 
-            "text": "I don't like color xyz, so i changed it to abc  I don't like name of variable abc so i changed it to def  Changes without proper logical reason", 
-            "title": "Things we don't like to see as pull requests"
-        }, 
-        {
-            "location": "/contribute/pull_request/#review", 
-            "text": "After submitting a pull request, one or more reviewers will go through your code and write comments. For anything more than trivial changes, at least one reviewer  must  be a core developer. The quicker you respond to those comments by fixing mistakes or clarifying things, the sooner your code will be merged. You can always add commits to a running pull request. Just push them to the branch which is going to be merged.", 
-            "title": "Review"
-        }, 
-        {
-            "location": "/contribute/pull_request/#merge-or-close", 
-            "text": "When the review is done, the reviewer will write a summary of his findings and vote for merge or close, sometimes adding conditions (e.g. something has to be fixed before merge).\nWhen there is consensus between author and reviewer that code will not be merged in the current state and has to be redone, the request will be closed. When a simple majority of core developer vote to merge or close, the request will be merged or closed accordingly.  If a pull request has been reviewed and is dormant because issues need to be addressed or the author is not resolving issues, the request will be closed. It can be reopened again later. This keeps the list of pending requests open to actionable items.  Authors will not merge their own pull requests.", 
-            "title": "Merge or Close"
-        }, 
-        {
-            "location": "/contribute/pull_request/#appeals", 
-            "text": "Every effort should be made to resolve issues and concerns within the standard review process. If, however, after three months from the date of the pull request opening, an agreement cannot be reached to merge or close the pull request, an appeal to the project governing board can be made. Once an appeal is made, no changes will be allowed on the branch. Board members will be notified and shall have one months from the date of notification to vote merge or close, or explicitly abstain. The board will not discuss technical merit after an appeal is made, but shall only review comments made prior to the appeal. No board member will need to explain their rationale for voting. The majority vote for merge or close shall govern.  This process is intentionally lengthy and should only be a means of last resort.  Again, every effort should be made to resolve issues and concerns within the standard review process.", 
-            "title": "Appeals"
-        }, 
-        {
-            "location": "/contribute/uavo_widget_relations/", 
-            "text": "UAVObject to Widget Relations\n\n\nWIP\n\n\nDesign doc\n\n\n\n\n\n\n\n\nProperty\n\n\nType\n\n\nDescription\n\n\n\n\n\n\n\n\n\n\nobjname\n\n\nstring\n\n\nName of the UAVO.\n\n\n\n\n\n\nfieldname\n\n\nstring\n\n\nName of the UAVO field.\n\n\n\n\n\n\nelement\n\n\nstring\n\n\nName of an element within the field. Only use for multi-element fields.\n\n\n\n\n\n\nscale\n\n\ndouble\n\n\nScaling factor applied to the value within the UI.", 
-            "title": "UAVObject to Widget Relations"
-        }, 
-        {
-            "location": "/contribute/uavo_widget_relations/#uavobject-to-widget-relations", 
+            "location": "/contribute/contributing/#3-deploy-static-site", 
             "text": "", 
-            "title": "UAVObject to Widget Relations"
-        }, 
-        {
-            "location": "/contribute/uavo_widget_relations/#wip", 
-            "text": "Design doc     Property  Type  Description      objname  string  Name of the UAVO.    fieldname  string  Name of the UAVO field.    element  string  Name of an element within the field. Only use for multi-element fields.    scale  double  Scaling factor applied to the value within the UI.", 
-            "title": "WIP"
+            "title": "3. Deploy static site"
         }
     ]
 }
