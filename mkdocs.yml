@@ -10,10 +10,12 @@ pages:
   - Home: index.md
 #  - Setup:
 #      - 'Linux Setup': 'setup/linux_setup.md'
-  - Projects:
-      - 'Setup Devlopment Environment': 'software/setup_dev_env.md'
-  - HOW-TOs:
-      - 'Create a New UAVObjects': 'tutorials/create_new_uavobjects.md'
+  - General:
+      - 'Workbench': 'general/workbench.md'
+      - 'Robot Platforms': 'general/robots.md'
+  # - HOW-TOs:
+  #     - 'How': 'projects/create_new_uavobjects.md'
+      # - 'Create a New UAVObjects': 'tutorials/create_new_uavobjects.md'
   - Contribute:
       - 'General Guide': 'contribute/contributing.md'
       # - 'Coding Standards': 'contribute/coding_standards.md'
