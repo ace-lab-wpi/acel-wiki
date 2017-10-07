@@ -183,9 +183,10 @@
         <div class="col-md-9" role="main">
 
 <h2 id="general-guide">General Guide</h2>
-<p>MkDocs, used to build this wiki, is a lightweight static site generator. You can write in markdown and publish easily to Github. The official document should be enough for its usage. The following is a summary of the most frequently used commands.</p>
+<p>MkDocs, which is used to build this wiki, is a lightweight static site generator. You can write contents in markdown and publish easily to Github. The <a href="http://www.mkdocs.org/">official user guide</a> should be sufficient for learning its usage. </p>
+<p>The following is a summary of the most frequently used commands.</p>
 <h3 id="1-install-mkdocs">1. Install MkDocs</h3>
-<p>Install Python and its package management tool "pip if you haven't.</p>
+<p>Install Python and its package management tool "pip" if you haven't.</p>
 <pre><code>$ sudo apt-get install python-pip python-dev
 </code></pre>
 
@@ -197,11 +198,11 @@
 <p>You can create pages in the "docs" folder using markdown.</p>
 <p>Some useful reference for using markdown:</p>
 <ul>
-<li>https://guides.github.com/features/mastering-markdown/</li>
-<li>https://help.github.com/articles/basic-writing-and-formatting-syntax/</li>
-<li>https://github.com/LewisVo/Markdown-Tutorial  </li>
+<li><a href="https://guides.github.com/features/mastering-markdown/">Mastering Markdown</a></li>
+<li><a href="https://help.github.com/articles/basic-writing-and-formatting-syntax/">Basic Writing and Formatting Syntax</a></li>
+<li><a href="https://github.com/LewisVo/Markdown-Tutorial">Markdown Tutorial</a>  </li>
 </ul>
-<p>After creating a page, you need to add it to "index.md" and "mkdocs.yml" so that it will be indexed and displayed properly. Just open these two docs and refer to the format of other entries.</p>
+<p>After creating a page, you need to add it to "index.md" and "mkdocs.yml" so that it will be indexed and displayed properly. Just open these two files and refer to the format of other entries.</p>
 <h3 id="3-build-and-preview">3. Build and Preview</h3>
 <p>Use the command to build pages</p>
 <pre><code>$ cd &lt;location-of-acel-wiki-folder&gt;
@@ -215,8 +216,16 @@ $ mkdocs build
 <p>Open your browser and type "http://127.0.0.1:8000/" to view the locally hosted site.</p>
 <h3 id="3-deploy-static-site">3. Deploy static site</h3>
 <p>When you are ready, push the generated site to Github.</p>
-<pre><code>$ mkdocs deploy
-</code></pre></div>
+<pre><code>$ mkdocs gh-deploy
+</code></pre>
+
+<p>After this command, the folder "site", which contains the generated HTML pages, will be pushed to the "gh-pages" branch of the wiki repository. "gh-pages" is the default branch that Github will treat as a project site and host automatically.</p>
+<p>Don't forget to also push the "source files" used to generate the site, usually "*.md" files and images.</p>
+<pre><code>$ &lt;create-a-git-comit&gt;
+$ git push origin acel-wiki
+</code></pre>
+
+<p><strong>Note</strong>: Ask for access if you could not push to the repository.</p></div>
         
     </div>
 

@@ -47,12 +47,12 @@
         }, 
         {
             "location": "/general/workbench/", 
-            "text": "Lab Workbench\n\n\nWhat's on the workbench:\n\n\n\n\nPC with Ubuntu 16.04 64-bit, Windows 7\n\n\nOscilloscope: Rigol DS4204 with upgraded 350M bandwidth, UART/I2C/SPI/CAN decoding\n\n\n\n\nGeneral Rules", 
+            "text": "Lab Workbench\n\n\nWhat's on the workbench:\n\n\n\n\nPC with Ubuntu 16.04 64-bit, Windows 7\n\n\nOscilloscope: Rigol DS4204 with upgraded 350M bandwidth, UART/I2C/SPI/CAN decoding package\n\n\n\n\nGeneral Rules", 
             "title": "Workbench"
         }, 
         {
             "location": "/general/workbench/#lab-workbench", 
-            "text": "What's on the workbench:   PC with Ubuntu 16.04 64-bit, Windows 7  Oscilloscope: Rigol DS4204 with upgraded 350M bandwidth, UART/I2C/SPI/CAN decoding", 
+            "text": "What's on the workbench:   PC with Ubuntu 16.04 64-bit, Windows 7  Oscilloscope: Rigol DS4204 with upgraded 350M bandwidth, UART/I2C/SPI/CAN decoding package", 
             "title": "Lab Workbench"
         }, 
         {
@@ -82,22 +82,22 @@
         }, 
         {
             "location": "/contribute/general-guide/", 
-            "text": "General Guide\n\n\nMkDocs, used to build this wiki, is a lightweight static site generator. You can write in markdown and publish easily to Github. The official document should be enough for its usage. The following is a summary of the most frequently used commands.\n\n\n1. Install MkDocs\n\n\nInstall Python and its package management tool \"pip if you haven't.\n\n\n$ sudo apt-get install python-pip python-dev\n\n\n\n\nThen install MkDcos.\n\n\n$ pip install mkdocs\n\n\n\n\n2. Edit page\n\n\nYou can create pages in the \"docs\" folder using markdown.\n\n\nSome useful reference for using markdown:\n\n\n\n\nhttps://guides.github.com/features/mastering-markdown/\n\n\nhttps://help.github.com/articles/basic-writing-and-formatting-syntax/\n\n\nhttps://github.com/LewisVo/Markdown-Tutorial  \n\n\n\n\nAfter creating a page, you need to add it to \"index.md\" and \"mkdocs.yml\" so that it will be indexed and displayed properly. Just open these two docs and refer to the format of other entries.\n\n\n3. Build and Preview\n\n\nUse the command to build pages\n\n\n$ cd \nlocation-of-acel-wiki-folder\n\n$ mkdocs build\n\n\n\n\nYou can preview the pages locally before pushing to Github.\n\n\n$ mkdocs serve\n\n\n\n\nOpen your browser and type \"http://127.0.0.1:8000/\" to view the locally hosted site.\n\n\n3. Deploy static site\n\n\nWhen you are ready, push the generated site to Github.\n\n\n$ mkdocs deploy", 
+            "text": "General Guide\n\n\nMkDocs, which is used to build this wiki, is a lightweight static site generator. You can write contents in markdown and publish easily to Github. The \nofficial user guide\n should be sufficient for learning its usage. \n\n\nThe following is a summary of the most frequently used commands.\n\n\n1. Install MkDocs\n\n\nInstall Python and its package management tool \"pip\" if you haven't.\n\n\n$ sudo apt-get install python-pip python-dev\n\n\n\n\nThen install MkDcos.\n\n\n$ pip install mkdocs\n\n\n\n\n2. Edit page\n\n\nYou can create pages in the \"docs\" folder using markdown.\n\n\nSome useful reference for using markdown:\n\n\n\n\nMastering Markdown\n\n\nBasic Writing and Formatting Syntax\n\n\nMarkdown Tutorial\n  \n\n\n\n\nAfter creating a page, you need to add it to \"index.md\" and \"mkdocs.yml\" so that it will be indexed and displayed properly. Just open these two files and refer to the format of other entries.\n\n\n3. Build and Preview\n\n\nUse the command to build pages\n\n\n$ cd \nlocation-of-acel-wiki-folder\n\n$ mkdocs build\n\n\n\n\nYou can preview the pages locally before pushing to Github.\n\n\n$ mkdocs serve\n\n\n\n\nOpen your browser and type \"http://127.0.0.1:8000/\" to view the locally hosted site.\n\n\n3. Deploy static site\n\n\nWhen you are ready, push the generated site to Github.\n\n\n$ mkdocs gh-deploy\n\n\n\n\nAfter this command, the folder \"site\", which contains the generated HTML pages, will be pushed to the \"gh-pages\" branch of the wiki repository. \"gh-pages\" is the default branch that Github will treat as a project site and host automatically.\n\n\nDon't forget to also push the \"source files\" used to generate the site, usually \"*.md\" files and images.\n\n\n$ \ncreate-a-git-comit\n\n$ git push origin acel-wiki\n\n\n\n\nNote\n: Ask for access if you could not push to the repository.", 
             "title": "General Guide"
         }, 
         {
             "location": "/contribute/general-guide/#general-guide", 
-            "text": "MkDocs, used to build this wiki, is a lightweight static site generator. You can write in markdown and publish easily to Github. The official document should be enough for its usage. The following is a summary of the most frequently used commands.", 
+            "text": "MkDocs, which is used to build this wiki, is a lightweight static site generator. You can write contents in markdown and publish easily to Github. The  official user guide  should be sufficient for learning its usage.   The following is a summary of the most frequently used commands.", 
             "title": "General Guide"
         }, 
         {
             "location": "/contribute/general-guide/#1-install-mkdocs", 
-            "text": "Install Python and its package management tool \"pip if you haven't.  $ sudo apt-get install python-pip python-dev  Then install MkDcos.  $ pip install mkdocs", 
+            "text": "Install Python and its package management tool \"pip\" if you haven't.  $ sudo apt-get install python-pip python-dev  Then install MkDcos.  $ pip install mkdocs", 
             "title": "1. Install MkDocs"
         }, 
         {
             "location": "/contribute/general-guide/#2-edit-page", 
-            "text": "You can create pages in the \"docs\" folder using markdown.  Some useful reference for using markdown:   https://guides.github.com/features/mastering-markdown/  https://help.github.com/articles/basic-writing-and-formatting-syntax/  https://github.com/LewisVo/Markdown-Tutorial     After creating a page, you need to add it to \"index.md\" and \"mkdocs.yml\" so that it will be indexed and displayed properly. Just open these two docs and refer to the format of other entries.", 
+            "text": "You can create pages in the \"docs\" folder using markdown.  Some useful reference for using markdown:   Mastering Markdown  Basic Writing and Formatting Syntax  Markdown Tutorial      After creating a page, you need to add it to \"index.md\" and \"mkdocs.yml\" so that it will be indexed and displayed properly. Just open these two files and refer to the format of other entries.", 
             "title": "2. Edit page"
         }, 
         {
@@ -107,7 +107,7 @@
         }, 
         {
             "location": "/contribute/general-guide/#3-deploy-static-site", 
-            "text": "When you are ready, push the generated site to Github.  $ mkdocs deploy", 
+            "text": "When you are ready, push the generated site to Github.  $ mkdocs gh-deploy  After this command, the folder \"site\", which contains the generated HTML pages, will be pushed to the \"gh-pages\" branch of the wiki repository. \"gh-pages\" is the default branch that Github will treat as a project site and host automatically.  Don't forget to also push the \"source files\" used to generate the site, usually \"*.md\" files and images.  $  create-a-git-comit \n$ git push origin acel-wiki  Note : Ask for access if you could not push to the repository.", 
             "title": "3. Deploy static site"
         }
     ]
