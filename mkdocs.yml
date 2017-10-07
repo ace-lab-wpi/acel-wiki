@@ -5,22 +5,14 @@ site_author: acel
 site_description: "ACEL wiki pages organized using mkdocs with cinder theme"
 repo_url: "https://github.com/ace-lab-wpi/acel-wiki.git"
 copyright: "This documentation is © Copyright 2017 ACEL."
-#google_analytics: ['UA-89355455-1', 'http://rdu.im/dronin-dev-guide/']
+#google_analytics: ['', '']
 pages:
   - Home: index.md
-#  - Setup:
-#      - 'Linux Setup': 'setup/linux_setup.md'
   - General:
       - 'Workbench': 'general/workbench.md'
       - 'Robot Platforms': 'general/robots.md'
-  # - HOW-TOs:
-  #     - 'How': 'projects/create_new_uavobjects.md'
-      # - 'Create a New UAVObjects': 'tutorials/create_new_uavobjects.md'
+  - HOW-TOs:
+      - 'How to solder': 'howtos/how-to-solder.md'
   - Contribute:
-      - 'General Guide': 'contribute/contributing.md'
-      # - 'Coding Standards': 'contribute/coding_standards.md'
-#      - 'Tracking Development with Git': 'https://dronin.readme.io/docs/tracking-development-with-git'
-      # - 'Pull Request Policy': 'contribute/pull_request.md'
-      # - 'UAVObject to Widget Relations': 'contribute/uavo_widget_relations.md'
-#      - 'Create a bug report': 'https://dronin.readme.io/docs/writing-good-bug-reports'
+      - 'General Guide': 'contribute/general-guide.md'      
 #  - Specimen: specimen.md
