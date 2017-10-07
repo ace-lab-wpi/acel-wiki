@@ -2,7 +2,7 @@
     "docs": [
         {
             "location": "/", 
-            "text": "Welcome\n ACEL Wiki \n\n\n\nWelcome to the wiki of Autonomy, Control, and Estimation Lab (ACEL) at WPI.\n\n\nGeneral\n\n\n- \nWorkbench\n\n\n- \nRobot platforms\n\n\nHOW-TOs\n\n\n- \nHow to connect a Raspberry Pi to WPI wireless network\n\n\nContribute\n\n\n- \nAdd a Wiki Page", 
+            "text": "ACEL Wiki\n\n\n\nWelcome to the wiki of Autonomy, Control, and Estimation Lab (ACEL) at WPI.\n\n\nGeneral\n\n\n- \nWorkbench\n\n\n- \nRobot platforms\n\n\nHOW-TOs\n\n\nHardware\n\n\n- \nHow to solder\n\n\nSoftware\n\n\n- \nHow to connect a Raspberry Pi to WPI wireless network\n\n\nContribute\n\n\n- \nAdd a Wiki Page", 
             "title": "Home"
         }, 
         {
@@ -22,8 +22,13 @@
         }, 
         {
             "location": "/#how-tos", 
-            "text": "", 
+            "text": "Hardware", 
             "title": "HOW-TOs"
+        }, 
+        {
+            "location": "/#-how-to-solder", 
+            "text": "Software", 
+            "title": "- How to solder"
         }, 
         {
             "location": "/#-how-to-connect-a-raspberry-pi-to-wpi-wireless-network", 
@@ -66,28 +71,43 @@
             "title": "Robots"
         }, 
         {
-            "location": "/contribute/contributing/", 
-            "text": "Contributing\n\n\n1. Install MkDocs\n\n\n2. Edit page\n\n\n3. Deploy static site", 
+            "location": "/howtos/how-to-solder/", 
+            "text": "How to solder", 
+            "title": "How to solder"
+        }, 
+        {
+            "location": "/howtos/how-to-solder/#how-to-solder", 
+            "text": "", 
+            "title": "How to solder"
+        }, 
+        {
+            "location": "/contribute/general-guide/", 
+            "text": "General Guide\n\n\nMkDocs, used to build this wiki, is a lightweight static site generator. You can write in markdown and publish easily to Github. The official document should be enough for its usage. The following is a summary of the most frequently used commands.\n\n\n1. Install MkDocs\n\n\nInstall Python and its package management tool \"pip if you haven't.\n\n\n$ sudo apt-get install python-pip python-dev\n\n\n\n\nThen install MkDcos.\n\n\n$ pip install mkdocs\n\n\n\n\n2. Edit page\n\n\nYou can create pages in the \"docs\" folder using markdown.\n\n\nSome useful reference for using markdown:\n\n\n\n\nhttps://guides.github.com/features/mastering-markdown/\n\n\nhttps://help.github.com/articles/basic-writing-and-formatting-syntax/\n\n\nhttps://github.com/LewisVo/Markdown-Tutorial  \n\n\n\n\nAfter creating a page, you need to add it to \"index.md\" and \"mkdocs.yml\" so that it will be indexed and displayed properly. Just open these two docs and refer to the format of other entries.\n\n\n3. Build and Preview\n\n\nUse the command to build pages\n\n\n$ cd \nlocation-of-acel-wiki-folder\n\n$ mkdocs build\n\n\n\n\nYou can preview the pages locally before pushing to Github.\n\n\n$ mkdocs serve\n\n\n\n\nOpen your browser and type \"http://127.0.0.1:8000/\" to view the locally hosted site.\n\n\n3. Deploy static site\n\n\nWhen you are ready, push the generated site to Github.\n\n\n$ mkdocs deploy", 
             "title": "General Guide"
         }, 
         {
-            "location": "/contribute/contributing/#contributing", 
-            "text": "", 
-            "title": "Contributing"
+            "location": "/contribute/general-guide/#general-guide", 
+            "text": "MkDocs, used to build this wiki, is a lightweight static site generator. You can write in markdown and publish easily to Github. The official document should be enough for its usage. The following is a summary of the most frequently used commands.", 
+            "title": "General Guide"
         }, 
         {
-            "location": "/contribute/contributing/#1-install-mkdocs", 
-            "text": "", 
+            "location": "/contribute/general-guide/#1-install-mkdocs", 
+            "text": "Install Python and its package management tool \"pip if you haven't.  $ sudo apt-get install python-pip python-dev  Then install MkDcos.  $ pip install mkdocs", 
             "title": "1. Install MkDocs"
         }, 
         {
-            "location": "/contribute/contributing/#2-edit-page", 
-            "text": "", 
+            "location": "/contribute/general-guide/#2-edit-page", 
+            "text": "You can create pages in the \"docs\" folder using markdown.  Some useful reference for using markdown:   https://guides.github.com/features/mastering-markdown/  https://help.github.com/articles/basic-writing-and-formatting-syntax/  https://github.com/LewisVo/Markdown-Tutorial     After creating a page, you need to add it to \"index.md\" and \"mkdocs.yml\" so that it will be indexed and displayed properly. Just open these two docs and refer to the format of other entries.", 
             "title": "2. Edit page"
         }, 
         {
-            "location": "/contribute/contributing/#3-deploy-static-site", 
-            "text": "", 
+            "location": "/contribute/general-guide/#3-build-and-preview", 
+            "text": "Use the command to build pages  $ cd  location-of-acel-wiki-folder \n$ mkdocs build  You can preview the pages locally before pushing to Github.  $ mkdocs serve  Open your browser and type \"http://127.0.0.1:8000/\" to view the locally hosted site.", 
+            "title": "3. Build and Preview"
+        }, 
+        {
+            "location": "/contribute/general-guide/#3-deploy-static-site", 
+            "text": "When you are ready, push the generated site to Github.  $ mkdocs deploy", 
             "title": "3. Deploy static site"
         }
     ]
