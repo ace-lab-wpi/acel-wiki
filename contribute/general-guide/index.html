@@ -9,7 +9,7 @@
     <meta name="author" content="acel">  
     <link rel="shortcut icon" href="../../img/favicon.ico">
 
-    <title>Workbench - ACEL Wiki</title>
+    <title>General Guide - ACEL Wiki</title>
 
     <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
@@ -72,19 +72,19 @@
                 
                 
                 
-                    <li class="dropdown active">
+                    <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">General <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                         
                             
-<li class="active">
-    <a href="./">Workbench</a>
+<li >
+    <a href="../../general/workbench/">Workbench</a>
 </li>
 
                         
                             
 <li >
-    <a href="../robots/">Robot Platforms</a>
+    <a href="../../general/robots/">Robot Platforms</a>
 </li>
 
                         
@@ -108,13 +108,13 @@
                 
                 
                 
-                    <li class="dropdown">
+                    <li class="dropdown active">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Contribute <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                         
                             
-<li >
-    <a href="../../contribute/general-guide/">General Guide</a>
+<li class="active">
+    <a href="./">General Guide</a>
 </li>
 
                         
@@ -133,12 +133,12 @@
                 </li>
                 
                     <li >
-                        <a rel="next" href="../..">
+                        <a rel="next" href="../../howtos/how-to-solder/">
                             <i class="fa fa-arrow-left"></i> Previous
                         </a>
                     </li>
-                    <li >
-                        <a rel="prev" href="../robots/">
+                    <li class="disabled">
+                        <a rel="prev" >
                             Next <i class="fa fa-arrow-right"></i>
                         </a>
                     </li>
@@ -163,15 +163,18 @@
         <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
     
-        <li class="first-level active"><a href="#lab-workbench">Lab Workbench</a></li>
+        <li class="first-level active"><a href="#general-guide">General Guide</a></li>
         
-            <li class="second-level"><a href="#general-rules">General rules</a></li>
+            <li class="second-level"><a href="#1-install-mkdocs">1. Install MkDocs</a></li>
             
         
-            <li class="second-level"><a href="#how-to-solder">How to solder</a></li>
+            <li class="second-level"><a href="#2-edit-page">2. Edit page</a></li>
             
         
-            <li class="second-level"><a href="#how-to-use-the-power-supply">How to use the power supply</a></li>
+            <li class="second-level"><a href="#3-build-and-preview">3. Build and Preview</a></li>
+            
+        
+            <li class="second-level"><a href="#3-deploy-static-site">3. Deploy static site</a></li>
             
         
     
@@ -179,52 +182,50 @@
 </div></div>
         <div class="col-md-9" role="main">
 
-<h2 id="lab-workbench">Lab Workbench</h2>
-<p>What's on the workbench:</p>
+<h2 id="general-guide">General Guide</h2>
+<p>MkDocs, which is used to build this wiki, is a lightweight static site generator. You can write contents in markdown and publish easily to Github. The <a href="http://www.mkdocs.org/">official user guide</a> should be sufficient for learning its usage. </p>
+<p>The following is a summary of the most frequently used commands.</p>
+<h3 id="1-install-mkdocs">1. Install MkDocs</h3>
+<p>Install Python and its package management tool "pip" if you haven't.</p>
+<pre><code>$ sudo apt-get install python-pip python-dev
+</code></pre>
+
+<p>Then install MkDcos.</p>
+<pre><code>$ pip install mkdocs
+</code></pre>
+
+<h3 id="2-edit-page">2. Edit page</h3>
+<p>You can create pages in the "docs" folder using markdown.</p>
+<p>Some useful reference for using markdown:</p>
 <ul>
-<li>PC with Ubuntu 16.04 64-bit, Windows 7</li>
-<li>Power supply: Rigol DP832 Triple Output 195 Watt, <a href="https://assets.tequipment.net/assets/1/26/Rigol_DP800_UserGuide.pdf">Manual</a> </li>
-<li>Oscilloscope: Rigol DS4204 (350M bandwidth, UART/I2C/SPI/CAN decoding), <a href="https://assets.tequipment.net/assets/1/26/Documents/Rigol/DS4054/ds4054_doc_11.pdf">Manual</a></li>
-<li>Multimeter: Fluke 117, <a href="http://assets.fluke.com/manuals/114_____umeng0100.pdf">Manual</a></li>
-<li>Soldering station: Hakko FX888D with tips (T18-D16, T18-D32, T18-C2), <a href="https://cdn.sparkfun.com/datasheets/Tools/fx888d.pdf">Manual</a></li>
-<li>Soldering accessories:<ul>
-<li><strong>Lead-free</strong> solder, flux, solder wick</li>
-<li>Smoke absorber: Hakko FA-400</li>
-<li>Vise: Panavise 209</li>
-<li>Tweezer set</li>
-<li>Wire cutter and wire stripper</li>
-<li>Heat gun and heat shrink tubes</li>
+<li><a href="https://guides.github.com/features/mastering-markdown/">Mastering Markdown</a></li>
+<li><a href="https://help.github.com/articles/basic-writing-and-formatting-syntax/">Basic Writing and Formatting Syntax</a></li>
+<li><a href="https://github.com/LewisVo/Markdown-Tutorial">Markdown Tutorial</a>  </li>
 </ul>
-</li>
-</ul>
-<h3 id="general-rules">General rules</h3>
-<ul>
-<li>Do not take any item away from the workbench and always use the equipment on this workbench.</li>
-<li>Clean up the workbench after each use and put all items back to place.</li>
-</ul>
-<h3 id="how-to-solder">How to solder</h3>
-<p>There are a lot of good tutorials on soldering available from the Internet. </p>
-<ul>
-<li><a href="https://learn.sparkfun.com/tutorials/how-to-solder-through-hole-soldering">How to Solder: Through-Hole Soldering - Sparkfun</a></li>
-<li><a href="http://www.rctech.net/forum/radio-electronics/336870-how-solder-correctly-not-so-brief-lesson.html">How to solder correctly - RCTECH</a> (long but highly recommended)</li>
-<li>More on YouTube</li>
-</ul>
-<p>Summary</p>
-<ul>
-<li>Wet the sponge before use. It should be sufficient for most the tip cleanning work. In other cases, use the cleaning wire.</li>
-<li>For most through hole soldering, 610~625 F temperature should be sufficient. Consider using a larger tip if you find the solder not flowing well even with a higher temperature, for example when you're soldering 12 AWG wires to a motor. </li>
-<li>Before soldering, clean and add a small amount of solder to the tip for better heat transfer.</li>
-<li>Clean the soldering surface and use flux when necessary. </li>
-<li>Heat the pad &amp; component lead with iron tip and feed the solder to the joint. Don't try to attach solder to the tip and then transfer the solder from the tip to the joint. (Read the above articles if you are not clear what this means.)</li>
-<li>Don't leave the soldring iron on for a long time, for example when you need to spend 10+ minutes to work on something else. Hot iron tip will oxidize more quickly, which shortens the life of the tip. </li>
-<li>Clean and tin the tip (leave a blob of solder on the tip) after you finish the soldering work.</li>
-<li><strong>BE CAREFUL NOT TO MELT THE OSCILLOOSCOPE PROBES OR ANY OTHER ITEMS BY ACCIDENT!</strong></li>
-</ul>
-<h3 id="how-to-use-the-power-supply">How to use the power supply</h3>
-<ul>
-<li>Set the voltage and current properly BEFORE enabling the channel. Otherwise you may damage your circuit with improper power input.</li>
-<li>Refer to manual for more details</li>
-</ul></div>
+<p>After creating a page, you need to add it to "index.md" and "mkdocs.yml" so that it will be indexed and displayed properly. Just open these two files and refer to the format of other entries.</p>
+<h3 id="3-build-and-preview">3. Build and Preview</h3>
+<p>Use the command to build pages</p>
+<pre><code>$ cd &lt;location-of-acel-wiki-folder&gt;
+$ mkdocs build
+</code></pre>
+
+<p>You can preview the pages locally before pushing to Github.</p>
+<pre><code>$ mkdocs serve
+</code></pre>
+
+<p>Open your browser and type "http://127.0.0.1:8000/" to view the locally hosted site.</p>
+<h3 id="3-deploy-static-site">3. Deploy static site</h3>
+<p>When you are ready, push the generated site to Github.</p>
+<pre><code>$ mkdocs gh-deploy
+</code></pre>
+
+<p>After this command, the folder "site", which contains the generated HTML pages, will be pushed to the "gh-pages" branch of the wiki repository. "gh-pages" is the default branch that Github will treat as a project site and host automatically.</p>
+<p>Don't forget to also push the "source files" used to generate the site, usually "*.md" files and images.</p>
+<pre><code>$ &lt;create-a-git-comit&gt;
+$ git push origin acel-wiki
+</code></pre>
+
+<p><strong>Note</strong>: Ask for access if you could not push to the repository.</p></div>
         
     </div>
 
