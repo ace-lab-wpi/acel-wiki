@@ -191,7 +191,15 @@
 </code></pre>
 
 <p>Then install MkDcos.</p>
-<pre><code>$ pip install mkdocs
+<pre><code>$ sudo -H pip install mkdocs
+</code></pre>
+
+<p>In case you get the error saying mkdocs cannot be found, add the following line to your "~/.bashrc"</p>
+<pre><code>export PYTHONPATH=&quot;${PYTHONPATH}/usr/local/lib/python2.7/site-packages:/usr/lib/python2.7/site-packages&quot;
+</code></pre>
+
+<p>Don't forget to source "~/.bashrc" after you make the modification.</p>
+<pre><code>$ source ~/.bashrc
 </code></pre>
 
 <h3 id="2-edit-page">2. Edit page</h3>
