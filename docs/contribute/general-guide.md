@@ -21,7 +21,7 @@ $ sudo -H pip install mkdocs
 In case you get the error saying mkdocs cannot be found, add the following line to your "~/.bashrc"
 
 ```
-export PYTHONPATH="${PYTHONPATH}/usr/local/lib/python2.7/site-packages:/usr/lib/python2.7/site-packages"
+export PYTHONPATH="${PYTHONPATH}:/usr/local/lib/python2.7/site-packages:/usr/lib/python2.7/site-packages"
 ```
 
 Don't forget to source "~/.bashrc" after you make the modification.
