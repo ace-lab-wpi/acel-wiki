@@ -15,8 +15,21 @@ $ sudo apt-get install python-pip python-dev
 Then install MkDcos.
 
 ```
-$ pip install mkdocs
+$ sudo -H pip install mkdocs
 ```
+
+In case you get the error saying mkdocs cannot be found, add the following line to your "~/.bashrc"
+
+```
+export PYTHONPATH="${PYTHONPATH}/usr/local/lib/python2.7/site-packages:/usr/lib/python2.7/site-packages"
+```
+
+Don't forget to source "~/.bashrc" after you make the modification.
+
+```
+$ source ~/.bashrc
+```
+
 ### 2. Edit page
 
 You can create pages in the "docs" folder using markdown.

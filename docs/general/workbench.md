@@ -35,7 +35,7 @@ Summary
 * Before soldering, clean and add a small amount of solder to the tip for better heat transfer.
 * Clean the soldering surface and use flux when necessary. 
 * Heat the pad & component lead with iron tip and feed the solder to the joint. Don't try to attach solder to the tip and then transfer the solder from the tip to the joint. (Read the above articles if you are not clear what this means.)
-* Don't leave the soldring iron on for a long time, for example when you need to spend 10+ minutes to work on something else. Hot iron tip will oxidize more quickly, which shortens the life of the tip. 
+* Don't leave the soldring iron on without any use for a long time, for example when you need to spend 10+ minutes to work on something else. Hot iron tip will oxidize more quickly, which shortens the life of the tip. 
 * Clean and tin the tip (leave a blob of solder on the tip) after you finish the soldering work.
 * **BE CAREFUL NOT TO MELT THE OSCILLOOSCOPE PROBES OR ANY OTHER ITEMS BY ACCIDENT!**
 
